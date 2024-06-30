@@ -1,0 +1,27 @@
+// This defines the minimum commands that a client should have.
+
+// Schema
+idParser
+ extends abstractIdParser
+
+commandDescriptionParser
+ crux description
+ extends abstractStringMeasureParser
+ description What does this command do?
+ float sortIndex 1.3
+
+// Commands
+id fetch
+description If no params provided, fetch all folders previously fetched. If folder names provided, fetch those folders.
+
+id help
+description Print the available commands.
+
+id where
+description Print where WWS folders are stored.
+
+id list
+description List all of the available folders and whether they've been fetched or not.
+
+id open
+description Open wws/index.html

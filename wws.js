@@ -8,8 +8,10 @@ const fs = require("fs")
 // Scroll Notation Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { ScrollCli, ScrollFile, ScrollFileSystem } = require("scroll-cli")
+const packageJson = require("./package.json")
 
-const WWS_VERSION = "0.0.1"
+// Constants
+const WWS_VERSION = packageJson.version
 
 const scrollFs = new ScrollFileSystem()
 const scrollCli = new ScrollCli().silence()
@@ -18,9 +20,9 @@ class WWSCli {
   CommandFnDecoratorSuffix = "Command"
 
   executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
-    const command = args[0] // Note: we don't take any parameters on purpose. Simpler UX.
+    const command = args[0]
     const commandName = `${command}${this.CommandFnDecoratorSuffix}`
-    if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](process.cwd())
+    if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](args.slice(1))
     else if (command) this.log(`No command '${command}'. Running help command.`)
     else this.log(`No command provided. Running help command.`)
     return this.helpCommand()
@@ -43,7 +45,7 @@ class WWSCli {
       if (folders.length === 0)
         // Hacky to make sure this at least does something in all environments.
         // process.stdin.isTTY is not quite accurate for pipe detection
-        this[commandName](process.cwd())
+        this[commandName]()
     })
   }
 
@@ -67,59 +69,68 @@ class WWSCli {
       .sort()
   }
 
-  async initCommand(cwd) {
-    // Split cwd by dir separator and see if it already contains a "wws" part:
-    const wwsCache = this._getWWSDir(cwd)
-    if (wwsCache) return this.log(`\n👍 WWS already initialized: '${wwsCache}'.`)
+  get wwsDir() {
+    return path.join(__dirname, "wws")
+  }
 
-    // If not, create a new folder and initialize it:
-    const newCwd = path.join(cwd, "wws")
-    Disk.mkdir(newCwd)
+  init() {
+    const { wwsDir } = this
+    if (Disk.exists(wwsDir)) return true
+
+    Disk.mkdir(wwsDir)
     const initFolder = {
       "index.scroll": `The World Wide Scroll\n`
     }
-    Disk.writeObjectToDisk(newCwd, initFolder)
-    return this.log(`\n👍 Initialized new WWS cache in '${newCwd}'.`)
+    Disk.writeObjectToDisk(wwsDir, initFolder)
+    return this.log(`\n👍 Initialized new WWS cache in '${wwsDir}'.`)
   }
 
-  async buildIndexPage(cwd) {
-    const indexFile = path.join(cwd, "index.scroll")
+  async buildIndexPage() {
+    const { wwsDir } = this
+    const indexFile = path.join(wwsDir, "index.scroll")
     const content = `title The World Wide Scroll
 metaTags
 gazetteCss
 printTitle
 thinColumns 1
 
-${this.folders.map(concept => `- ${concept.id}\n link ${concept.id}/index.html`).join("\n")}
+# Fetched
+${this.fetchedFolders.map(concept => `- ${concept.id}\n link ${concept.id}/index.html`).join("\n")}
+
+# Unfetched
+${this.unfetchedFolders.map(concept => `- ${concept.id}`).join("\n")}
 `
     Disk.write(indexFile, content)
-    await scrollCli.buildCommand(cwd)
-  }
-
-  _getWWSDir(cwd) {
-    // first check if this folder contains a folder named "wws":
-    if (Disk.exists(path.join(cwd, "wws"))) return path.join(cwd, "wws")
-    const parts = cwd.split(path.sep)
-    const indexOfWws = parts.indexOf("wws")
-    if (indexOfWws === -1) return null
-    return parts.slice(0, indexOfWws + 1).join(path.sep)
+    await scrollCli.buildCommand(wwsDir)
   }
 
   get folders() {
-    const wwsFile = path.join(__dirname, "wws.scroll")
+    const { wwsDir } = this
+    const wwsFile = path.join(__dirname, "readme.scroll")
     const wws = new ScrollFile(Disk.read(wwsFile), wwsFile, scrollFs)
-    return wws.concepts
+    const { concepts } = wws
+    concepts.forEach(concept => (concept.fetched = Disk.exists(path.join(wwsDir, concept.id))))
+    return concepts
+  }
+
+  get fetchedFolders() {
+    return this.folders.filter(concept => concept.fetched)
+  }
+
+  get unfetchedFolders() {
+    return this.folders.filter(concept => !concept.fetched)
   }
 
   listCommand() {
-    this.folders.forEach(concept => this.log(concept.id))
+    this.folders.forEach(concept => this.log((concept.fetched ? "✅ " : "▢ ") + concept.id))
   }
 
-  fetchScroll(folderName, dir) {
+  fetchScroll(folderName) {
+    const { wwsDir } = this
     const folder = this.folders.find(concept => concept.id === folderName)
     if (!folder) return this.log(`\n👎 No folder '${folderName}' found.`)
     // mkdir the folder if it doesn't exist:
-    const conceptDir = path.join(dir, folder.id)
+    const conceptDir = path.join(wwsDir, folder.id)
     const gitSource = folder.source
     if (!Disk.exists(conceptDir)) {
       this.log(`Fetching ${folderName}`)
@@ -133,19 +144,24 @@ ${this.folders.map(concept => `- ${concept.id}\n link ${concept.id}/index.html`)
     }
   }
 
-  fetchCommand(cwd) {
-    const dir = this._getWWSDir(cwd)
-    if (!dir) return this.log(`\n👎 No WWS cache found in '${cwd}'.`)
-    this.folders.forEach(concept => this.fetchScroll(concept.id, dir))
-    this.buildIndexPage(dir)
+  fetchCommand(folderNames) {
+    this.init()
+    const { wwsDir, fetchedFolders } = this
+    if (!folderNames.length) fetchedFolders.forEach(concept => this.fetchScroll(concept.id))
+    else folderNames.forEach(folderName => this.fetchScroll(folderName))
+    this.buildIndexPage()
   }
 
-  openCommand(cwd) {
+  openCommand() {
     // Trigger the terminal to run "open index.html", opening the users web browser:
-    const dir = this._getWWSDir(cwd)
-    if (!dir) return this.log(`\n👎 No WWS cache found in '${cwd}'.`)
-    const indexHtml = path.join(dir, "index.html")
+    this.init()
+    const { wwsDir } = this
+    const indexHtml = path.join(wwsDir, "index.html")
     return require("child_process").exec(`open ${indexHtml}`)
+  }
+
+  whereCommand() {
+    return this.log(this.wwsDir)
   }
 
   helpCommand() {
