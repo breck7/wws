@@ -1,5 +1,6 @@
 importOnly
 baseUrl https://wws.scroll.pub/
+buildText
 downloadUrl https://github.com/breck7/wws/archive/refs/heads/wws.zip
 email wws@scroll.pub
 git https://github.com/breck7/wws
@@ -10,5 +11,4 @@ gazetteCss
 pageHeader
 copyButtons
 css html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}
-buildText
 keyboardNav

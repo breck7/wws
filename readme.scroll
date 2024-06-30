@@ -1,6 +1,7 @@
-title The World Wide Scroll
 buildConcepts wws.csv wws.json wws.tsv
 buildMeasures wwsMeasures.tsv
+permalink index.html
+title The World Wide Scroll
 
 import header.scroll
 printTitle
@@ -146,4 +147,3 @@ printConcepts
 endColumns
 
 pageFooter
-
