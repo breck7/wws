@@ -1,0 +1,9 @@
+*.html
+*.txt
+*.json
+*.csv
+*.tsv
+*.rss
+*.xml
+node_modules/
+.DS_Store

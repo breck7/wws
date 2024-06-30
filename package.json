@@ -1,0 +1,39 @@
+{
+  "name": "wws",
+  "version": "0.2.0",
+  "description": "The World Wide Scroll",
+  "main": "wws.js",
+  "engines": {
+    "node": ">=16.0"
+  },
+  "scripts": {
+    "test": "node wws.test.js"
+  },
+  "bin": {
+    "wws": "./wws.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breck7/wws.git"
+  },
+  "author": "Breck Yunits",
+  "prettier": {
+    "parser": "babel",
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": false,
+    "printWidth": 240,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed"
+  },
+  "homepage": "https://wws.scroll.pub",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "scroll-cli": "^98.0.2",
+    "scrollsdk": "^80.0.0"
+  },
+  "devDependencies": {
+    "tap": "^18.7.2"
+  }
+}
