@@ -8,6 +8,9 @@ printTitle
 
 mediumColumns 1
 
+# Why build this?
+We believe every human deserves their own copy of humanity's best information.
+
 # What is the World Wide Scroll (WWS)?
 The WWS is like the World Wide Web, except:
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
@@ -16,9 +19,6 @@ The WWS is like the World Wide Web, except:
 - *Pristine.* No ads, no paywalls, no trackers, no cookies, no copyright.
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code behind every page.
-
-# Why build this?
-Because every human deserves their own copy of humanity's best information.
 
 # Try now
 code
