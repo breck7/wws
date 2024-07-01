@@ -159,6 +159,10 @@ printMeasures
 # Folders
 printConcepts
 
+# Logo
+image wws.jpg
+
 endColumns
+
 
 pageFooter
