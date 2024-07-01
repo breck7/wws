@@ -1,6 +1,6 @@
 {
   "name": "wws",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "The World Wide Scroll",
   "main": "wws.js",
   "engines": {
@@ -32,7 +32,7 @@
   "homepage": "https://wws.scroll.pub",
   "dependencies": {
     "minimist": "^1.2.8",
-    "scroll-cli": "^99.0.0",
+    "scroll-cli": "^99.1.0",
     "scrollsdk": "^80.0.0"
   },
   "devDependencies": {
