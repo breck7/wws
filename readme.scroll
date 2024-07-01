@@ -77,6 +77,12 @@ ownerParser
   description What is the email address of the owner of this folder?
   float sortIndex 1.11
 
+wwsSnippetsParser
+ crux snippets
+ extends abstractStringMeasureParser
+ description What is the group name (and optionally folder path) to the blog posts that should be included on a user's WWS front page?
+ float sortIndex 1.3
+
 registeredParser
  extends abstractStringMeasureParser
  description On what day was this folder name first registered?
@@ -92,6 +98,7 @@ expiresParser
 id scroll
 www https://scroll.pub
 source https://github.com/breck7/scroll
+snippets blog/All
 owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -100,6 +107,7 @@ expires 6/12/2034
 id breck
 www https://breckyunits.com
 source https://github.com/breck7/breckyunits.com
+snippets All
 owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -108,6 +116,7 @@ expires 6/12/2034
 id pldb
 www https://pldb.io
 source https://github.com/breck7/pldb
+snippets blog/All
 owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -116,6 +125,7 @@ expires 6/12/2034
 id cancerdb
 www https://cancerdb.com
 source https://github.com/breck7/CancerDB
+snippets blog/All
 owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024

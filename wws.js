@@ -92,18 +92,41 @@ class WWSCli {
 metaTags
 gazetteCss
 printTitle
-thinColumns 1
 
 WWS version ${WWS_VERSION}
- https://wws.scroll.pub WWS
+ https://wws.scroll.pub
  style text-align:center;
 
 import ../header.scroll
 
-Folders saved locally to:
+thinColumns 1
 
 code
  ${wwsDir}
+
+endColumns
+
+thinColumns
+
+wwsSnippetsParser
+ extends snippetsParser
+ crux snippets
+ javascript
+  makeSnippet(file, compileSettings) {
+    const path = require("path")
+    const folderName = file.folderPath.replace('${wwsDir}', "").split(path.sep)[1]
+    return super.makeSnippet(file, compileSettings).replace('<h1 class="scrollTitle">', '<h1 class="scrollTitle"><a href="' + folderName + '/index.html" style="color: gray;">~' + folderName + '</a><br>')
+  }
+
+snippets ${this.fetchedFolders
+      .filter(concept => concept.snippets)
+      .map(concept => concept.id + "/" + concept.snippets)
+      .join(" ")}
+ limit 5
+
+endColumns
+
+thinColumns 1
 
 # Fetched
 ${this.fetchedFolders.map(concept => `- ${concept.id}\n link ${concept.id}/index.html`).join("\n")}
@@ -111,6 +134,8 @@ ${this.fetchedFolders.map(concept => `- ${concept.id}\n link ${concept.id}/index
 # Unfetched
 expander
 ${this.unfetchedFolders.map(concept => `- ${concept.id}`).join("\n")}
+
+endColumns
 
 pageFooter
 viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
