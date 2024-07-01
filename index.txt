@@ -15,6 +15,7 @@ Try now
 =======
 git clone https://github.com/breck7/wws
 cd wws
+npm install .
 npm install -g .
 wws list
 wws fetch scroll
