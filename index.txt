@@ -11,7 +11,9 @@ The WWS is like the World Wide Web, except:
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code behind every page.
 
-Every human deserves their own copy of humanity's best information.
+Why build this?
+===============
+Because every human deserves their own copy of humanity's best information.
 
 Try now
 =======
