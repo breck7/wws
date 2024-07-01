@@ -19,9 +19,11 @@ The WWS is like the World Wide Web, except:
 
 # Try now
 code
- npm install -g scroll-cli
- wws init
- wws fetch
+ git clone https://github.com/breck7/wws
+ cd wws
+ npm install -g .
+ wws list
+ wws fetch scroll
  wws open
 
 # Register a Folder

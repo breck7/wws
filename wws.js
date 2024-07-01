@@ -88,17 +88,32 @@ class WWSCli {
   async buildIndexPage() {
     const { wwsDir } = this
     const indexFile = path.join(wwsDir, "index.scroll")
-    const content = `title The World Wide Scroll
+    const content = `title Your World Wide Scroll
 metaTags
 gazetteCss
 printTitle
 thinColumns 1
 
+WWS version ${WWS_VERSION}
+ https://wws.scroll.pub WWS
+ style text-align:center;
+
+import ../header.scroll
+
+Folders saved locally to:
+
+code
+ ${wwsDir}
+
 # Fetched
 ${this.fetchedFolders.map(concept => `- ${concept.id}\n link ${concept.id}/index.html`).join("\n")}
 
 # Unfetched
+expander
 ${this.unfetchedFolders.map(concept => `- ${concept.id}`).join("\n")}
+
+pageFooter
+viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
 `
     Disk.write(indexFile, content)
     await scrollCli.buildCommand(wwsDir)
