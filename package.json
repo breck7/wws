@@ -8,8 +8,6 @@
   },
   "scripts": {
     "test": "node wws.test.js",
-    "build": "scroll list | scroll build",
-    "open": "open index.html",
     "up": "npm install scroll-cli@latest"
   },
   "bin": {
