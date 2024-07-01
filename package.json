@@ -1,13 +1,13 @@
 {
   "name": "wws",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "The World Wide Scroll",
   "main": "wws.js",
   "engines": {
     "node": ">=16.0"
   },
   "scripts": {
-    "test": "scroll list | scroll test; node wws.test.js",
+    "test": "node wws.test.js",
     "build": "scroll list | scroll build",
     "open": "open index.html",
     "up": "npm install scroll-cli@latest"
@@ -33,7 +33,7 @@
   "homepage": "https://wws.scroll.pub",
   "dependencies": {
     "minimist": "^1.2.8",
-    "scroll-cli": "^98.0.2",
+    "scroll-cli": "^99.0.0",
     "scrollsdk": "^80.0.0"
   },
   "devDependencies": {
