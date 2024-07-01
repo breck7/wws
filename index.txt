@@ -11,7 +11,7 @@ The WWS is like the World Wide Web, except:
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code behind every page.
 
-The mission of the WWS is to enable every child on earth to have their own copy of humanity's best information.
+Every human deserves their own copy of humanity's best information.
 
 Try now
 =======
