@@ -30,7 +30,7 @@ code
  wws fetch scroll
  wws open
 
-# Register a Folder
+# Buy a Folder
 The World Wide Scroll beta is live!
 
 You can now buy a folder in the World Wide Scroll for $100 for 10 years.
@@ -39,7 +39,9 @@ Funds pay for the development of the Scroll language and WWS standards.
 
 import stripeBuyButton.scroll
 
-import gettingStarted.scroll
+After you buy your folder, check out the Getting Started Guide.
+ link gettingStarted.html Getting Started Guide
+
 import finePrint.scroll
 
 // Schema
@@ -85,6 +87,16 @@ expiresParser
  description On what day does this registration expire?
  float sortIndex 1.4
 
+repParser
+ extends abstractStringMeasureParser
+ description Which WWS rep onboarded this folder?
+ float sortIndex 1.5
+
+transactionIdParser
+ extends abstractStringMeasureParser
+ description What is the payment transaction id for this purchase?
+ float sortIndex 1.5
+
 // The World Wide Scroll
 
 id scroll
@@ -95,6 +107,8 @@ owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
+rep Breck Yunits
+transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 id breck
 www https://breckyunits.com
@@ -104,6 +118,8 @@ owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
+rep Breck Yunits
+transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 id pldb
 www https://pldb.io
@@ -113,6 +129,8 @@ owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
+rep Breck Yunits
+transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 id cancerdb
 www https://cancerdb.com
@@ -122,6 +140,8 @@ owner Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
+rep Breck Yunits
+transactionId pm_1PQz7LJktJxKl0r5x39CYvIV
 
 import stripeBuyButton.scroll
 
