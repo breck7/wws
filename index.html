@@ -400,7 +400,7 @@ wws list
 wws fetch scroll
 wws open</code>
 </div>
-<div class="scrollSection"><h1 class="scrollParagraph">Register a Folder</h1>
+<div class="scrollSection"><h1 class="scrollParagraph">Buy a Folder</h1>
 <p class="scrollParagraph">The World Wide Scroll beta is live!</p>
 </div>
 <p class="scrollParagraph">You can now buy a folder in the World Wide Scroll for $100 for 10 years.</p>
@@ -414,24 +414,12 @@ wws open</code>
 </stripe-buy-button>
 </center>
 <br><br>
-<div class="scrollSection"><h1 class="scrollParagraph">Getting Started</h1>
-</div>
-<p class="scrollParagraph">After you've placed your order, it's time to get your site ready for the WWS.</p>
-<div class="scrollSection"><h1 class="scrollParagraph">How to Get Your Site Ready for the World Wide Scroll</h1>
-<p class="scrollParagraph">The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and human-first alternative to the World Wide Web. As you prepare your site for the WWS, keep the following guidelines in mind:</p>
-</div>
-<ol  start="1."><li ><strong>Utilize the Scroll Language</strong>: Scroll is the primary language of the WWS, designed to be simple and expandable for both humans and AIs. While you can use plain HTML, Markdown, or any language that compiles to HTML, using Scroll will streamline many other requirements. Learn more about Scroll at <a href="https://scroll.pub">scroll.pub</a>.</li></ol>
-<ol  start="2."><li ><strong>Open Source and Public Domain</strong>: The WWS is dedicated to open-source, public domain content. Ensure that all content on your site complies with these principles.</li></ol>
-<ol  start="3."><li ><strong>Leverage Git for Site Management</strong>: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like <a href="https://github.com">GitHub</a> and <a href="https://gitlab.com">GitLab</a> offer free hosting for open-source projects. Your repo should have a branch named <code>wws</code> where your compiled site is written to.</li></ol>
-<ol  start="4."><li ><strong>Design for Offline Use</strong>: Your site should function fully offline. Avoid using external JavaScript, images, or assets that require an internet connection. Ensure all necessary files are included in your Git repo. For large files, such as videos, linking to external sites is acceptable, but avoid adding unnecessarily large files directly to your repo.</li></ol>
-<ol  start="5."><li ><strong>No Ads or Trackers</strong>: While commercial sites and sponsorships are welcome on the WWS, any form of JavaScript trackers or advertising is prohibited. Ensure your site is free from ads and trackers to maintain the integrity and privacy of the WWS.</li></ol>
-<p class="scrollParagraph">If you need <em>any</em> help with these guidelines, share your issue on <a href="https://github.com/breck7/wws/issues">github.com/breck7/wws/issues</a> or <a href="https://www.reddit.com/r/WorldWideScroll/">r/WorldWideScroll</a> or <a href="https://twitter.com/breckyunits">Twitter</a>.</p>
-<p class="scrollParagraph">By adhering to these guidelines, you’ll help create a more intelligent, offline-first, and human-centric internet. Welcome to the World Wide Scroll!</p>
+<p class="scrollParagraph">After you buy your folder, check out the <a href="gettingStarted.html">Getting Started Guide</a>.</p>
 <div class="scrollSection"><h1 class="scrollParagraph">Fine Print</h1>
 <ul ><li >A purchase gives you the rights to choose one unique unclaimed alpha-numeric id in the World Wide Scroll for ten years, renewal rights, and update rights to the metadata for that folder, as defined in this file.</li><ul ><li >At any time you may change your folder name to a different unclaimed alpha-numeric id.</li></ul>
-<li >All updates are subject to approval by the World Wide Scroll editors.</li>
+<li >All updates are subject to approval by the World Wide Scroll reps.</li>
 <li >WWS Folders can only be reserved by individuals.</li>
-<li >The WWS is for high quality, non-anonymous content.</li><ul ><li >You must use your real name and a real email address when registering a folder.</li><ul ><li >This information will be publicly visible in this file (<code>wws.scroll</code>).</li></ul></ul>
+<li >The WWS is for high quality, non-anonymous content.</li><ul ><li >You must use your real name and a real email address when buying a folder.</li><ul ><li >This information will be publicly visible in this file (<code>wws.scroll</code>).</li></ul></ul>
 <li >Limit 5 folders per person.</li><ul ><li >The WWS discourages name squatting and content not edited by humans.</li>
 <li >If you maintain high quality folders and hit the limit, you can request a higher limit.</li></ul>
 <li >Changes to your folder information may be communicated to the WWS team via email and/or using future self-service software.</li></ul>
@@ -622,6 +610,32 @@ wws open</code>
 <td></td>
 <td></td>
 <td></td>
+</tr>
+<tr><td>rep</td>
+<td>4</td>
+<td>100%</td>
+<td>Which WWS rep onboarded this folder?</td>
+<td>Breck Yunits</td>
+<td>string</td>
+<td></td>
+<td>1.5</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td>transactionId</td>
+<td>4</td>
+<td>100%</td>
+<td>What is the payment transaction id for this purchase?</td>
+<td>pm_1PQxCOJktJxKl0r5l24p6Zwu</td>
+<td>string</td>
+<td></td>
+<td>1.5</td>
+<td>false</td>
+<td></td>
+<td></td>
+<td></td>
 </tr></tbody></table>
 <div class="scrollSection"><h1 class="scrollParagraph">Folders</h1>
 <table class="scrollTable"><thead><tr><th>id</th>
@@ -639,6 +653,10 @@ wws open</code>
 <th>registered</th>
 
 <th>expires</th>
+
+<th>rep</th>
+
+<th>transactionId</th>
 </tr></thead>
 <tbody><tr><td>scroll</td>
 <td><a href="https://scroll.pub">https://scroll.pub</a></td>
@@ -648,6 +666,8 @@ wws open</code>
 <td>blog/All</td>
 <td>6/12/2024</td>
 <td>6/12/2034</td>
+<td>Breck Yunits</td>
+<td>pm_1PQxCOJktJxKl0r5l24p6Zwu</td>
 </tr>
 <tr><td>breck</td>
 <td><a href="https://breckyunits.com">https://breckyunits.com</a></td>
@@ -657,6 +677,8 @@ wws open</code>
 <td>All</td>
 <td>6/12/2024</td>
 <td>6/12/2034</td>
+<td>Breck Yunits</td>
+<td>pm_1PQxCOJktJxKl0r5l24p6Zwu</td>
 </tr>
 <tr><td>pldb</td>
 <td><a href="https://pldb.io">https://pldb.io</a></td>
@@ -666,6 +688,8 @@ wws open</code>
 <td>blog/All</td>
 <td>6/12/2024</td>
 <td>6/12/2034</td>
+<td>Breck Yunits</td>
+<td>pm_1PQxCOJktJxKl0r5l24p6Zwu</td>
 </tr>
 <tr><td>cancerdb</td>
 <td><a href="https://cancerdb.com">https://cancerdb.com</a></td>
@@ -675,6 +699,8 @@ wws open</code>
 <td>blog/All</td>
 <td>6/12/2024</td>
 <td>6/12/2034</td>
+<td>Breck Yunits</td>
+<td>pm_1PQz7LJktJxKl0r5x39CYvIV</td>
 </tr></tbody></table>
 </div>
 <div class="scrollSection"><h1 class="scrollParagraph">Logo</h1>
