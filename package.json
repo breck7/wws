@@ -33,7 +33,7 @@
   "dependencies": {
     "minimist": "^1.2.8",
     "scroll-cli": "100.0.0",
-    "scrollsdk": "^80.0.0"
+    "scrollsdk": "^80.1.1"
   },
   "devDependencies": {
     "tap": "^18.7.2"
