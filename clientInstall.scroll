@@ -1,0 +1,14 @@
+importOnly
+# Install the WWS client
+code
+ git clone https://github.com/breck7/wws
+ cd wws
+ npm install .
+ npm install -g .
+ wws list
+ # Fetch a few sites:
+ wws fetch scroll breck pldb
+ wws open
+
+The WWS client currently requires Node.js. More clients coming soon.
+ https://nodejs.org/en Node.js

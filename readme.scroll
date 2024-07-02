@@ -20,15 +20,7 @@ The WWS is like the World Wide Web, except:
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code and change history behind every page.
 
-# Try now
-code
- git clone https://github.com/breck7/wws
- cd wws
- npm install .
- npm install -g .
- wws list
- wws fetch scroll
- wws open
+import clientInstall.scroll
 
 # Buy a Folder
 The World Wide Scroll beta is live!
