@@ -1,6 +1,7 @@
 importOnly
 baseUrl https://wws.scroll.pub/
-buildText
+buildTxt
+buildHtml
 downloadUrl https://github.com/breck7/wws/archive/refs/heads/wws.zip
 email wws@scroll.pub
 git https://github.com/breck7/wws
