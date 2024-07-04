@@ -92,6 +92,7 @@ class WWSCli {
 metaTags
 gazetteCss
 printTitle
+buildHtml
 
 WWS version ${WWS_VERSION}
  https://wws.scroll.pub
@@ -109,7 +110,7 @@ endColumns
 thinColumns
 
 wwsSnippetsParser
- extends snippetsParser
+ extends printSnippetsParser
  crux snippets
  javascript
   makeSnippet(file, compileSettings) {
