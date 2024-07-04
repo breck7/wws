@@ -3,8 +3,8 @@ importOnly
 code
  git clone https://github.com/breck7/wws
  cd wws
- npm install .
- npm install -g .
+ npm install --omit=dev
+ npm install --omit=dev -g .
  wws list
  # Fetch a few sites:
  wws fetch scroll breck pldb
