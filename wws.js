@@ -147,8 +147,8 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
 
   get folders() {
     const { wwsDir } = this
-    const wwsFile = path.join(__dirname, "readme.scroll")
-    const wws = new ScrollFile(Disk.read(wwsFile), wwsFile, scrollFs)
+    const rootFilePath = path.join(__dirname, "root.scroll")
+    const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
     const { concepts } = wws
     concepts.forEach(concept => (concept.fetched = Disk.exists(path.join(wwsDir, concept.id))))
     return concepts

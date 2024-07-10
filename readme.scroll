@@ -25,115 +25,18 @@ import clientInstall.scroll
 # Buy a Folder
 The World Wide Scroll beta is live!
 
-You can now buy a folder in the World Wide Scroll for $100 for 10 years.
+You can now buy a root folder in the World Wide Scroll for $100 for 10 years.
 
 Funds pay for the development of the Scroll language and WWS standards.
 
 import stripeBuyButton.scroll
 
-After you buy your folder, check out the Getting Started Guide.
+After you buy your root folder, check out the Getting Started Guide.
  link gettingStarted.html Getting Started Guide
 
 import finePrint.scroll
 
-// Schema
-
-idParser
- extends abstractIdParser
-
-wwwParser
- extends abstractUrlMeasureParser
- description What is the URL to this folder on the World Wide Web?
- float sortIndex 1.01
-
-sourceParser
- extends abstractUrlMeasureParser
- description What is the URL to the source code for this folder?
- float sortIndex 1.02
-
-ownerParser
- // required
- extends abstractStringMeasureParser
- description What is the real name of the owner of this folder?
- float sortIndex 1.1
- ownerEmailParser
-  // required
-  crux email
-  extends abstractStringMeasureParser
-  description What is the email address of the owner of this folder?
-  float sortIndex 1.11
-
-wwsSnippetsParser
- crux snippets
- extends abstractStringMeasureParser
- description What is the group name (and optionally folder path) to the blog posts that should be included on a user's WWS front page?
- float sortIndex 1.3
-
-registeredParser
- extends abstractStringMeasureParser
- description On what day was this folder name first registered?
- float sortIndex 1.3
-
-expiresParser
- extends abstractStringMeasureParser
- description On what day does this registration expire?
- float sortIndex 1.4
-
-repParser
- extends abstractStringMeasureParser
- description Which WWS rep onboarded this folder?
- float sortIndex 1.5
-
-transactionIdParser
- extends abstractStringMeasureParser
- description What is the payment transaction id for this purchase?
- float sortIndex 1.5
-
-// The World Wide Scroll
-
-id scroll
-www https://scroll.pub
-source https://github.com/breck7/scroll
-snippets blog/All
-owner Breck Yunits
- email breck7@gmail.com
-registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
-
-id breck
-www https://breckyunits.com
-source https://github.com/breck7/breckyunits.com
-snippets All
-owner Breck Yunits
- email breck7@gmail.com
-registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
-
-id pldb
-www https://pldb.io
-source https://github.com/breck7/pldb
-snippets blog/All
-owner Breck Yunits
- email breck7@gmail.com
-registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
-
-id cancerdb
-www https://cancerdb.com
-source https://github.com/breck7/CancerDB
-snippets blog/All
-owner Breck Yunits
- email breck7@gmail.com
-registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQz7LJktJxKl0r5x39CYvIV
+import root.scroll
 
 import stripeBuyButton.scroll
 
@@ -149,7 +52,7 @@ endColumns
 wideColumns 1
 
 # Download
-Download the list of folders in the World Wide Scroll as:
+Download the list of root folders in the World Wide Scroll as:
 
 * CSV | TSV | JSON
  link wws.csv CSV
