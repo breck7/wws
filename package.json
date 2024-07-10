@@ -1,6 +1,6 @@
 {
   "name": "wws",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "The World Wide Scroll",
   "main": "wws.js",
   "engines": {

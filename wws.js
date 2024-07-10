@@ -16,6 +16,8 @@ const WWS_VERSION = packageJson.version
 const scrollFs = new ScrollFileSystem()
 const scrollCli = new ScrollCli().silence()
 
+const sanitizeFolderName = name => name.toLowerCase().replace(/[^a-z0-9._]/g, "")
+
 class WWSCli {
   CommandFnDecoratorSuffix = "Command"
 
@@ -171,17 +173,39 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     const folder = this.folders.find(concept => concept.id === folderName)
     if (!folder) return this.log(`\n👎 No folder '${folderName}' found.`)
     // mkdir the folder if it doesn't exist:
-    const conceptDir = path.join(wwsDir, folder.id)
+    const rootFolder = path.join(wwsDir, folder.id)
     const gitSource = folder.source
-    if (!Disk.exists(conceptDir)) {
+    const wwsFile = path.join(rootFolder, "wws.scroll")
+    if (!Disk.exists(rootFolder)) {
       this.log(`Fetching ${folderName}`)
-      Disk.mkdir(conceptDir)
+      Disk.mkdir(rootFolder)
       // do a shallow clone of the built site (wws branch) into the folder:
-      require("child_process").execSync(`git clone --depth 1 --branch wws ${gitSource} ${conceptDir}`)
+      require("child_process").execSync(`git clone --depth 1 --branch wws ${gitSource} ${rootFolder}`)
     } else {
       // update the shallow clone but still keep it shallow
       this.log(`Updating ${folderName}`)
-      require("child_process").execSync(`cd ${conceptDir} && git pull`)
+      require("child_process").execSync(`cd ${rootFolder} && git pull origin wws`)
+    }
+    // fetch subfolders
+    if (Disk.exists(wwsFile)) {
+      // subfolder wws https://github.com/breck7/wws
+      Disk.read(wwsFile)
+        .trim()
+        .split("\n")
+        .forEach(line => {
+          const words = line.trim().split(" ")
+          if (words.length !== 3 || words[0] !== "subfolder") {
+            console.log(`Error fetching subfolder: "${line}"`)
+            return
+          }
+          const subfolderName = sanitizeFolderName(words[1])
+          const subfolder = path.join(rootFolder, subfolderName)
+          console.log(`Updating subfolder '${subfolderName}'`)
+          if (!Disk.exists(subfolder)) {
+            Disk.mkdir(subfolder)
+            require("child_process").execSync(`git clone --depth 1 --branch wws ${words[2]} ${subfolder}`)
+          } else require("child_process").execSync(`cd ${subfolder} && git pull origin wws`)
+        })
     }
   }
 
