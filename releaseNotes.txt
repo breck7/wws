@@ -1,0 +1,15 @@
+World Wide Scroll Release Notes
+===============================
+A list of what has changed in WWS releases.
+===========================================
+
+Download as CSV | TSV | JSON
+ https://wws.scroll.pub/releaseNotes.csv
+ https://wws.scroll.pub/releaseNotes.tsv
+ https://wws.scroll.pub/releaseNotes.json
+
+0.7.0 7/10/2024s
+================
+🎉 added release notes
+🎉 moved site registry to `root.scroll`
+🎉 updated Scroll

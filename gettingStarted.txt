@@ -1,7 +1,7 @@
 World Wide Scroll Getting Started Guide
 =======================================
 
-After you've purchased your folder, a WWS Rep will reach out to you via the email you provided at checkout to help onboard your site to your WWS folder.
+After you've purchased your root folder, a WWS Rep will reach out to you via the email you provided at checkout to help onboard your site to your WWS folder.
 
 While you wait for their email, follow this guide to get your site ready for the World Wide Scroll.
 
@@ -14,9 +14,10 @@ The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and h
 
 2. *Open Source and Public Domain*: The WWS is designed for a post-copyright world and all content on the WWS is open-source and public domain.
 
-3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like GitHub and GitLab offer free hosting for open-source projects. Your repo should have a branch named `wws` where your compiled site is written to.
+3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like GitHub and GitLab offer free hosting for open-source projects. Your repo should have a branch named `wws` where your compiled site is written to. ScrollHub (beta) is another fast option you could use.
  https://github.com
  https://gitlab.com
+ http://hub.scroll.pub/
 
 4. *Design for Offline Use*: Your site should function fully offline. Avoid using external JavaScript, images, or assets that require an internet connection. Ensure all necessary files are included in your Git repo. For large files, such as videos, linking to external sites is acceptable, but avoid adding unnecessarily large files directly to your repo.
 
