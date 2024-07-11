@@ -1,7 +1,7 @@
+title World Wide Scroll Getting Started Guide
+
 import header.scroll
 printTitle
-
-title World Wide Scroll Getting Started Guide
 
 mediumColumns 1
 

@@ -1,10 +1,10 @@
+buildConcepts releaseNotes.csv releaseNotes.json releaseNotes.tsv
+buildMeasures releaseNotesMeasures.tsv
 title World Wide Scroll Release Notes
 
 import header.scroll
 printTitle
 ## A list of what has changed in WWS releases.
-buildConcepts releaseNotes.csv releaseNotes.json releaseNotes.tsv
-buildMeasures releaseNotesMeasures.tsv
 
 thinColumns 1
 Download as CSV | TSV | JSON
@@ -17,6 +17,11 @@ endColumns
 import changes.parsers
 
 thinColumns
+
+📦 0.9.0 7/11/2024
+🎉 added descriptions to folders (max 7 words)
+🎉 nicer `wws list` output
+⚠️ moved `snippets` parser from the `root.scroll` file to `wws.scroll` files.
 
 📦 0.8.0 7/10/2024
 🎉 added new concept of subfolders
