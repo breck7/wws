@@ -7,6 +7,7 @@ const fs = require("fs")
 
 // Scroll Notation Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
+const { TreeNode } = require("scrollsdk/products/TreeNode.js")
 const { ScrollCli, ScrollFile, ScrollFileSystem } = require("scroll-cli")
 const packageJson = require("./package.json")
 
@@ -122,8 +123,13 @@ wwsSnippetsParser
   }
 
 snippets ${this.fetchedFolders
-      .filter(concept => concept.snippets)
-      .map(concept => concept.id + "/" + concept.snippets)
+      .map(concept => {
+        const settings = this.getFolderSettings(concept.id)
+        const snippets = settings.get("snippets")
+        if (!snippets) return ""
+        return concept.id + "/" + snippets
+      })
+      .filter(i => i)
       .join(" ")}
  limit 5
 
@@ -165,7 +171,28 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   }
 
   listCommand() {
-    this.folders.forEach(concept => this.log((concept.fetched ? "✅ " : "▢ ") + concept.id))
+    const table = new TreeNode(
+      this.folders.map(concept => {
+        const { fetched, id, description } = concept
+        return {
+          " ": fetched ? "🟩" : "⬜️",
+          Folder: id,
+          Description: description
+        }
+      })
+    )
+    this.log(`There are currently ${this.folders.length} folders in the World Wide Scroll.`)
+    this.log("")
+    this.log(table.toFormattedTable())
+    this.log("")
+  }
+
+  getFolderSettings(folderName) {
+    const { wwsDir } = this
+    const rootFolder = path.join(wwsDir, folderName)
+    const wwsFile = path.join(rootFolder, "wws.scroll")
+    if (!Disk.exists(wwsFile)) return new TreeNode()
+    return new TreeNode(Disk.read(wwsFile))
   }
 
   fetchScroll(folderName) {
@@ -175,7 +202,6 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     // mkdir the folder if it doesn't exist:
     const rootFolder = path.join(wwsDir, folder.id)
     const gitSource = folder.source
-    const wwsFile = path.join(rootFolder, "wws.scroll")
     if (!Disk.exists(rootFolder)) {
       this.log(`Fetching ${folderName}`)
       Disk.mkdir(rootFolder)
@@ -186,27 +212,19 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       this.log(`Updating ${folderName}`)
       require("child_process").execSync(`cd ${rootFolder} && git pull origin wws`)
     }
-    // fetch subfolders
-    if (Disk.exists(wwsFile)) {
-      // subfolder wws https://github.com/breck7/wws
-      Disk.read(wwsFile)
-        .trim()
-        .split("\n")
-        .forEach(line => {
-          const words = line.trim().split(" ")
-          if (words.length !== 3 || words[0] !== "subfolder") {
-            console.log(`Error fetching subfolder: "${line}"`)
-            return
-          }
-          const subfolderName = sanitizeFolderName(words[1])
-          const subfolder = path.join(rootFolder, subfolderName)
-          console.log(`Updating subfolder '${subfolderName}'`)
-          if (!Disk.exists(subfolder)) {
-            Disk.mkdir(subfolder)
-            require("child_process").execSync(`git clone --depth 1 --branch wws ${words[2]} ${subfolder}`)
-          } else require("child_process").execSync(`cd ${subfolder} && git pull origin wws`)
-        })
-    }
+    const settingsTree = this.getFolderSettings(folder.id)
+    settingsTree
+      .filter(node => node.getLine().startsWith("subfolder"))
+      .forEach(subfolder => {
+        const subfolderName = sanitizeFolderName(subfolder.words[1])
+        const subfolderPath = path.join(rootFolder, subfolderName)
+        const sourceRepo = subfolder.words[2]
+        console.log(`Updating subfolder '${subfolderName}'`)
+        if (!Disk.exists(subfolderPath)) {
+          Disk.mkdir(subfolderPath)
+          require("child_process").execSync(`git clone --depth 1 --branch wws ${sourceRepo} ${subfolderPath}`)
+        } else require("child_process").execSync(`cd ${subfolderPath} && git pull origin wws`)
+      })
   }
 
   fetchCommand(folderNames) {

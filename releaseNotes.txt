@@ -8,6 +8,12 @@ Download as CSV | TSV | JSON
  https://wws.scroll.pub/releaseNotes.tsv
  https://wws.scroll.pub/releaseNotes.json
 
+0.9.0 7/11/2024
+===============
+🎉 added descriptions to folders (max 7 words)
+🎉 nicer `wws list` output
+⚠️ moved `snippets` parser from the `root.scroll` file to `wws.scroll` files.
+
 0.8.0 7/10/2024
 ===============
 🎉 added new concept of subfolders

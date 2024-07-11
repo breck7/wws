@@ -5,6 +5,11 @@
 idParser
  extends abstractIdParser
 
+descriptionParser
+ extends abstractStringMeasureParser
+ description What is this site about? Maximum 7 words.
+ float sortIndex 1.001
+
 wwwParser
  extends abstractUrlMeasureParser
  description What is the URL to this folder on the World Wide Web?
@@ -15,23 +20,17 @@ sourceParser
  description What is the URL to the source code for this folder?
  float sortIndex 1.02
 
-ownerParser
+editorParser
  // required
  extends abstractStringMeasureParser
- description What is the real name of the owner of this folder?
+ description What is the real name of the editor of this folder?
  float sortIndex 1.1
- ownerEmailParser
+ editorEmailParser
   // required
   crux email
   extends abstractStringMeasureParser
-  description What is the email address of the owner of this folder?
+  description What is the email address of the editor of this folder?
   float sortIndex 1.11
-
-wwsSnippetsParser
- crux snippets
- extends abstractStringMeasureParser
- description What is the group name (and optionally folder path) to the blog posts that should be included on a user's WWS front page?
- float sortIndex 1.3
 
 registeredParser
  extends abstractStringMeasureParser
@@ -56,10 +55,10 @@ transactionIdParser
 // Root Folders
 
 id scroll
+description A language for scientists of all ages
 www https://scroll.pub
 source https://github.com/breck7/scroll
-snippets blog/All
-owner Breck Yunits
+editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
@@ -67,10 +66,10 @@ rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 id breck
+description Breck's Blog
 www https://breckyunits.com
 source https://github.com/breck7/breckyunits.com
-snippets All
-owner Breck Yunits
+editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
@@ -78,10 +77,10 @@ rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 id pldb
+description A Programming Language DataBase
 www https://pldb.io
 source https://github.com/breck7/pldb
-snippets blog/All
-owner Breck Yunits
+editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
@@ -89,10 +88,10 @@ rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 id cancerdb
+description Datasets about Cancer
 www https://cancerdb.com
 source https://github.com/breck7/CancerDB
-snippets blog/All
-owner Breck Yunits
+editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034

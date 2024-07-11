@@ -22,23 +22,27 @@ The WWS is like the World Wide Web, except:
 
 import clientInstall.scroll
 
-# Buy a Folder
+# Register a Folder
 The World Wide Scroll beta is live!
 
-You can now buy a root folder in the World Wide Scroll for $100 for 10 years.
+You can now register a root folder in the World Wide Scroll for $100 for 10 years.
 
-Funds pay for the development of the Scroll language and WWS standards.
+When you register a folder in the WWS, you become that folder's "Editor".
 
-import stripeBuyButton.scroll
+The Editor is the person responsible for updating the metadata about that folder.
 
-After you buy your root folder, check out the Getting Started Guide.
+Registration funds go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
+
+import stripeButton.scroll
+
+After you register your root folder, check out the Getting Started Guide.
  link gettingStarted.html Getting Started Guide
 
 import finePrint.scroll
 
 import root.scroll
 
-import stripeBuyButton.scroll
+import stripeButton.scroll
 
 # Values
 Art. Calmness. Courage. Freedom. Fun. Intelligence. Laughter. Love. Science. Truth.
@@ -68,6 +72,5 @@ printConcepts
 image wws.jpg
 
 endColumns
-
 
 pageFooter

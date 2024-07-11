@@ -29,15 +29,19 @@ wws open
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en
 
-Buy a Folder
-============
+Register a Folder
+=================
 The World Wide Scroll beta is live!
 
-You can now buy a root folder in the World Wide Scroll for $100 for 10 years.
+You can now register a root folder in the World Wide Scroll for $100 for 10 years.
 
-Funds pay for the development of the Scroll language and WWS standards.
+When you register a folder in the WWS, you become that folder's "Editor".
 
-After you buy your root folder, check out the Getting Started Guide.
+The Editor is the person responsible for updating the metadata about that folder.
+
+Registration funds go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
+
+After you register your root folder, check out the Getting Started Guide.
  https://wws.scroll.pub/gettingStarted.html
 
 Fine Print
@@ -47,7 +51,7 @@ Fine Print
 - All updates are subject to approval by the World Wide Scroll reps.
 - WWS Folders can only be reserved by individuals.
 - The WWS is for high quality, non-anonymous content.
- - You must use your real name and a real email address when buying a folder.
+ - You must use your real name and a real email address when registering a folder.
   - This information will be publicly visible in root file (`root.scroll`).
 - Limit 5 folders per person.
  - The WWS discourages name squatting and content not edited by humans.

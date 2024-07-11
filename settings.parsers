@@ -1,0 +1,12 @@
+wwsSubfolderParser
+ crux subfolder
+ extends abstractStringMeasureParser
+ description What is the name and URL to the source repo of a subfolder?
+ float sortIndex 1.3
+ cells keywordCell anyCell urlCell
+
+wwsSnippetsParser
+ crux snippets
+ extends abstractStringMeasureParser
+ description What is the group name (and optionally folder path) to the blog posts that should be included on a user's WWS front page?
+ float sortIndex 1.3
