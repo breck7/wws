@@ -1,0 +1,60 @@
+// I made this animation by taking the beautiful, concise code by Soham Saha (https://github.com/soham-saha) and making some adjustments to communicate the vision for The WWS in a new way. Thank you Soham for your wonderful work!
+ https://news.ycombinator.com/item?id=40959114
+<canvas id='canv'></canvas>
+css
+ body {
+  text-align: center;
+ }
+<script>
+ const WIDTH = 400;
+ const HEIGHT = 400;
+ const NUM_POINTS = 200;
+ const POINT_SIZE = 2
+ const OUTER_RADIUS = Math.min(WIDTH, HEIGHT) / 2.2;
+ const INNER_RADIUS = OUTER_RADIUS / 2;
+ const canv = document.getElementById('canv');
+ const ctx = canv.getContext('2d');
+ canv.width = WIDTH;
+ canv.height = HEIGHT;
+ ctx.fillRect(0, 0, WIDTH, HEIGHT);
+ const pts = new Float32Array(NUM_POINTS * 2);
+ const targets = new Float32Array(NUM_POINTS * 2);
+ function initializePoints() {
+     for (let i = 0; i < NUM_POINTS; i++) {
+         const angle = Math.random() * 2 * Math.PI;
+         pts[i * 2] = Math.cos(angle) * OUTER_RADIUS;
+         pts[i * 2 + 1] = Math.sin(angle) * OUTER_RADIUS;
+         const targetAngle = Math.random() * 2 * Math.PI;
+         targets[i * 2] = Math.cos(targetAngle) * INNER_RADIUS;
+         targets[i * 2 + 1] = Math.sin(targetAngle) * INNER_RADIUS;
+     }
+ }
+ function updatePoints() {
+     for (let i = 0; i < NUM_POINTS; i++) {
+         const x = pts[2 * i];
+         const y = pts[2 * i + 1];
+         const tx = targets[i * 2];
+         const ty = targets[i * 2 + 1];
+         pts[2 * i] += (tx - x) * 0.05;
+         pts[2 * i + 1] += (ty - y) * 0.05;
+     }
+ }
+ let ct = 0;
+ function updateScreen() {
+     ct += 1;
+     updatePoints();
+     ctx.fillStyle = 'rgba(244,244,244,1)';
+     ctx.fillRect(0, 0, WIDTH, HEIGHT);
+     ctx.fillStyle = 'black';
+     for (let i = 0; i < NUM_POINTS; i++) {
+        ctx.fillRect(pts[i * 2] + WIDTH / 2, pts[i * 2 + 1] + HEIGHT / 2, POINT_SIZE, POINT_SIZE);
+     }
+     requestAnimationFrame(updateScreen);
+     if (ct > 150) {
+         initializePoints();
+         ct = 0;
+     }
+ }
+ initializePoints();
+ requestAnimationFrame(updateScreen);
+</script>

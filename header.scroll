@@ -4,7 +4,6 @@ buildHtml
 buildTxt
 downloadUrl https://github.com/breck7/wws/archive/refs/heads/wws.zip
 email wws@scroll.pub
-git https://github.com/breck7/wws
 viewSourceBaseUrl https://github.com/breck7/wws/blob/main
 
 metaTags
