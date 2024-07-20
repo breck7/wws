@@ -1,0 +1,15 @@
+import header.scroll
+
+title The World Wide Scroll
+
+# The World Wide Scroll
+ style font-weight: 100; font-size: 400%;
+
+# Add Your Voice
+ style font-weight: 100; font-size: 200%;
+
+import animation.scroll
+
+import stripeButton.scroll
+
+<a href="readme.html" style="text-align:center; color: grey">Readme</a>
