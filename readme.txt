@@ -9,7 +9,7 @@ What is the World Wide Scroll (WWS)?
 ====================================
 The WWS is like the World Wide Web, except:
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
- https://scroll.pub
+ https://scroll.pub simple, expandable language
 - *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Pristine.* No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
@@ -27,7 +27,7 @@ wws fetch scroll breck pldb
 wws open
 
 The WWS client currently requires Node.js. More clients coming soon.
- https://nodejs.org/en
+ https://nodejs.org/en Node.js
 
 Register a Folder
 =================
@@ -42,7 +42,7 @@ The Editor is the person responsible for updating the metadata about that folder
 Registration funds go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
 
 After you register your root folder, check out the Getting Started Guide.
- https://wws.scroll.pub/gettingStarted.html
+ https://wws.scroll.pub/gettingStarted.html Getting Started Guide
 
 Fine Print
 ==========
@@ -58,7 +58,7 @@ Fine Print
  - If you maintain high quality folders and hit the limit, you can request a higher limit.
 - Changes to your folder information may be made by pull request or communicated to your WWS rep via email.
 - Folders must adhere to the Guidelines
- https://wws.scroll.pub/gettingStarted.html
+ https://wws.scroll.pub/gettingStarted.html Guidelines
 
 Values
 ======
@@ -73,9 +73,9 @@ Download
 Download the list of root folders in the World Wide Scroll as:
 
 CSV | TSV | JSON
- https://wws.scroll.pub/wws.csv
- https://wws.scroll.pub/wws.tsv
- https://wws.scroll.pub/wws.json
+ https://wws.scroll.pub/wws.csv CSV
+ https://wws.scroll.pub/wws.tsv TSV
+ https://wws.scroll.pub/wws.json JSON
 
 Folders
 =======

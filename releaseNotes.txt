@@ -4,9 +4,9 @@ A list of what has changed in WWS releases.
 ===========================================
 
 Download as CSV | TSV | JSON
- https://wws.scroll.pub/releaseNotes.csv
- https://wws.scroll.pub/releaseNotes.tsv
- https://wws.scroll.pub/releaseNotes.json
+ https://wws.scroll.pub/releaseNotes.csv CSV
+ https://wws.scroll.pub/releaseNotes.tsv TSV
+ https://wws.scroll.pub/releaseNotes.json JSON
 
 0.9.0 7/11/2024
 ===============
