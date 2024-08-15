@@ -35,4 +35,4 @@ By adhering to these guidelines, you’ll help create a more intelligent, offlin
 
 import clientInstall.scroll
 
-pageFooter
+import pageFooter.scroll

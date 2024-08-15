@@ -72,4 +72,4 @@ image wws.jpg
 
 endColumns
 
-pageFooter
+import pageFooter.scroll

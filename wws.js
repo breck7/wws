@@ -146,7 +146,9 @@ ${this.unfetchedFolders.map(concept => `- ${concept.id}`).join("\n")}
 
 endColumns
 
-pageFooter
+center
+viewSourceButton
+scrollVersionLink
 viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
 `
     Disk.write(indexFile, content)
