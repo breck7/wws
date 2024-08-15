@@ -8,6 +8,7 @@ viewSourceBaseUrl https://github.com/breck7/wws/blob/main
 
 metaTags
 gazetteCss
-pageHeader
+homeButton
+viewSourceButton
 copyButtons
 css html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}

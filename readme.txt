@@ -66,7 +66,7 @@ Art. Calmness. Courage. Freedom. Fun. Intelligence. Laughter. Love. Science. Tru
 
 These are the words that guide The World Wide Scroll (WWS).
 
-****
+⁂
 
 Download
 ========
@@ -83,3 +83,5 @@ Folders
 Logo
 ====
 [Image Omitted]
+
+Built with Scroll v120.2.0
