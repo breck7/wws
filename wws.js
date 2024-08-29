@@ -7,7 +7,7 @@ const fs = require("fs")
 
 // Scroll Notation Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
-const { TreeNode } = require("scrollsdk/products/TreeNode.js")
+const { Particle } = require("scrollsdk/products/Particle.js")
 const { ScrollCli, ScrollFile, ScrollFileSystem } = require("scroll-cli")
 const packageJson = require("./package.json")
 
@@ -173,7 +173,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   }
 
   listCommand() {
-    const table = new TreeNode(
+    const table = new Particle(
       this.folders.map(concept => {
         const { fetched, id, description } = concept
         return {
@@ -193,8 +193,8 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     const { wwsDir } = this
     const rootFolder = path.join(wwsDir, folderName)
     const wwsFile = path.join(rootFolder, "wws.scroll")
-    if (!Disk.exists(wwsFile)) return new TreeNode()
-    return new TreeNode(Disk.read(wwsFile))
+    if (!Disk.exists(wwsFile)) return new Particle()
+    return new Particle(Disk.read(wwsFile))
   }
 
   fetchScroll(folderName) {
@@ -214,9 +214,9 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       this.log(`Updating ${folderName}`)
       require("child_process").execSync(`cd ${rootFolder} && git pull origin wws`)
     }
-    const settingsTree = this.getFolderSettings(folder.id)
-    settingsTree
-      .filter(node => node.getLine().startsWith("subfolder"))
+    const settingsParticle = this.getFolderSettings(folder.id)
+    settingsParticle
+      .filter(particle => particle.getLine().startsWith("subfolder"))
       .forEach(subfolder => {
         const subfolderName = sanitizeFolderName(subfolder.words[1])
         const subfolderPath = path.join(rootFolder, subfolderName)
