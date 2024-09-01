@@ -5,7 +5,7 @@ const parseArgs = require("minimist")
 const path = require("path")
 const fs = require("fs")
 
-// Scroll Notation Includes
+// Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Particle } = require("scrollsdk/products/Particle.js")
 const { ScrollCli, ScrollFile, ScrollFileSystem } = require("scroll-cli")
