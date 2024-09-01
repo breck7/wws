@@ -13,4 +13,7 @@ import animation.scroll
 
 import stripeButton.scroll
 
-<a href="readme.html" style="text-align:center; color: grey">Readme</a>
+Readme
+ center
+ style color:grey;
+ link readme.html

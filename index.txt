@@ -3,3 +3,6 @@ The World Wide Scroll
 
 Add Your Voice
 ==============
+
+Readme
+ https://wws.scroll.pub/readme.html Readme
