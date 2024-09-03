@@ -7,6 +7,8 @@ mediumColumns 1
 
 import root.scroll
 
-form
+classicForm
+
+scrollForm
 
 import pageFooter.scroll
