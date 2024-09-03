@@ -1,6 +1,6 @@
 [
   {
-    "id": "scroll",
+    "folder": "scroll",
     "description": "A language for scientists of all ages",
     "www": "https://scroll.pub",
     "source": "https://github.com/breck7/scroll",
@@ -11,7 +11,7 @@
     "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
   },
   {
-    "id": "breck",
+    "folder": "breck",
     "description": "Breck's Blog",
     "www": "https://breckyunits.com",
     "source": "https://github.com/breck7/breckyunits.com",
@@ -22,7 +22,7 @@
     "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
   },
   {
-    "id": "pldb",
+    "folder": "pldb",
     "description": "A Programming Language DataBase",
     "www": "https://pldb.io",
     "source": "https://github.com/breck7/pldb",
@@ -33,7 +33,7 @@
     "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
   },
   {
-    "id": "cancerdb",
+    "folder": "cancerdb",
     "description": "Datasets about Cancer",
     "www": "https://cancerdb.com",
     "source": "https://github.com/breck7/CancerDB",

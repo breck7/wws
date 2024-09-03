@@ -1,0 +1,12 @@
+title WWS Registration Form
+
+import header.scroll
+printTitle
+
+mediumColumns 1
+
+import root.scroll
+
+form
+
+import pageFooter.scroll
