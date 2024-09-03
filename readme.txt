@@ -33,7 +33,7 @@ Register a Folder
 =================
 The World Wide Scroll beta is live!
 
-You can now register a root folder in the World Wide Scroll for $100 for 10 years.
+You can now register a root folder in the World Wide Scroll!
 
 When you register a folder in the WWS, you become that folder's "Editor".
 
@@ -87,4 +87,4 @@ Logo
 ====
 [Image Omitted]
 
-Built with Scroll v125.6.0
+Built with Scroll v125.8.0
