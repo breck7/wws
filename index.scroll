@@ -1,4 +1,4 @@
-import header.scroll
+header.scroll
 openGraphImage wws.gif
 
 title The World Wide Scroll
@@ -9,9 +9,9 @@ title The World Wide Scroll
 # Add Your Voice
  style font-weight: 100; font-size: 200%;
 
-import animation.scroll
+animation.scroll
 
-import stripeButton.scroll
+stripeButton.scroll
 
 Readme
  center

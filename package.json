@@ -34,7 +34,7 @@
   "homepage": "https://wws.scroll.pub",
   "dependencies": {
     "minimist": "^1.2.8",
-    "scroll-cli": "^126.0.1",
+    "scroll-cli": "^130.1.1",
     "scrollsdk": "^84.0.0"
   },
   "devDependencies": {

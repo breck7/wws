@@ -2,7 +2,7 @@ buildConcepts wws.csv wws.json wws.tsv
 buildMeasures wwsMeasures.tsv
 title The World Wide Scroll
 
-import header.scroll
+header.scroll
 printTitle
 
 mediumColumns 1
@@ -19,7 +19,7 @@ The WWS is like the World Wide Web, except:
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code and change history behind every page.
 
-import clientInstall.scroll
+clientInstall.scroll
 
 # Register a Folder
 The World Wide Scroll beta is live!
@@ -32,16 +32,16 @@ The Editor is the person responsible for updating the metadata about that folder
 
 Registration funds go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
 
-import stripeButton.scroll
+stripeButton.scroll
 
 After you register your root folder, check out the Getting Started Guide.
  link gettingStarted.html Getting Started Guide
 
-import finePrint.scroll
+finePrint.scroll
 
-import root.scroll
+root.scroll
 
-import stripeButton.scroll
+stripeButton.scroll
 
 # Values
 Art. Calmness. Courage. Freedom. Fun. Intelligence. Laughter. Love. Science. Truth.
@@ -72,4 +72,4 @@ image wws.jpg
 
 endColumns
 
-import pageFooter.scroll
+pageFooter.scroll
