@@ -1,6 +1,6 @@
 title World Wide Scroll Getting Started Guide
 
-import header.scroll
+header.scroll
 printTitle
 
 mediumColumns 1
@@ -33,6 +33,5 @@ If you need _any_ help with these guidelines, share your issue on github.com/bre
 
 By adhering to these guidelines, you’ll help create a more intelligent, offline-first, and human-centric internet. Welcome to the World Wide Scroll!
 
-import clientInstall.scroll
-
-import pageFooter.scroll
+clientInstall.scroll
+pageFooter.scroll

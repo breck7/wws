@@ -2,7 +2,7 @@ buildConcepts releaseNotes.csv releaseNotes.json releaseNotes.tsv
 buildMeasures releaseNotesMeasures.tsv
 title World Wide Scroll Release Notes
 
-import header.scroll
+header.scroll
 printTitle
 ## A list of what has changed in WWS releases.
 
@@ -14,7 +14,7 @@ Download as CSV | TSV | JSON
 endColumns
 <br>
 
-import node_modules/scroll-cli/microlangs/changes.parsers
+node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns
 
@@ -33,4 +33,4 @@ thinColumns
 
 endColumns
 
-import footer.scroll
+footer.scroll

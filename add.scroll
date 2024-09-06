@@ -1,14 +1,14 @@
 title WWS Registration Form
 
-import header.scroll
+header.scroll
 printTitle
 
 mediumColumns 1
 
-import root.scroll
+root.scroll
 
 classicForm
 
 scrollForm
 
-import pageFooter.scroll
+pageFooter.scroll
