@@ -91,7 +91,7 @@ class WWSCli {
   async buildIndexPage() {
     const { wwsDir } = this
     const indexFile = path.join(wwsDir, "index.scroll")
-    const content = `title Your World Wide Scroll
+    const content = `title Your Copy of the World Wide Scroll
 metaTags
 gazetteCss
 printTitle
