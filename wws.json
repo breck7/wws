@@ -31,16 +31,5 @@
     "expires": "6/12/2034",
     "rep": "Breck Yunits",
     "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
-  },
-  {
-    "folder": "cancerdb",
-    "description": "Datasets about Cancer",
-    "www": "https://cancerdb.com",
-    "source": "https://github.com/breck7/CancerDB",
-    "editor": "Breck Yunits",
-    "registered": "6/12/2024",
-    "expires": "6/12/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1PQz7LJktJxKl0r5x39CYvIV"
   }
 ]
