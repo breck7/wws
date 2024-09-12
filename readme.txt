@@ -7,6 +7,9 @@ To provide every human with their own copy of humanity's most intelligent inform
 
 What is the World Wide Scroll (WWS)?
 ====================================
+View slideshow
+ https://breckyunits.com/theScroll.html View slideshow
+
 The WWS is like the World Wide Web, except:
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
  https://scroll.pub simple, expandable language
@@ -29,22 +32,23 @@ wws open
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js
 
-Register a Folder
+Buy a Scroll Name
 =================
 The World Wide Scroll beta is live!
 
-You can now register a root folder in the World Wide Scroll!
+You can now buy a Scroll Name in the World Wide Scroll!
 
-When you register a folder in the WWS, you become that folder's "Editor".
+When you buy a Scroll Name, you can create a "folder" in the World Wide Scroll.
 
-The Editor is the person responsible for updating the metadata about that folder.
+A folder is just a few lines of metadata about your Scroll Name stored in the root.scroll file.
+ https://wws.scroll.pub/root.scroll root.scroll
 
-Registration funds go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
+Revenue from Scroll Name sales go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
 
 Buy a Scroll Name
  https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a Scroll Name
 
-After you register your root folder, check out the Getting Started Guide.
+After you buy your name, check out the Getting Started Guide.
  https://wws.scroll.pub/gettingStarted.html Getting Started Guide
 
 Fine Print
