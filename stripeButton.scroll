@@ -2,12 +2,6 @@ importOnly
 
 br 2
 center
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
-<stripe-buy-button
-  buy-button-id="buy_btn_1PugMzJktJxKl0r55AmfK7nL"
-  publishable-key="pk_live_51IQx1tJktJxKl0r5YOhZM9Th6S8zhR2DXlUlJFIuLSrgzu3nfkKTx96ym19ihYYIeEnf3daa1TCPgDt0To2qt4Qk00TzjPmP9c"
- >
-</stripe-buy-button>
+button Buy folder
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn
 br 2
