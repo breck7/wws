@@ -6,17 +6,23 @@ header.scroll
 printTitle
 ## A list of what has changed in WWS releases.
 
-thinColumns 1
+thinColumn
 Download as CSV | TSV | JSON
  link releaseNotes.csv CSV
  link releaseNotes.tsv TSV
  link releaseNotes.json JSON
-endColumns
-<br>
+
+br
 
 node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns
+
+📦 0.11.0 9/12/2024
+🏥 bug fixes
+
+📦 0.10.0 9/6/2024
+🏥 upgrade scroll
 
 📦 0.9.0 7/11/2024
 🎉 added descriptions to folders (max 7 words)
