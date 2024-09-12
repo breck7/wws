@@ -41,8 +41,8 @@ The Editor is the person responsible for updating the metadata about that folder
 
 Registration funds go toward the development of the Scroll language ecosystem. A portion is also distributed to the "WWS Reps" who help onboard and maintain the community.
 
-Buy folder
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy folder
+Buy a Scroll Name
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a Scroll Name
 
 After you register your root folder, check out the Getting Started Guide.
  https://wws.scroll.pub/gettingStarted.html Getting Started Guide
@@ -63,8 +63,8 @@ Fine Print
 - Folders must adhere to the Guidelines
  https://wws.scroll.pub/gettingStarted.html Guidelines
 
-Buy folder
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy folder
+Buy a Scroll Name
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a Scroll Name
 
 Values
 ======
