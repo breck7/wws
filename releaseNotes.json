@@ -1,5 +1,19 @@
 [
   {
+    "version": "0.11.0",
+    "releaseDate": "9/12/2024",
+    "bugFixes": 1,
+    "newFeatures": 0,
+    "breakingChanges": 0
+  },
+  {
+    "version": "0.10.0",
+    "releaseDate": "9/6/2024",
+    "bugFixes": 1,
+    "newFeatures": 0,
+    "breakingChanges": 0
+  },
+  {
     "version": "0.9.0",
     "releaseDate": "7/11/2024",
     "bugFixes": 0,
