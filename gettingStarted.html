@@ -422,15 +422,14 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <ol  start="5."><li ><strong>No Ads or Trackers</strong>: While commercial sites and sponsorships are welcome on the WWS, any form of JavaScript trackers or advertising is prohibited. Ensure your site is free from ads and trackers to maintain the integrity and privacy of the WWS.</li></ol>
 <p class="scrollParagraph">If you need <em>any</em> help with these guidelines, share your issue on <a href="https://github.com/breck7/wws/issues">github.com/breck7/wws/issues</a> or <a href="https://www.reddit.com/r/WorldWideScroll/">r/WorldWideScroll</a> or <a href="https://twitter.com/breckyunits">Twitter</a>.</p>
 <p class="scrollParagraph">By adhering to these guidelines, you’ll help create a more intelligent, offline-first, and human-centric internet. Welcome to the World Wide Scroll!</p>
-<div class="scrollSection"><h1 class="scrollParagraph">Install the WWS client</h1>
-<code class="scrollCodeBlock">git clone https://github.com/breck7/wws
-cd wws
-npm install --omit=dev
-npm install --omit=dev -g .
-wws list
-# Fetch a few sites:
-wws fetch scroll breck pldb
-wws open</code>
+<div class="scrollSection"><h1 class="scrollParagraph">WWS command line client one-liner install</h1>
+<code class="scrollCodeBlock">git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws</code>
+</div>
+<div class="scrollSection"><h1 class="scrollParagraph">Fetch sites and open</h1>
+<code class="scrollCodeBlock">wws fetch scroll breck pldb && wws open</code>
+</div>
+<div class="scrollSection"><h1 class="scrollParagraph">Uninstalling</h1>
+<code class="scrollCodeBlock">sudo npm uninstall -g wws</code>
 </div>
 <p class="scrollParagraph">The WWS client currently requires <a href="https://nodejs.org/en">Node.js</a>. More clients coming soon.</p>
 <center><p class="scrollParagraph"></p>

@@ -30,16 +30,17 @@ If you need _any_ help with these guidelines, share your issue on github.com/bre
 
 By adhering to these guidelines, you’ll help create a more intelligent, offline-first, and human-centric internet. Welcome to the World Wide Scroll!
 
-Install the WWS client
-======================
-git clone https://github.com/breck7/wws
-cd wws
-npm install --omit=dev
-npm install --omit=dev -g .
-wws list
-# Fetch a few sites:
-wws fetch scroll breck pldb
-wws open
+WWS command line client one-liner install
+=========================================
+git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
+
+Fetch sites and open
+====================
+wws fetch scroll breck pldb && wws open
+
+Uninstalling
+============
+sudo npm uninstall -g wws
 
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js

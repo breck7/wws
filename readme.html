@@ -422,15 +422,14 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <li ><strong>Pristine.</strong> No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.</li>
 <li ><strong>Human first.</strong> Instead of anonymous domains the WWS has folders owned by verified humans.</li>
 <li ><strong>Trustworthy.</strong> Source code and change history behind every page.</li></ul>
-<div class="scrollSection"><h1 class="scrollParagraph">Install the WWS client</h1>
-<code class="scrollCodeBlock">git clone https://github.com/breck7/wws
-cd wws
-npm install --omit=dev
-npm install --omit=dev -g .
-wws list
-# Fetch a few sites:
-wws fetch scroll breck pldb
-wws open</code>
+<div class="scrollSection"><h1 class="scrollParagraph">WWS command line client one-liner install</h1>
+<code class="scrollCodeBlock">git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws</code>
+</div>
+<div class="scrollSection"><h1 class="scrollParagraph">Fetch sites and open</h1>
+<code class="scrollCodeBlock">wws fetch scroll breck pldb && wws open</code>
+</div>
+<div class="scrollSection"><h1 class="scrollParagraph">Uninstalling</h1>
+<code class="scrollCodeBlock">sudo npm uninstall -g wws</code>
 </div>
 <p class="scrollParagraph">The WWS client currently requires <a href="https://nodejs.org/en">Node.js</a>. More clients coming soon.</p>
 <div class="scrollSection"><h1 class="scrollParagraph">Buy a Scroll Name</h1>

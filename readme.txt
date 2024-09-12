@@ -18,16 +18,17 @@ The WWS is like the World Wide Web, except:
 - *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code and change history behind every page.
 
-Install the WWS client
-======================
-git clone https://github.com/breck7/wws
-cd wws
-npm install --omit=dev
-npm install --omit=dev -g .
-wws list
-# Fetch a few sites:
-wws fetch scroll breck pldb
-wws open
+WWS command line client one-liner install
+=========================================
+git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
+
+Fetch sites and open
+====================
+wws fetch scroll breck pldb && wws open
+
+Uninstalling
+============
+sudo npm uninstall -g wws
 
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js
