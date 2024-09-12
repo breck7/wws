@@ -66,13 +66,9 @@ Download the list of root folders in the World Wide Scroll as:
  link wws.tsv TSV
  link wws.json JSON
 
-printMeasures
-
 # Folders
-printConcepts
-
-# Logo
-image wws.jpg
+table wws.tsv
+ printTable
 
 endColumns
 
