@@ -1,15 +1,16 @@
 importOnly
 
-# Install the WWS client
+# WWS command line client one-liner install
 code
- git clone https://github.com/breck7/wws
- cd wws
- npm install --omit=dev
- npm install --omit=dev -g .
- wws list
- # Fetch a few sites:
- wws fetch scroll breck pldb
- wws open
+ git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
+
+# Fetch sites and open
+code
+ wws fetch scroll breck pldb && wws open
+
+# Uninstalling
+code
+ sudo npm uninstall -g wws
 
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js

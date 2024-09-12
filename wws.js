@@ -124,10 +124,10 @@ wwsSnippetsParser
 
 snippets ${this.fetchedFolders
       .map(concept => {
-        const settings = this.getFolderSettings(concept.id)
+        const settings = this.getFolderSettings(concept.folder)
         const snippets = settings.get("snippets")
         if (!snippets) return ""
-        return concept.id + "/" + snippets
+        return concept.folder + "/" + snippets
       })
       .filter(i => i)
       .join(" ")}
@@ -138,11 +138,11 @@ endColumns
 thinColumns 1
 
 # Fetched
-${this.fetchedFolders.map(concept => `- ${concept.id}\n link ${concept.id}/index.html`).join("\n")}
+${this.fetchedFolders.map(concept => `- ${concept.folder}\n link ${concept.folder}/index.html`).join("\n")}
 
 # Unfetched
 expander
-${this.unfetchedFolders.map(concept => `- ${concept.id}`).join("\n")}
+${this.unfetchedFolders.map(concept => `- ${concept.folder}`).join("\n")}
 
 endColumns
 
@@ -160,7 +160,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     const rootFilePath = path.join(__dirname, "root.scroll")
     const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
     const { concepts } = wws
-    concepts.forEach(concept => (concept.fetched = Disk.exists(path.join(wwsDir, concept.id))))
+    concepts.forEach(concept => (concept.fetched = Disk.exists(path.join(wwsDir, concept.folder))))
     return concepts
   }
 
@@ -175,10 +175,10 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   listCommand() {
     const table = new Particle(
       this.folders.map(concept => {
-        const { fetched, id, description } = concept
+        const { fetched, folder, description } = concept
         return {
           " ": fetched ? "🟩" : "⬜️",
-          Folder: id,
+          Folder: folder,
           Description: description
         }
       })
@@ -199,10 +199,10 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
 
   fetchScroll(folderName) {
     const { wwsDir } = this
-    const folder = this.folders.find(concept => concept.id === folderName)
+    const folder = this.folders.find(concept => concept.folder === folderName)
     if (!folder) return this.log(`\n👎 No folder '${folderName}' found.`)
     // mkdir the folder if it doesn't exist:
-    const rootFolder = path.join(wwsDir, folder.id)
+    const rootFolder = path.join(wwsDir, folder.folder)
     const gitSource = folder.source
     if (!Disk.exists(rootFolder)) {
       this.log(`Fetching ${folderName}`)
@@ -214,7 +214,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       this.log(`Updating ${folderName}`)
       require("child_process").execSync(`cd ${rootFolder} && git pull origin wws`)
     }
-    const settingsParticle = this.getFolderSettings(folder.id)
+    const settingsParticle = this.getFolderSettings(folder.folder)
     settingsParticle
       .filter(particle => particle.getLine().startsWith("subfolder"))
       .forEach(subfolder => {
@@ -232,7 +232,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   fetchCommand(folderNames) {
     this.init()
     const { wwsDir, fetchedFolders } = this
-    if (!folderNames.length) fetchedFolders.forEach(concept => this.fetchScroll(concept.id))
+    if (!folderNames.length) fetchedFolders.forEach(concept => this.fetchScroll(concept.folder))
     else folderNames.forEach(folderName => this.fetchScroll(folderName))
     this.buildIndexPage()
   }
