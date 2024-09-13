@@ -91,26 +91,16 @@ class WWSCli {
   async buildIndexPage() {
     const { wwsDir } = this
     const indexFile = path.join(wwsDir, "index.scroll")
-    const content = `title Your Copy of the World Wide Scroll
+    const content = `title The World Wide Scroll
 metaTags
 gazetteCss
 printTitle
 buildHtml
 
-WWS version ${WWS_VERSION}
- https://wws.scroll.pub
- style text-align:center;
+center
+Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/${this.folders.length} folders fetched. WWS version: ${WWS_VERSION}.
 
-import ../header.scroll
-
-thinColumns 1
-
-code
- ${wwsDir}
-
-endColumns
-
-thinColumns
+../header.scroll
 
 wwsSnippetsParser
  extends printSnippetsParser
@@ -122,6 +112,7 @@ wwsSnippetsParser
     return super.makeSnippet(file, compileSettings).replace('<h1 class="scrollTitle">', '<h1 class="scrollTitle"><a href="' + folderName + '/index.html" style="color: gray;">~' + folderName + '</a><br>')
   }
 
+thinColumns
 snippets ${this.fetchedFolders
       .map(concept => {
         const settings = this.getFolderSettings(concept.folder)
@@ -132,19 +123,14 @@ snippets ${this.fetchedFolders
       .filter(i => i)
       .join(" ")}
  limit 5
-
 endColumns
 
-thinColumns 1
-
-# Fetched
+thinColumn
+# Fetched (${this.fetchedFolders.length})
 ${this.fetchedFolders.map(concept => `- ${concept.folder}\n link ${concept.folder}/index.html`).join("\n")}
-
-# Unfetched
+# Unfetched (${this.unfetchedFolders.length})
 expander
 ${this.unfetchedFolders.map(concept => `- ${concept.folder}`).join("\n")}
-
-endColumns
 
 center
 viewSourceButton
@@ -234,6 +220,11 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     const { wwsDir, fetchedFolders } = this
     if (!folderNames.length) fetchedFolders.forEach(concept => this.fetchScroll(concept.folder))
     else folderNames.forEach(folderName => this.fetchScroll(folderName))
+    this.buildIndexPage()
+  }
+
+  buildCommand() {
+    this.init()
     this.buildIndexPage()
   }
 
