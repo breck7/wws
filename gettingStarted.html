@@ -423,8 +423,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <p class="scrollParagraph">If you need <em>any</em> help with these guidelines, share your issue on <a href="https://github.com/breck7/wws/issues">github.com/breck7/wws/issues</a> or <a href="https://www.reddit.com/r/WorldWideScroll/">r/WorldWideScroll</a> or <a href="https://twitter.com/breckyunits">Twitter</a>.</p>
 <p class="scrollParagraph">By adhering to these guidelines, you’ll help create a more intelligent, offline-first, and human-centric internet. Welcome to the World Wide Scroll!</p>
 <div class="scrollSection"><h1 class="scrollParagraph">WWS command line client one-liner install</h1>
-<code class="scrollCodeBlock">git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws</code>
 </div>
+<p class="scrollParagraph">From npm:</p>
+<code class="scrollCodeBlock">sudo npm install -g @breck/wws</code>
+<p class="scrollParagraph">From source:</p>
+<code class="scrollCodeBlock">git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws</code>
 <div class="scrollSection"><h1 class="scrollParagraph">Fetch sites and open</h1>
 <code class="scrollCodeBlock">wws fetch scroll breck pldb && wws open</code>
 </div>

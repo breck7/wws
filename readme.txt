@@ -20,6 +20,11 @@ The WWS is like the World Wide Web, except:
 
 WWS command line client one-liner install
 =========================================
+
+From npm:
+sudo npm install -g @breck/wws
+
+From source:
 git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
 
 Fetch sites and open

@@ -423,8 +423,11 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 <li ><strong>Human first.</strong> Instead of anonymous domains the WWS has folders owned by verified humans.</li>
 <li ><strong>Trustworthy.</strong> Source code and change history behind every page.</li></ul>
 <div class="scrollSection"><h1 class="scrollParagraph">WWS command line client one-liner install</h1>
-<code class="scrollCodeBlock">git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws</code>
 </div>
+<p class="scrollParagraph">From npm:</p>
+<code class="scrollCodeBlock">sudo npm install -g @breck/wws</code>
+<p class="scrollParagraph">From source:</p>
+<code class="scrollCodeBlock">git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws</code>
 <div class="scrollSection"><h1 class="scrollParagraph">Fetch sites and open</h1>
 <code class="scrollCodeBlock">wws fetch scroll breck pldb && wws open</code>
 </div>
