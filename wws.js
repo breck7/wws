@@ -68,7 +68,7 @@ class WWSCli {
 
   get _allCommands() {
     return Object.getOwnPropertyNames(Object.getPrototypeOf(this))
-      .filter(word => word.endsWith(this.CommandFnDecoratorSuffix))
+      .filter(atom => atom.endsWith(this.CommandFnDecoratorSuffix))
       .sort()
   }
 
@@ -204,9 +204,9 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     settingsParticle
       .filter(particle => particle.getLine().startsWith("subfolder"))
       .forEach(subfolder => {
-        const subfolderName = sanitizeFolderName(subfolder.words[1])
+        const subfolderName = sanitizeFolderName(subfolder.atoms[1])
         const subfolderPath = path.join(rootFolder, subfolderName)
-        const sourceRepo = subfolder.words[2]
+        const sourceRepo = subfolder.atoms[2]
         console.log(`Updating subfolder '${subfolderName}'`)
         if (!Disk.exists(subfolderPath)) {
           Disk.mkdir(subfolderPath)
