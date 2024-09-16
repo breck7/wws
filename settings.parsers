@@ -3,7 +3,7 @@ wwsSubfolderParser
  extends abstractStringMeasureParser
  description What is the name and URL to the source repo of a subfolder?
  float sortIndex 1.3
- cells keywordCell anyCell urlCell
+ atoms keywordAtom anyAtom urlAtom
 
 wwsSnippetsParser
  crux snippets

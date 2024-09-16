@@ -11,7 +11,7 @@
     "build": "scroll build",
     "format": "scroll format",
     "open": "open index.html",
-    "up": "npm install scroll-cli@latest"
+    "up": "npm install scroll-cli@latest; npm install scrollsdk@latest"
   },
   "bin": {
     "wws": "./wws.js"
@@ -34,8 +34,8 @@
   "homepage": "https://wws.scroll.pub",
   "dependencies": {
     "minimist": "^1.2.8",
-    "scroll-cli": "^130.5.0",
-    "scrollsdk": "^84.0.0"
+    "scroll-cli": "^133.0.0",
+    "scrollsdk": "^87.0.0"
   },
   "devDependencies": {
     "tap": "^18.7.2"
