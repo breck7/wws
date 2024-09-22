@@ -100,5 +100,6 @@ scroll	A language for scientists of all ages	https://scroll.pub	https://github.c
 breck	Breck's Blog	https://breckyunits.com	https://github.com/breck7/breckyunits.com	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
 pldb	A Programming Language DataBase	https://pldb.io	https://github.com/breck7/pldb	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
 zombo	You can do anything.	https://zombo.breckyunits.com	https://github.com/breck7/zombo	Breck Yunits		9/14/2024	9/14/2034	Breck Yunits	pm_1Pz4fFJktJxKl0r537cx4sCs
+news	News for builders.	https://news.pub	https://github.com/breck7/news.pub	Breck Yunits		9/22/2024	9/22/2034	Breck Yunits	pm_1Q1qilJktJxKl0r5ASsCMZ5K
 
-Built with Scroll v133.0.0
+Built with Scroll v133.1.0
