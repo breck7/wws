@@ -1,6 +1,6 @@
 buildConcepts wws.csv wws.json wws.tsv
 buildMeasures wwsMeasures.tsv
-title The World Wide Scroll
+title The World Wide Scroll - a successor to the web that works offline
 
 header.scroll
 printTitle
@@ -15,12 +15,12 @@ View slideshow
  https://breckyunits.com/theScroll.html
 
 The WWS is like the World Wide Web, except:
+- *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
  https://scroll.pub simple, expandable language
-- *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Pristine.* No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.
-- *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code and change history behind every page.
+- *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 
 clientInstall.scroll
 

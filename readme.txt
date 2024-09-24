@@ -1,5 +1,5 @@
-The World Wide Scroll
-=====================
+The World Wide Scroll - a successor to the web that works offline
+=================================================================
 
 Why build this?
 ===============
@@ -11,12 +11,12 @@ View slideshow
  https://breckyunits.com/theScroll.html View slideshow
 
 The WWS is like the World Wide Web, except:
+- *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
  https://scroll.pub simple, expandable language
-- *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Pristine.* No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.
-- *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 - *Trustworthy.* Source code and change history behind every page.
+- *Human first.* Instead of anonymous domains the WWS has folders owned by verified humans.
 
 WWS command line client one-liner install
 =========================================
@@ -102,4 +102,4 @@ pldb	A Programming Language DataBase	https://pldb.io	https://github.com/breck7/p
 zombo	You can do anything.	https://zombo.breckyunits.com	https://github.com/breck7/zombo	Breck Yunits		9/14/2024	9/14/2034	Breck Yunits	pm_1Pz4fFJktJxKl0r537cx4sCs
 news	News for builders.	https://news.pub	https://github.com/breck7/news.pub	Breck Yunits		9/22/2024	9/22/2034	Breck Yunits	pm_1Q1qilJktJxKl0r5ASsCMZ5K
 
-Built with Scroll v133.1.0
+Built with Scroll v133.3.0
