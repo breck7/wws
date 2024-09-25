@@ -45,7 +45,7 @@
   },
   {
     "folder": "news",
-    "description": "News for builders.",
+    "description": "BuilderNews.",
     "www": "https://news.pub",
     "source": "https://github.com/breck7/news.pub",
     "editor": "Breck Yunits",
