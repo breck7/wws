@@ -93,7 +93,7 @@ class WWSCli {
     const indexFile = path.join(wwsDir, "index.scroll")
     const content = `title The World Wide Scroll
 metaTags
-gazetteCss
+theme gazette
 printTitle
 buildHtml
 
