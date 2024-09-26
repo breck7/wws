@@ -4,8 +4,8 @@ The World Wide Scroll
 Make Something You Love
 =======================
 
-Buy a Scroll Name
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a Scroll Name
+Buy a root name
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a root name
 
 Readme
  https://wws.scroll.pub/readme.html Readme
