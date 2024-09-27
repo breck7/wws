@@ -4,10 +4,10 @@ The World Wide Scroll
 Make Something You Love
 =======================
 
-Buy a root name
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a root name
+Buy root name
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name
 
 Readme
  https://wws.scroll.pub/readme.html Readme
 
-Built with Scroll v135.0.0
+Built with Scroll v136.2.1

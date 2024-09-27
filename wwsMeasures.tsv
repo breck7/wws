@@ -1,6 +1,6 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Crux
 folder	5	100%	What is the folder name?	scroll	string		1	false	true	true	folder
-description	5	100%	What is this site about? Maximum 7 words.	A language for scientists of all ages	string		1.001	false			
+title	5	100%	What is this site about? Maximum 7 words.	A language for scientists of all ages	string		1.001	false			title
 www	5	100%	What is the URL to this folder on the World Wide Web?	https://scroll.pub	string		1.01	false			
 source	5	100%	What is the URL to the source code for this folder?	https://github.com/breck7/scroll	string		1.02	false			
 editor	5	100%	What is the real name of the editor of this folder?	Breck Yunits	string		1.1	false			

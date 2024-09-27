@@ -1,5 +1,8 @@
-The World Wide Scroll - a non-toxic, intelligent, trustworthy successor to the web that works offline
-=====================================================================================================
+BuilderNews: Watch people try web creations
+===========================================
+
+A non-toxic, intelligent, trustworthy successor to the web that works offline.
+==============================================================================
 
 Why build this?
 ===============
@@ -50,8 +53,8 @@ A root folder is just a few lines of data about your folder and where the files 
 
 Revenue from root name sales go toward the development of The Scroll ecosystem including funds to "WWS Reps" who help onboard and maintain the community.
 
-Buy a root name
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a root name
+Buy root name
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name
 
 After you buy your root name, check out the Getting Started Guide.
  https://wws.scroll.pub/gettingStarted.html Getting Started Guide
@@ -72,8 +75,8 @@ Fine Print
 - Folders must adhere to the Guidelines
  https://wws.scroll.pub/gettingStarted.html Guidelines
 
-Buy a root name
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy a root name
+Buy root name
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name
 
 Values
 ======
@@ -94,11 +97,11 @@ CSV | TSV | JSON
 
 Folders
 =======
-folder	description	www	source	editor	editor_email	registered	expires	rep	transactionId
-scroll	A language for scientists of all ages	https://scroll.pub	https://github.com/breck7/scroll	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
-breck	Breck's Blog	https://breckyunits.com	https://github.com/breck7/breckyunits.com	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
-pldb	A Programming Language DataBase	https://pldb.io	https://github.com/breck7/pldb	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
-zombo	You can do anything.	https://zombo.breckyunits.com	https://github.com/breck7/zombo	Breck Yunits		9/14/2024	9/14/2034	Breck Yunits	pm_1Pz4fFJktJxKl0r537cx4sCs
-news	BuilderNews.	https://news.pub	https://github.com/breck7/news.pub	Breck Yunits		9/22/2024	9/22/2034	Breck Yunits	pm_1Q1qilJktJxKl0r5ASsCMZ5K
+folder,title,links
+scroll,A language for scientists of all ages,"www source"
+breck,Breck's Blog,"www source"
+pldb,A Programming Language DataBase,"www source"
+zombo,You can do anything.,"www source"
+news,BuilderNews: Watch people try web creations,"www source"
 
-Built with Scroll v135.0.0
+Built with Scroll v136.2.1

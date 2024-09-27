@@ -1,7 +1,7 @@
 [
   {
     "folder": "scroll",
-    "description": "A language for scientists of all ages",
+    "title": "A language for scientists of all ages",
     "www": "https://scroll.pub",
     "source": "https://github.com/breck7/scroll",
     "editor": "Breck Yunits",
@@ -12,7 +12,7 @@
   },
   {
     "folder": "breck",
-    "description": "Breck's Blog",
+    "title": "Breck's Blog",
     "www": "https://breckyunits.com",
     "source": "https://github.com/breck7/breckyunits.com",
     "editor": "Breck Yunits",
@@ -23,7 +23,7 @@
   },
   {
     "folder": "pldb",
-    "description": "A Programming Language DataBase",
+    "title": "A Programming Language DataBase",
     "www": "https://pldb.io",
     "source": "https://github.com/breck7/pldb",
     "editor": "Breck Yunits",
@@ -34,7 +34,7 @@
   },
   {
     "folder": "zombo",
-    "description": "You can do anything.",
+    "title": "You can do anything.",
     "www": "https://zombo.breckyunits.com",
     "source": "https://github.com/breck7/zombo",
     "editor": "Breck Yunits",
@@ -45,7 +45,7 @@
   },
   {
     "folder": "news",
-    "description": "BuilderNews.",
+    "title": "BuilderNews: Watch people try web creations",
     "www": "https://news.pub",
     "source": "https://github.com/breck7/news.pub",
     "editor": "Breck Yunits",
