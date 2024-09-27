@@ -39,6 +39,27 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 
 <style>html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}</style>
 </center>
+<style>iframe {
+  width: 800px;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: inline-block;
+  border: 0;
+  transform: scale(0.25);
+  transform-origin: 0 0;
+}
+.iframeHolder {
+ width: 200px;
+ height: 150px;
+ box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+ border-radius: 8px;
+ margin: 10px;
+ display: inline-block;
+ position: relative;
+ overflow: hidden;
+}</style>
 <div class="scrollSection"><h1 class="scrollTitle"><a href="add.html">BuilderNews: Watch people try web creations</a></h1>
 </div>
 <div class="scrollColumns" style="column-width:65ch;column-count:1;max-width:65ch;">
@@ -558,10 +579,41 @@ viewSourceButton
 copyButtons
 css html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}
 
+iframeThumbsParser
+ extends iframesParser
+ javascript
+  compile () {
+    return this.atoms.slice(1).map(url => `<div class="iframeHolder"><iframe src="${url}" frameborder="0"></iframe></div>`).join("\n")
+  }
+
+css
+ iframe {
+   width: 800px;
+   height: 600px;
+   border-radius: 15px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   display: inline-block;
+   border: 0;
+   transform: scale(0.25);
+   transform-origin: 0 0;
+ }
+ .iframeHolder {
+  width: 200px;
+  height: 150px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+ }
 printTitle
 
 mediumColumns 1
 
+buildConcepts wws.csv wws.json wws.tsv
+buildMeasures wwsMeasures.tsv
 // The World Wide Scroll Root File
 
 // Schema
