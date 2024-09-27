@@ -1,11 +1,16 @@
 buildConcepts wws.csv wws.json wws.tsv
 buildMeasures wwsMeasures.tsv
-title The World Wide Scroll - a non-toxic, intelligent, trustworthy successor to the web that works offline
+title The World Wide Scroll Readme
+replace DESCRIPTION A non-toxic, intelligent, trustworthy successor to the web that works offline.
+description DESCRIPTION
 
 header.scroll
+
 printTitle
 
-mediumColumns 1
+container 800px
+
+# DESCRIPTION
 
 # Why build this?
 To provide every human with their own copy of humanity's most intelligent information.
@@ -67,7 +72,9 @@ Download the list of root folders in the World Wide Scroll as:
 
 # Folders
 table wws.tsv
- printTable
+ select folder title www source
+  links www source
+   printTable
 
 endColumns
 
