@@ -53,8 +53,10 @@ A root folder is just a few lines of data about your folder and where the files 
 
 Revenue from root name sales go toward the development of The Scroll ecosystem including funds to "WWS Reps" who help onboard and maintain the community.
 
-Buy root name
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name
+Buy root name with Crypto
+ https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
+Buy root name with Credit Card
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name with Credit Card
 
 After you buy your root name, check out the Getting Started Guide.
  https://wws.scroll.pub/gettingStarted.html Getting Started Guide
@@ -75,8 +77,10 @@ Fine Print
 - Folders must adhere to the Guidelines
  https://wws.scroll.pub/gettingStarted.html Guidelines
 
-Buy root name
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name
+Buy root name with Crypto
+ https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
+Buy root name with Credit Card
+ https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name with Credit Card
 
 Values
 ======
