@@ -1,3 +1,5 @@
+buildConcepts wws.csv wws.json wws.tsv
+buildMeasures wwsMeasures.tsv
 // The World Wide Scroll Root File
 
 // Schema

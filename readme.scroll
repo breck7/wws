@@ -1,5 +1,3 @@
-buildConcepts wws.csv wws.json wws.tsv
-buildMeasures wwsMeasures.tsv
 title The World Wide Scroll Readme
 replace DESCRIPTION A non-toxic, intelligent, trustworthy successor to the web that works offline.
 description DESCRIPTION
@@ -8,9 +6,12 @@ header.scroll
 
 printTitle
 
-container 800px
-
 # DESCRIPTION
+
+center
+iframeThumbs https://scroll.pub https://pldb.io https://breckyunits.com https://news.pub https://zombo.com
+
+container 800px
 
 # Why build this?
 To provide every human with their own copy of humanity's most intelligent information.
@@ -46,8 +47,6 @@ After you buy your root name, check out the Getting Started Guide.
  link gettingStarted.html Getting Started Guide
 
 finePrint.scroll
-
-root.scroll
 
 stripeButton.scroll
 
