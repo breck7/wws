@@ -16,7 +16,10 @@ br
 
 node_modules/scroll-cli/microlangs/changes.parsers
 
-thinColumns
+thinColumns 1
+
+📦 0.12.0 10/02/2024
+🎉 miscelaneous cleanup
 
 📦 0.11.0 9/12/2024
 🏥 bug fixes
