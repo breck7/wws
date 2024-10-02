@@ -16,13 +16,10 @@ id fetch
 description If no params provided, fetch all folders previously fetched. If folder names provided, fetch those folders.
 
 id help
-description Print the available commands.
+description Print available commands and stats about local copy.
 
 id list
 description List all of the available folders and whether they've been fetched or not.
 
 id open
 description Open wws/index.html
-
-id where
-description Print where WWS folders are stored.

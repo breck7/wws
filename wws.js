@@ -4,6 +4,7 @@
 const parseArgs = require("minimist")
 const path = require("path")
 const fs = require("fs")
+const child_process = require("child_process")
 
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
@@ -175,6 +176,10 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     this.log("")
   }
 
+  get count() {
+    return this.fetchedFolders.length
+  }
+
   getFolderSettings(folderName) {
     const { wwsDir } = this
     const rootFolder = path.join(wwsDir, folderName)
@@ -190,16 +195,19 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     // mkdir the folder if it doesn't exist:
     const rootFolder = path.join(wwsDir, folder.folder)
     const gitSource = folder.source
+    const gitBranch = folder.branch || "main"
     if (!Disk.exists(rootFolder)) {
       this.log(`Fetching ${folderName}`)
       Disk.mkdir(rootFolder)
       // do a shallow clone of the built site (wws branch) into the folder:
-      require("child_process").execSync(`git clone --depth 1 --branch wws ${gitSource} ${rootFolder}`)
+      child_process.execSync(`git clone --depth 1 --branch ${gitBranch} ${gitSource} ${rootFolder}`)
     } else {
       // update the shallow clone but still keep it shallow
       this.log(`Updating ${folderName}`)
-      require("child_process").execSync(`cd ${rootFolder} && git pull origin wws`)
+      child_process.execSync(`cd ${rootFolder} && git pull origin ${gitBranch}`)
     }
+    // if main branch, build the site
+    if (gitBranch === "main") child_process.execSync(`cd ${rootFolder} && scroll build`)
     const settingsParticle = this.getFolderSettings(folder.folder)
     settingsParticle
       .filter(particle => particle.getLine().startsWith("subfolder"))
@@ -210,8 +218,8 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
         console.log(`Updating subfolder '${subfolderName}'`)
         if (!Disk.exists(subfolderPath)) {
           Disk.mkdir(subfolderPath)
-          require("child_process").execSync(`git clone --depth 1 --branch wws ${sourceRepo} ${subfolderPath}`)
-        } else require("child_process").execSync(`cd ${subfolderPath} && git pull origin wws`)
+          child_process.execSync(`git clone --depth 1 --branch wws ${sourceRepo} ${subfolderPath}`)
+        } else child_process.execSync(`cd ${subfolderPath} && git pull origin wws`)
       })
   }
 
@@ -223,26 +231,22 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     this.buildIndexPage()
   }
 
-  buildCommand() {
-    this.init()
-    this.buildIndexPage()
-  }
+  // buildCommand() {
+  //   this.init()
+  //   this.buildIndexPage()
+  // }
 
   openCommand() {
     // Trigger the terminal to run "open index.html", opening the users web browser:
     this.init()
     const { wwsDir } = this
     const indexHtml = path.join(wwsDir, "index.html")
-    return require("child_process").exec(`open ${indexHtml}`)
-  }
-
-  whereCommand() {
-    return this.log(this.wwsDir)
+    return child_process.exec(`open ${indexHtml}`)
   }
 
   helpCommand() {
     this.log(`\n🌎🌏📜 WELCOME TO THE WWS (v${WWS_VERSION})`)
-    return this.log(`\nThis is the WWS help page.\n\nCommands you can run:\n\n${this._allCommands.map(comm => `🖌️ ` + comm.replace(this.CommandFnDecoratorSuffix, "")).join("\n")}\n​​`)
+    return this.log(`\n${this.count} folders in ${this.wwsDir}\n\nThis is the WWS help page.\n\nCommands you can run:\n\n${this._allCommands.map(comm => `🖌️ ` + comm.replace(this.CommandFnDecoratorSuffix, "")).join("\n")}\n​​`)
   }
 }
 
