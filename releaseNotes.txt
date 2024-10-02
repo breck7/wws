@@ -8,6 +8,10 @@ Download as CSV | TSV | JSON
  https://wws.scroll.pub/releaseNotes.tsv TSV
  https://wws.scroll.pub/releaseNotes.json JSON
 
+0.12.0 10/02/2024
+=================
+🎉 miscelaneous cleanup
+
 0.11.0 9/12/2024
 ================
 🏥 bug fixes

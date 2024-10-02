@@ -1,3 +1,19 @@
+html,
+body,
+div,
+span,
+p,
+ol,
+ul,
+li,
+table,
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  border-spacing: 0;
+}
 figure {
   margin: 0;
   padding: 0;
@@ -91,22 +107,6 @@ summary {
 .scrollCopiedButton::after {
   content: "[✓]";
 }
-html,
-body,
-div,
-span,
-p,
-ol,
-ul,
-li,
-table,
-figure {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  border-spacing: 0;
-}
 ol,
 ul {
   padding-left: 1rem;
@@ -182,6 +182,9 @@ code {
 }
 center .scrollParagraph {
   text-align: center;
+}
+.subdued {
+  color: rgb(150, 150, 150);
 }
 .scrollColumns {
   column-count: auto;

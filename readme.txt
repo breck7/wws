@@ -90,22 +90,24 @@ These are the words that guide The Scroll.
 
 ⁂
 
+Release notes
+ https://wws.scroll.pub/releaseNotes.html Release notes
+
 Download
 ========
-Download the list of root folders in the World Wide Scroll as:
-
-CSV | TSV | JSON
- https://wws.scroll.pub/wws.csv CSV
- https://wws.scroll.pub/wws.tsv TSV
- https://wws.scroll.pub/wws.json JSON
+Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
+ https://wws.scroll.pub/root.csv CSV
+ https://wws.scroll.pub/root.tsv TSV
+ https://wws.scroll.pub/root.json JSON
 
 Folders
 =======
 folder,title,links
-scroll,A language for scientists of all ages,"www source"
-breck,Breck's Blog,"www source"
-pldb,A Programming Language DataBase,"www source"
-zombo,You can do anything.,"www source"
+wifind,Wifind: find great wifi near you,"www source"
 news,BuilderNews: Watch people try web creations,"www source"
+zombo,You can do anything.,"www source"
+pldb,A Programming Language DataBase,"www source"
+breck,Breck's Blog,"www source"
+scroll,A language for scientists of all ages,"www source"
 
-Built with Scroll v136.3.0
+Built with Scroll v136.11.0

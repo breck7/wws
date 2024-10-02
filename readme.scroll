@@ -1,6 +1,6 @@
-title The World Wide Scroll Readme
-replace DESCRIPTION A non-toxic, intelligent, trustworthy successor to the web that works offline.
 description DESCRIPTION
+replace DESCRIPTION A non-toxic, intelligent, trustworthy successor to the web that works offline.
+title The World Wide Scroll Readme
 
 header.scroll
 
@@ -9,7 +9,9 @@ printTitle
 # DESCRIPTION
 
 center
-iframeThumbs https://scroll.pub https://pldb.io https://breckyunits.com https://news.pub https://zombo.com
+table root.tsv
+ compose tag <div class="iframeHolder"><iframe src="{www}" frameborder="0"></iframe></div>
+  printColumn tag
 
 container 800px
 
@@ -57,24 +59,19 @@ These are the words that guide The Scroll.
 
 ****
 
-endColumns
-
-wideColumns 1
+Release notes
+ releaseNotes.html
 
 # Download
-Download the list of root folders in the World Wide Scroll as:
-
-* CSV | TSV | JSON
- link wws.csv CSV
- link wws.tsv TSV
- link wws.json JSON
+Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
+ link root.csv CSV
+ link root.tsv TSV
+ link root.json JSON
 
 # Folders
-table wws.tsv
+table root.tsv
  select folder title www source
   links www source
    printTable
-
-endColumns
 
 pageFooter.scroll
