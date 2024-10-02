@@ -1,68 +1,47 @@
 buildConcepts wws.csv wws.json wws.tsv
 buildMeasures wwsMeasures.tsv
+
 // The World Wide Scroll Root File
 
-// Schema
+root.parsers
 
-folderNameParser
- crux folder
- extends abstractIdParser
- description What is the folder name?
+folder wifind
+title Wifind: find great wifi near you
+www https://hub.scroll.pub/wifind/
+source http://hub.scroll.pub/wifind.git
+editor Breck Yunits
+ email breck7@gmail.com
+registered 10/02/2024
+expires 10/02/2034
+rep Breck Yunits
+transactionId pm_1Q5Y9HJktJxKl0r5jeY4nOdh
 
-folderTitleParser
- crux title
- extends abstractStringMeasureParser
- description What is this site about? Maximum 7 words.
- float sortIndex 1.001
+folder news
+title BuilderNews: Watch people try web creations
+www https://news.pub
+source https://github.com/breck7/news.pub
+editor Breck Yunits
+ email breck7@gmail.com
+registered 9/22/2024
+expires 9/22/2034
+rep Breck Yunits
+transactionId pm_1Q1qilJktJxKl0r5ASsCMZ5K
 
-wwwParser
- extends abstractUrlMeasureParser
- description What is the URL to this folder on the World Wide Web?
- float sortIndex 1.01
+folder zombo
+title You can do anything.
+www https://zombo.breckyunits.com
+source https://github.com/breck7/zombo
+editor Breck Yunits
+ email breck7@gmail.com
+registered 9/14/2024
+expires 9/14/2034
+rep Breck Yunits
+transactionId pm_1Pz4fFJktJxKl0r537cx4sCs
 
-sourceParser
- extends abstractUrlMeasureParser
- description What is the URL to the source code for this folder?
- float sortIndex 1.02
-
-editorParser
- // required
- extends abstractStringMeasureParser
- description What is the real name of the editor of this folder?
- float sortIndex 1.1
- editorEmailParser
-  // required
-  crux email
-  extends abstractStringMeasureParser
-  description What is the email address of the editor of this folder?
-  float sortIndex 1.11
-
-registeredParser
- extends abstractStringMeasureParser
- description On what day was this folder name first registered?
- float sortIndex 1.3
-
-expiresParser
- extends abstractStringMeasureParser
- description On what day does this registration expire?
- float sortIndex 1.4
-
-repParser
- extends abstractStringMeasureParser
- description Which WWS rep onboarded this folder?
- float sortIndex 1.5
-
-transactionIdParser
- extends abstractStringMeasureParser
- description What is the payment transaction id for this purchase?
- float sortIndex 1.5
-
-// Root Folders
-
-folder scroll
-title A language for scientists of all ages
-www https://scroll.pub
-source https://github.com/breck7/scroll
+folder pldb
+title A Programming Language DataBase
+www https://pldb.io
+source https://github.com/breck7/pldb
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -81,35 +60,13 @@ expires 6/12/2034
 rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
-folder pldb
-title A Programming Language DataBase
-www https://pldb.io
-source https://github.com/breck7/pldb
+folder scroll
+title A language for scientists of all ages
+www https://scroll.pub
+source https://github.com/breck7/scroll
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
 expires 6/12/2034
 rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
-
-folder zombo
-title You can do anything.
-www https://zombo.breckyunits.com
-source https://github.com/breck7/zombo
-editor Breck Yunits
- email breck7@gmail.com
-registered 9/14/2024
-expires 9/14/2034
-rep Breck Yunits
-transactionId pm_1Pz4fFJktJxKl0r537cx4sCs
-
-folder news
-title BuilderNews: Watch people try web creations
-www https://news.pub
-source https://github.com/breck7/news.pub
-editor Breck Yunits
- email breck7@gmail.com
-registered 9/22/2024
-expires 9/22/2034
-rep Breck Yunits
-transactionId pm_1Q1qilJktJxKl0r5ASsCMZ5K

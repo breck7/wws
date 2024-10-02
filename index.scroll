@@ -1,7 +1,7 @@
-header.scroll
 openGraphImage wws.gif
-
 title The World Wide Scroll - a successor to the web that works offline
+
+header.scroll
 
 # The World Wide Scroll
  style font-weight: 100; font-size: 400%;
