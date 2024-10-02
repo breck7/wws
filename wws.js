@@ -103,6 +103,14 @@ Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/$
 
 ../header.scroll
 
+center
+table
+ data
+  folder
+  ${this.fetchedFolders.map(folder => folder.folder).join("\n  ")}
+ compose tag <div class="iframeHolder"><div><a href="{folder}/index.html">{folder}</a></div><iframe src="{folder}/index.html" frameborder="0"></iframe></div>
+  printColumn tag
+
 wwsSnippetsParser
  extends printSnippetsParser
  crux snippets
@@ -126,12 +134,7 @@ snippets ${this.fetchedFolders
  limit 5
 endColumns
 
-thinColumn
-# Fetched (${this.fetchedFolders.length})
-${this.fetchedFolders.map(concept => `- ${concept.folder}\n link ${concept.folder}/index.html`).join("\n")}
-# Unfetched (${this.unfetchedFolders.length})
-expander
-${this.unfetchedFolders.map(concept => `- ${concept.folder}`).join("\n")}
+# Unfetched (${this.unfetchedFolders.length}): ${this.unfetchedFolders.map(concept => `${concept.folder}`).join(" - ")}
 
 center
 viewSourceButton
