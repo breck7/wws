@@ -1,7 +1,7 @@
-folder	title	www	source	editor	editor_email	registered	expires	rep	transactionId
-wifind	Wifind: find great wifi near you	https://hub.scroll.pub/wifind/	http://hub.scroll.pub/wifind.git	Breck Yunits		10/02/2024	10/02/2034	Breck Yunits	pm_1Q5Y9HJktJxKl0r5jeY4nOdh
-news	BuilderNews: Watch people try web creations	https://news.pub	https://github.com/breck7/news.pub	Breck Yunits		9/22/2024	9/22/2034	Breck Yunits	pm_1Q1qilJktJxKl0r5ASsCMZ5K
-zombo	You can do anything.	https://zombo.breckyunits.com	https://github.com/breck7/zombo	Breck Yunits		9/14/2024	9/14/2034	Breck Yunits	pm_1Pz4fFJktJxKl0r537cx4sCs
-pldb	A Programming Language DataBase	https://pldb.io	https://github.com/breck7/pldb	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
-breck	Breck's Blog	https://breckyunits.com	https://github.com/breck7/breckyunits.com	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
-scroll	A language for scientists of all ages	https://scroll.pub	https://github.com/breck7/scroll	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
+folder	title	www	source	branch	editor	editor_email	registered	expires	rep	transactionId
+wifind	Wifind: find great wifi near you	https://hub.scroll.pub/wifind/	http://hub.scroll.pub/wifind.git		Breck Yunits		10/02/2024	10/02/2034	Breck Yunits	pm_1Q5Y9HJktJxKl0r5jeY4nOdh
+news	BuilderNews: Watch people try web creations	https://news.pub	https://github.com/breck7/news.pub		Breck Yunits		9/22/2024	9/22/2034	Breck Yunits	pm_1Q1qilJktJxKl0r5ASsCMZ5K
+zombo	You can do anything.	https://zombo.breckyunits.com	https://github.com/breck7/zombo		Breck Yunits		9/14/2024	9/14/2034	Breck Yunits	pm_1Pz4fFJktJxKl0r537cx4sCs
+pldb	A Programming Language DataBase	https://pldb.io	https://github.com/breck7/pldb	wws	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
+breck	Breck's Blog	https://breckyunits.com	https://github.com/breck7/breckyunits.com	wws	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu
+scroll	A language for scientists of all ages	https://scroll.pub	https://github.com/breck7/scroll	wws	Breck Yunits		6/12/2024	6/12/2034	Breck Yunits	pm_1PQxCOJktJxKl0r5l24p6Zwu

@@ -42,6 +42,7 @@ folder pldb
 title A Programming Language DataBase
 www https://pldb.io
 source https://github.com/breck7/pldb
+branch wws
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -53,6 +54,7 @@ folder breck
 title Breck's Blog
 www https://breckyunits.com
 source https://github.com/breck7/breckyunits.com
+branch wws
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -64,6 +66,7 @@ folder scroll
 title A language for scientists of all ages
 www https://scroll.pub
 source https://github.com/breck7/scroll
+branch wws
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024

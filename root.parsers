@@ -19,6 +19,11 @@ sourceParser
  description What is the URL to the source code for this folder?
  float sortIndex 1.02
 
+branchParser
+ extends abstractStringMeasureParser
+ description What is the branch to fetch if not main?
+ float sortIndex 1.021
+
 editorParser
  // required
  extends abstractStringMeasureParser
