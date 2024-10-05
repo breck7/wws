@@ -2,8 +2,8 @@
   {
     "folder": "wifind",
     "title": "Wifind: find great wifi near you",
-    "www": "https://hub.scroll.pub/wifind/",
-    "source": "http://hub.scroll.pub/wifind.git",
+    "www": "https://wifind.hub.scroll.pub/",
+    "source": "https://hub.scroll.pub/wifind.hub.scroll.pub.git",
     "editor": "Breck Yunits",
     "registered": "10/02/2024",
     "expires": "10/02/2034",
