@@ -10,7 +10,7 @@ printTitle
 
 center
 table root.tsv
- compose tag <div class="iframeHolder"><iframe src="{www}" frameborder="0"></iframe></div>
+ compose tag <div class="iframeHolder"><div><a href="{www}">{folder}</a></div><iframe src="{www}" frameborder="0"></iframe></div>
   printColumn tag
 
 container 800px
