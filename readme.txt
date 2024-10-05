@@ -4,6 +4,13 @@ The World Wide Scroll Readme
 A non-toxic, intelligent, trustworthy successor to the web that works offline.
 ==============================================================================
 
+wifind
+news
+zombo
+pldb
+breck
+scroll
+
 Why build this?
 ===============
 To provide every human with their own copy of humanity's most intelligent information.
@@ -110,4 +117,4 @@ pldb,A Programming Language DataBase,"www source"
 breck,Breck's Blog,"www source"
 scroll,A language for scientists of all ages,"www source"
 
-Built with Scroll v136.12.0
+Built with Scroll v137.0.0
