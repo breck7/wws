@@ -9,7 +9,7 @@ const child_process = require("child_process")
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Particle } = require("scrollsdk/products/Particle.js")
-const { ScrollCli, ScrollFile, ScrollFileSystem } = require("scroll-cli")
+const { ScrollCli, ScrollFile, ScrollFileSystem, SimpleCLI } = require("scroll-cli")
 const packageJson = require("./package.json")
 
 // Constants
@@ -20,59 +20,7 @@ const scrollCli = new ScrollCli().silence()
 
 const sanitizeFolderName = name => name.toLowerCase().replace(/[^a-z0-9._]/g, "")
 
-class WWSCli {
-  CommandFnDecoratorSuffix = "Command"
-
-  executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
-    const command = args[0]
-    const commandName = `${command}${this.CommandFnDecoratorSuffix}`
-    if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](args.slice(1))
-    else if (command) this.log(`No command '${command}'. Running help command.`)
-    else this.log(`No command provided. Running help command.`)
-    return this.helpCommand()
-  }
-
-  _runCommandOnPipedStdIn(commandName) {
-    let pipedData = ""
-    process.stdin.on("readable", function () {
-      pipedData += this.read() // todo: what's the lambda way to do this?
-    })
-    process.stdin.on("end", () => {
-      const folders = pipedData
-        .trim()
-        .split("\n")
-        .map(line => line.trim())
-        .filter(line => fs.existsSync(line))
-
-      folders.forEach(line => this[commandName](line))
-
-      if (folders.length === 0)
-        // Hacky to make sure this at least does something in all environments.
-        // process.stdin.isTTY is not quite accurate for pipe detection
-        this[commandName]()
-    })
-  }
-
-  silence() {
-    this.verbose = false
-    return this
-  }
-
-  verbose = true
-
-  logIndent = 0
-  log(message) {
-    const indent = "    ".repeat(this.logIndent)
-    if (this.verbose) console.log(indent + message)
-    return message
-  }
-
-  get _allCommands() {
-    return Object.getOwnPropertyNames(Object.getPrototypeOf(this))
-      .filter(atom => atom.endsWith(this.CommandFnDecoratorSuffix))
-      .sort()
-  }
-
+class WWSCli extends SimpleCLI {
   get wwsDir() {
     return path.join(__dirname, "wws")
   }
@@ -247,9 +195,8 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     return child_process.exec(`open ${indexHtml}`)
   }
 
-  helpCommand() {
-    this.log(`\n🌎🌏📜 WELCOME TO THE WWS (v${WWS_VERSION})`)
-    return this.log(`\n${this.count} folders in ${this.wwsDir}\n\nThis is the WWS help page.\n\nCommands you can run:\n\n${this._allCommands.map(comm => `🖌️ ` + comm.replace(this.CommandFnDecoratorSuffix, "")).join("\n")}\n​​`)
+  get welcomeMessage() {
+    return `\n🌎🌏📜 WELCOME TO THE WWS (v${WWS_VERSION})\n\n${this.count} folders in ${this.wwsDir}`
   }
 }
 
