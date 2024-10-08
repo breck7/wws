@@ -4,7 +4,7 @@ The World Wide Scroll Readme
 A non-toxic, intelligent, trustworthy successor to the web that works offline.
 ==============================================================================
 
-wifind
+wifinder
 news
 zombo
 pldb
@@ -110,7 +110,7 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 Folders
 =======
 folder,title,links
-wifind,Wifind: find great wifi near you,"www source"
+wifinder,WiFinder: find great wifi near you,"www source"
 news,BuilderNews: Watch people try web creations,"www source"
 zombo,You can do anything.,"www source"
 pldb,A Programming Language DataBase,"www source"

@@ -1,8 +1,8 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Crux
-folder	6	100%	What is the folder name?	wifind	string		1	false	true	true	folder
-title	6	100%	What is this site about? Maximum 7 words.	Wifind: find great wifi near you	string		1.001	false			title
-www	6	100%	What is the URL to this folder on the World Wide Web?	https://wifind.hub.scroll.pub/	string		1.01	false			
-source	6	100%	What is the URL to the source code for this folder?	https://hub.scroll.pub/wifind.hub.scroll.pub.git	string		1.02	false			
+folder	6	100%	What is the folder name?	wifinder	string		1	false	true	true	folder
+title	6	100%	What is this site about? Maximum 7 words.	WiFinder: find great wifi near you	string		1.001	false			title
+www	6	100%	What is the URL to this folder on the World Wide Web?	https://wifinder.wiki	string		1.01	false			
+source	6	100%	What is the URL to the source code for this folder?	https://wifinder.wiki/wifinder.wiki.git	string		1.02	false			
 branch	3	50%	What is the branch to fetch if not main?	wws	string		1.021	false			
 editor	6	100%	What is the real name of the editor of this folder?	Breck Yunits	string		1.1	false			
 editor_email	0	0%	What is the email address of the editor of this folder?		text		1.11	false			email
