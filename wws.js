@@ -139,7 +139,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     return new Particle(Disk.read(wwsFile))
   }
 
-  fetchScroll(folderName) {
+  async fetchScroll(folderName) {
     const { wwsDir } = this
     const folder = this.folders.find(concept => concept.folder === folderName)
     if (!folder) return this.log(`\n👎 No folder '${folderName}' found.`)
@@ -158,7 +158,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       child_process.execSync(`cd ${rootFolder} && git pull origin ${gitBranch}`)
     }
     // if main branch, build the site
-    if (gitBranch === "main") child_process.execSync(`cd ${rootFolder} && scroll build`)
+    if (gitBranch === "main") await scrollCli.buildCommand(rootFolder)
     const settingsParticle = this.getFolderSettings(folder.folder)
     settingsParticle
       .filter(particle => particle.getLine().startsWith("subfolder"))
@@ -174,10 +174,20 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       })
   }
 
-  fetchCommand(folderNames) {
+  // todo: upstream this
+  executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
+    const command = args[0]
+    const commandName = `${command}${this.CommandFnDecoratorSuffix}`
+    if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](args.slice(1))
+    else if (command) this.log(`No command '${command}'. Running help command.`)
+    else this.log(`No command provided. Running help command.`)
+    return this.helpCommand()
+  }
+
+  async fetchCommand(folderNames) {
     this.init()
     const { wwsDir, fetchedFolders } = this
-    if (!folderNames.length) fetchedFolders.forEach(concept => this.fetchScroll(concept.folder))
+    if (!folderNames.length) await Promise.all(fetchedFolders.map(async concept => await this.fetchScroll(concept.folder)))
     else folderNames.forEach(folderName => this.fetchScroll(folderName))
     this.buildIndexPage()
   }

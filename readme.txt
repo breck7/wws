@@ -4,12 +4,13 @@ The World Wide Scroll Readme
 A non-toxic, intelligent, trustworthy successor to the web that works offline.
 ==============================================================================
 
-wifinder
-news
-zombo
-pldb
-breck
-scroll
+~public
+~wifinder
+~news
+~zombo
+~pldb
+~breck
+~scroll
 
 Why build this?
 ===============
@@ -77,7 +78,7 @@ Fine Print
 - The WWS is for high quality, non-anonymous content.
  - You must use your real name and a real email address when registering a folder.
   - This information will be publicly visible in root file (`root.scroll`).
-- Limit 5 folders per person.
+- Limit 10 folders per person.
  - The WWS discourages name squatting and content not edited by humans.
  - If you maintain high quality folders and hit the limit, you can request a higher limit.
 - Changes to your folder information may be made by pull request or communicated to your WWS rep via email.
@@ -110,6 +111,7 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 Folders
 =======
 folder,title,links
+public,A Public Domain Company,"www source"
 wifinder,WiFinder: find great wifi near you,"www source"
 news,BuilderNews: Watch people try web creations,"www source"
 zombo,You can do anything.,"www source"
@@ -117,4 +119,4 @@ pldb,A Programming Language DataBase,"www source"
 breck,Breck's Blog,"www source"
 scroll,A language for scientists of all ages,"www source"
 
-Built with Scroll v137.3.0
+Built with Scroll v138.4.0

@@ -5,6 +5,17 @@ buildMeasures wwsMeasures.tsv
 
 root.parsers
 
+folder public
+title A Public Domain Company
+www https://publicdomaincompany.com/
+source https://github.com/breck7/publicdomaincompany.com
+editor Breck Yunits
+ email breck7@gmail.com
+registered 10/10/2024
+expires 10/10/2034
+rep Breck Yunits
+transactionId pi_3Q8SqRJktJxKl0r50QNBJBv1
+
 folder wifinder
 title WiFinder: find great wifi near you
 www https://wifinder.wiki
