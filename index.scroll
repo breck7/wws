@@ -16,7 +16,7 @@ stripeButton.scroll
 Readme
  center
  style color:grey;
- link readme.html
+ readme.html
 
 br
 scrollVersionLink

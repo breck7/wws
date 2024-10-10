@@ -10,7 +10,7 @@ printTitle
 
 center
 table root.tsv
- compose tag <div class="iframeHolder"><div><a href="{www}">{folder}</a></div><iframe src="{www}" frameborder="0"></iframe></div>
+ compose tag <div class="iframeHolder"><div><a href="{www}">~{folder}</a></div><iframe src="{www}" frameborder="0"></iframe></div>
   printColumn tag
 
 container 800px
@@ -46,7 +46,7 @@ Revenue from root name sales go toward the development of The Scroll ecosystem i
 stripeButton.scroll
 
 After you buy your root name, check out the Getting Started Guide.
- link gettingStarted.html Getting Started Guide
+ gettingStarted.html Getting Started Guide
 
 finePrint.scroll
 
