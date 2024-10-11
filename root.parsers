@@ -3,10 +3,10 @@ nameParser
  extends abstractIdParser
  description What is the folder name?
 
-folderTitleParser
- crux title
+descriptionParser
+ crux description
  extends abstractStringMeasureParser
- description What is this site about? Maximum 7 words.
+ description What is this folder about? Maximum 7 words.
  float sortIndex 1.001
 
 webParser

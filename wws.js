@@ -4,6 +4,7 @@
 const parseArgs = require("minimist")
 const path = require("path")
 const fs = require("fs")
+const os = require("os")
 const child_process = require("child_process")
 const express = require("express")
 const dns = require("dns")
@@ -25,7 +26,7 @@ const sanitizeFolderName = name => name.toLowerCase().replace(/[^a-z0-9._]/g, ""
 
 class WWSCli extends SimpleCLI {
   get wwsDir() {
-    return path.join(__dirname, "wws")
+    return path.join(os.homedir(), ".wws")
   }
 
   server = null
@@ -88,7 +89,7 @@ class WWSCli extends SimpleCLI {
       "index.scroll": `The World Wide Scroll\n`
     }
     Disk.writeObjectToDisk(wwsDir, initFolder)
-    return this.log(`\n👍 Initialized new WWS cache in '${wwsDir}'.`)
+    return this.log(`\n👍 Initialized new WWS copy in '${wwsDir}'.`)
   }
 
   async buildIndexPage() {
@@ -103,7 +104,8 @@ buildHtml
 center
 Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/${this.folders.length} folders fetched. WWS version: ${WWS_VERSION}.
 
-../header.scroll
+// todo: fix root includes in scroll and remove below.
+${fs.readFileSync("header.scroll")}
 
 center
 table
@@ -170,7 +172,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
         const { fetched, name, description } = folder
         return {
           " ": fetched ? "🟩" : "⬜️",
-          Folder: folder,
+          Folder: name,
           Description: description
         }
       })
@@ -205,7 +207,9 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       this.log(`Fetching ${folderName}`)
       Disk.mkdir(rootFolder)
       // do a shallow clone of the built site (wws branch) into the folder:
-      child_process.execSync(`git clone --depth 1 --branch ${gitBranch} ${gitSource} ${rootFolder}`)
+      const cloneCommand = `git clone --branch ${gitBranch} ${gitSource} ${rootFolder}`
+      console.log(cloneCommand)
+      child_process.execSync(cloneCommand)
     } else {
       // update the shallow clone but still keep it shallow
       this.log(`Updating ${folderName}`)

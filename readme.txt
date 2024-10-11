@@ -125,12 +125,12 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 Folders
 =======
 name,title,links
-public,A Public Domain Company,"web source"
-wifinder,WiFinder: find great wifi near you,"web source"
-news,BuilderNews: Watch people try web creations,"web source"
-zombo,You can do anything.,"web source"
-pldb,A Programming Language DataBase,"web source"
-breck,Breck's Blog,"web source"
-scroll,A language for scientists of all ages,"web source"
+public,,"web source"
+wifinder,,"web source"
+news,,"web source"
+zombo,,"web source"
+pldb,,"web source"
+breck,,"web source"
+scroll,,"web source"
 
 Built with Scroll v138.4.0
