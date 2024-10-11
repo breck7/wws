@@ -10,9 +10,17 @@ From source:
 code
  git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
 
-# Fetch sites and open
+# Fetch sites
 code
- wws fetch scroll breck pldb && wws open
+ wws fetch scroll breck pldb
+
+# Start local server
+code
+ wws start
+
+# OR just open static files
+code
+ wws open 
 
 # Uninstalling
 code
@@ -20,3 +28,9 @@ code
 
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js
+
+# Keeping WWS server running
+
+code
+ sudo npm install -g pm2
+ pm2 start wws start

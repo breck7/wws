@@ -1,5 +1,5 @@
-folderNameParser
- crux folder
+nameParser
+ crux name
  extends abstractIdParser
  description What is the folder name?
 
@@ -9,7 +9,7 @@ folderTitleParser
  description What is this site about? Maximum 7 words.
  float sortIndex 1.001
 
-wwwParser
+webParser
  extends abstractUrlMeasureParser
  description What is the URL to this folder on the World Wide Web?
  float sortIndex 1.01
@@ -20,6 +20,7 @@ sourceParser
  float sortIndex 1.02
 
 branchParser
+ // todo: remove this
  extends abstractStringMeasureParser
  description What is the branch to fetch if not main?
  float sortIndex 1.021

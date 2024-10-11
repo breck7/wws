@@ -7,6 +7,7 @@ const fs = require("fs")
 const child_process = require("child_process")
 const express = require("express")
 const dns = require("dns")
+const util = require("util")
 
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
@@ -27,25 +28,55 @@ class WWSCli extends SimpleCLI {
     return path.join(__dirname, "wws")
   }
 
-  startCommand() {
+  server = null
+  async startCommand() {
     const app = express()
     const port = 80
-    dns.lookup("scroll", (err, address, family) => {
-      const scrollPointsToLocalhost = address === "127.0.0.1"
-      if (!scrollPointsToLocalhost) console.log(`No DNS alias to Scroll detected. Run '${__dirname}/wws.js hosts' to enable http://scroll `)
 
-      const hostname = scrollPointsToLocalhost ? "scroll" : "localhost"
-      app.listen(port, () => {
+    // Promisify dns.lookup to use async/await
+    const lookup = util.promisify(dns.lookup)
+
+    // Await DNS lookup
+    const { address } = await lookup("scroll")
+    const scrollPointsToLocalhost = address === "127.0.0.1"
+
+    if (!scrollPointsToLocalhost) console.log(`No DNS alias to Scroll detected. Run '${__dirname}/wws.js hosts' to enable http://scroll`)
+
+    const hostname = scrollPointsToLocalhost ? "scroll" : "localhost"
+
+    // Wrap app.listen in a Promise to await server start
+    await new Promise((resolve, reject) => {
+      this.server = app.listen(port, err => {
+        if (err) {
+          return reject(err)
+        }
         console.log(`WWS running at http://${hostname}`)
+        resolve()
       })
     })
 
+    // Middleware to allow CORS
     app.use((req, res, next) => {
       res.setHeader("Access-Control-Allow-Origin", "*")
       next()
     })
 
+    // Serve static files from this.wwsDir
     app.use(express.static(this.wwsDir))
+
+    return app
+  }
+
+  async stop() {
+    await new Promise((resolve, reject) => {
+      this.server.close(err => {
+        if (err) {
+          return reject(err) // Reject if an error occurs
+        }
+        console.log("Server stopped successfully")
+        resolve() // Resolve when server has closed
+      })
+    })
   }
 
   init() {
@@ -77,9 +108,9 @@ Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/$
 center
 table
  data
-  folder
-  ${this.fetchedFolders.map(folder => folder.folder).join("\n  ")}
- compose tag <div class="iframeHolder"><div><a href="{folder}/index.html">{folder}</a></div><iframe src="{folder}/index.html" frameborder="0"></iframe></div>
+  rootName
+  ${this.fetchedFolders.map(folder => folder.name).join("\n  ")}
+ compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0"></iframe></div>
   printColumn tag
 
 wwsSnippetsParser
@@ -94,18 +125,18 @@ wwsSnippetsParser
 
 thinColumns
 snippets ${this.fetchedFolders
-      .map(concept => {
-        const settings = this.getFolderSettings(concept.folder)
+      .map(folder => {
+        const settings = this.getFolderSettings(folder.name)
         const snippets = settings.get("snippets")
         if (!snippets) return ""
-        return concept.folder + "/" + snippets
+        return folder.name + "/" + snippets
       })
       .filter(i => i)
       .join(" ")}
  limit 5
 endColumns
 
-# Unfetched (${this.unfetchedFolders.length}): ${this.unfetchedFolders.map(concept => `${concept.folder}`).join(" - ")}
+# Unfetched (${this.unfetchedFolders.length}): ${this.unfetchedFolders.map(folder => `${folder.name}`).join(" - ")}
 
 center
 viewSourceButton
@@ -121,22 +152,22 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     const rootFilePath = path.join(__dirname, "root.scroll")
     const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
     const { concepts } = wws
-    concepts.forEach(concept => (concept.fetched = Disk.exists(path.join(wwsDir, concept.folder))))
+    concepts.forEach(folder => (folder.fetched = Disk.exists(path.join(wwsDir, folder.name))))
     return concepts
   }
 
   get fetchedFolders() {
-    return this.folders.filter(concept => concept.fetched)
+    return this.folders.filter(folder => folder.fetched)
   }
 
   get unfetchedFolders() {
-    return this.folders.filter(concept => !concept.fetched)
+    return this.folders.filter(folder => !folder.fetched)
   }
 
   listCommand() {
     const table = new Particle(
-      this.folders.map(concept => {
-        const { fetched, folder, description } = concept
+      this.folders.map(folder => {
+        const { fetched, name, description } = folder
         return {
           " ": fetched ? "🟩" : "⬜️",
           Folder: folder,
@@ -144,7 +175,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
         }
       })
     )
-    this.log(`There are currently ${this.folders.length} folders in the World Wide Scroll.`)
+    this.log(`There are currently ${this.folders.length} root folders in the World Wide Scroll.`)
     this.log("")
     this.log(table.toFormattedTable())
     this.log("")
@@ -164,10 +195,10 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
 
   async fetchScroll(folderName) {
     const { wwsDir } = this
-    const folder = this.folders.find(concept => concept.folder === folderName)
-    if (!folder) return this.log(`\n👎 No folder '${folderName}' found.`)
+    const folder = this.folders.find(folder => folder.name === folderName)
+    if (!folder) return this.log(`\n👎 No root folder '${folderName}' found.`)
     // mkdir the folder if it doesn't exist:
-    const rootFolder = path.join(wwsDir, folder.folder)
+    const rootFolder = path.join(wwsDir, folder.name)
     const gitSource = folder.source
     const gitBranch = folder.branch || "main"
     if (!Disk.exists(rootFolder)) {
@@ -182,7 +213,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     }
     // if main branch, build the site
     if (gitBranch === "main") await scrollCli.buildCommand(rootFolder)
-    const settingsParticle = this.getFolderSettings(folder.folder)
+    const settingsParticle = this.getFolderSettings(folder.name)
     settingsParticle
       .filter(particle => particle.getLine().startsWith("subfolder"))
       .forEach(subfolder => {
@@ -210,7 +241,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   async fetchCommand(folderNames) {
     this.init()
     const { wwsDir, fetchedFolders } = this
-    if (!folderNames.length) await Promise.all(fetchedFolders.map(async concept => await this.fetchScroll(concept.folder)))
+    if (!folderNames.length) await Promise.all(fetchedFolders.map(async folder => await this.fetchScroll(folder.name)))
     else folderNames.forEach(folderName => this.fetchScroll(folderName))
     this.buildIndexPage()
   }
@@ -229,7 +260,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   }
 
   get welcomeMessage() {
-    return `\n🌎🌏📜 WELCOME TO THE WWS (v${WWS_VERSION})\n\n${this.count} folders in ${this.wwsDir}`
+    return `\n🌎🌏📜 WELCOME TO THE WWS (v${WWS_VERSION})\n\n${this.count} root folders in ${this.wwsDir}`
   }
 }
 

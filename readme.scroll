@@ -10,7 +10,7 @@ printTitle
 
 center
 table root.tsv
- compose tag <div class="iframeHolder"><div><a href="{www}">~{folder}</a></div><iframe src="{www}" frameborder="0"></iframe></div>
+ compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0"></iframe></div>
   printColumn tag
 
 container 800px
@@ -70,8 +70,8 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 
 # Folders
 table root.tsv
- select folder title www source
-  links www source
+ select name title web source
+  links web source
    printTable
 
 pageFooter.scroll

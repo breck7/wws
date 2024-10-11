@@ -23,3 +23,6 @@ description List all of the available folders and whether they've been fetched o
 
 id open
 description Open wws/index.html
+
+id start
+description Start a local server to serve files over http://scroll/[folderName]

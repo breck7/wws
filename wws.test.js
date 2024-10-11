@@ -15,6 +15,17 @@ testParticles.basics = areEqual => {
   areEqual(!!wws, true)
 }
 
+testParticles.server = async areEqual => {
+  // Arrange
+  const wws = new WWSCli()
+  // Act/Assert
+  await wws.startCommand()
+
+  await wws.stop()
+
+  areEqual(true, true, "Server started and stopped successfully.")
+}
+
 if (module && !module.parent) TestRacer.testSingleFile(__filename, testParticles)
 
 module.exports = { testParticles }
