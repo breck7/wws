@@ -1,12 +1,13 @@
 {
   "name": "@breck/wws",
-  "version": "0.13.0",
+  "version": "0.15.0",
   "description": "The World Wide Scroll",
   "main": "wws.js",
   "engines": {
     "node": ">=16.0"
   },
   "scripts": {
+    "hosts": "echo '127.0.0.1 scroll' | sudo tee -a /etc/hosts",
     "test": "node wws.test.js",
     "build": "scroll build",
     "format": "scroll format",
@@ -33,6 +34,7 @@
   },
   "homepage": "https://wws.scroll.pub",
   "dependencies": {
+    "express": "^4.21.1",
     "minimist": "^1.2.8",
     "scroll-cli": "^138.4.0",
     "scrollsdk": "^88.0.0"
