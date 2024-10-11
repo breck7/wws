@@ -18,6 +18,10 @@ node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns 1
 
+📦 0.16.0 10/11/2024
+🎉 store data in users home dir. Thanks TD!
+🏥 bug fixes
+
 📦 0.15.0 10/11/2024
 🎉 added http://scroll
 

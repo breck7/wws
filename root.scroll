@@ -6,7 +6,7 @@ buildMeasures wwsMeasures.tsv
 root.parsers
 
 name public
-title A Public Domain Company
+description A Public Domain Company
 web https://publicdomaincompany.com
 source https://publicdomaincompany.com/publicdomaincompany.com.git
 editor Breck Yunits
@@ -17,7 +17,7 @@ rep Breck Yunits
 transactionId pi_3Q8SqRJktJxKl0r50QNBJBv1
 
 name wifinder
-title WiFinder: find great wifi near you
+description WiFinder: find great wifi near you
 web https://wifinder.wiki
 source https://wifinder.wiki/wifinder.wiki.git
 editor Breck Yunits
@@ -28,9 +28,9 @@ rep Breck Yunits
 transactionId pm_1Q5Y9HJktJxKl0r5jeY4nOdh
 
 name news
-title BuilderNews: Watch people try web creations
+description BuilderNews: Watch people try web creations
 web https://news.pub
-source http://news.pub/news.pub.git
+source https://news.pub/news.pub.git
 editor Breck Yunits
  email breck7@gmail.com
 registered 9/22/2024
@@ -39,7 +39,7 @@ rep Breck Yunits
 transactionId pm_1Q1qilJktJxKl0r5ASsCMZ5K
 
 name zombo
-title You can do anything.
+description You can do anything.
 web https://zombo.togger.com
 source http://zombo.togger.com/zombo.togger.com.git
 editor Breck Yunits
@@ -50,7 +50,7 @@ rep Breck Yunits
 transactionId pm_1Pz4fFJktJxKl0r537cx4sCs
 
 name pldb
-title A Programming Language DataBase
+description A Programming Language DataBase
 web https://pldb.io
 source https://github.com/breck7/pldb
 branch wws
@@ -62,7 +62,7 @@ rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 name breck
-title Breck's Blog
+description Breck's Blog
 web https://breckyunits.com
 source https://breckyunits.com/breckyunits.com.git
 editor Breck Yunits
@@ -73,7 +73,7 @@ rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
 name scroll
-title A language for scientists of all ages
+description A language for scientists of all ages
 web https://scroll.pub
 source https://github.com/breck7/scroll
 editor Breck Yunits
