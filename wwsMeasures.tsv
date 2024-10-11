@@ -2,7 +2,7 @@ Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequire
 name	7	100%	What is the folder name?	public	string		1	false	true	true	name
 title	7	100%	What is this site about? Maximum 7 words.	A Public Domain Company	string		1.001	false			title
 web	7	100%	What is the URL to this folder on the World Wide Web?	https://publicdomaincompany.com	string		1.01	false			
-source	7	100%	What is the URL to the source code for this folder?	https://github.com/breck7/publicdomaincompany.com	string		1.02	false			
+source	7	100%	What is the URL to the source code for this folder?	https://publicdomaincompany.com/publicdomaincompany.com.git	string		1.02	false			
 branch	1	14%	What is the branch to fetch if not main?	wws	string		1.021	false			
 editor	7	100%	What is the real name of the editor of this folder?	Breck Yunits	string		1.1	false			
 editor_email	0	0%	What is the email address of the editor of this folder?		text		1.11	false			email
