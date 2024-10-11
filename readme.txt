@@ -37,9 +37,17 @@ sudo npm install -g @breck/wws
 From source:
 git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
 
-Fetch sites and open
-====================
-wws fetch scroll breck pldb && wws open
+Fetch sites
+===========
+wws fetch scroll breck pldb
+
+Start local server
+==================
+wws start
+
+OR just open static files
+=========================
+wws open 
 
 Uninstalling
 ============
@@ -47,6 +55,12 @@ sudo npm uninstall -g wws
 
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js
+
+Keeping WWS server running
+==========================
+
+sudo npm install -g pm2
+pm2 start wws start
 
 Reserve your root name today!
 =============================
@@ -110,13 +124,13 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 
 Folders
 =======
-folder,title,links
-public,A Public Domain Company,"www source"
-wifinder,WiFinder: find great wifi near you,"www source"
-news,BuilderNews: Watch people try web creations,"www source"
-zombo,You can do anything.,"www source"
-pldb,A Programming Language DataBase,"www source"
-breck,Breck's Blog,"www source"
-scroll,A language for scientists of all ages,"www source"
+name,title,links
+public,A Public Domain Company,"web source"
+wifinder,WiFinder: find great wifi near you,"web source"
+news,BuilderNews: Watch people try web creations,"web source"
+zombo,You can do anything.,"web source"
+pldb,A Programming Language DataBase,"web source"
+breck,Breck's Blog,"web source"
+scroll,A language for scientists of all ages,"web source"
 
 Built with Scroll v138.4.0

@@ -5,9 +5,9 @@ buildMeasures wwsMeasures.tsv
 
 root.parsers
 
-folder public
+name public
 title A Public Domain Company
-www https://publicdomaincompany.com/
+web https://publicdomaincompany.com
 source https://github.com/breck7/publicdomaincompany.com
 editor Breck Yunits
  email breck7@gmail.com
@@ -16,9 +16,9 @@ expires 10/10/2034
 rep Breck Yunits
 transactionId pi_3Q8SqRJktJxKl0r50QNBJBv1
 
-folder wifinder
+name wifinder
 title WiFinder: find great wifi near you
-www https://wifinder.wiki
+web https://wifinder.wiki
 source https://wifinder.wiki/wifinder.wiki.git
 editor Breck Yunits
  email breck7@gmail.com
@@ -27,9 +27,9 @@ expires 10/02/2034
 rep Breck Yunits
 transactionId pm_1Q5Y9HJktJxKl0r5jeY4nOdh
 
-folder news
+name news
 title BuilderNews: Watch people try web creations
-www https://news.pub
+web https://news.pub
 source https://github.com/breck7/news.pub
 editor Breck Yunits
  email breck7@gmail.com
@@ -38,9 +38,9 @@ expires 9/22/2034
 rep Breck Yunits
 transactionId pm_1Q1qilJktJxKl0r5ASsCMZ5K
 
-folder zombo
+name zombo
 title You can do anything.
-www https://zombo.breckyunits.com
+web https://zombo.breckyunits.com
 source https://github.com/breck7/zombo
 editor Breck Yunits
  email breck7@gmail.com
@@ -49,9 +49,9 @@ expires 9/14/2034
 rep Breck Yunits
 transactionId pm_1Pz4fFJktJxKl0r537cx4sCs
 
-folder pldb
+name pldb
 title A Programming Language DataBase
-www https://pldb.io
+web https://pldb.io
 source https://github.com/breck7/pldb
 branch wws
 editor Breck Yunits
@@ -61,11 +61,10 @@ expires 6/12/2034
 rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
-folder breck
+name breck
 title Breck's Blog
-www https://breckyunits.com
+web https://breckyunits.com
 source https://github.com/breck7/breckyunits.com
-branch wws
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
@@ -73,11 +72,10 @@ expires 6/12/2034
 rep Breck Yunits
 transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
 
-folder scroll
+name scroll
 title A language for scientists of all ages
-www https://scroll.pub
+web https://scroll.pub
 source https://github.com/breck7/scroll
-branch wws
 editor Breck Yunits
  email breck7@gmail.com
 registered 6/12/2024
