@@ -5,6 +5,8 @@ const parseArgs = require("minimist")
 const path = require("path")
 const fs = require("fs")
 const child_process = require("child_process")
+const express = require("express")
+const dns = require("dns")
 
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
@@ -23,6 +25,27 @@ const sanitizeFolderName = name => name.toLowerCase().replace(/[^a-z0-9._]/g, ""
 class WWSCli extends SimpleCLI {
   get wwsDir() {
     return path.join(__dirname, "wws")
+  }
+
+  startCommand() {
+    const app = express()
+    const port = 80
+    dns.lookup("scroll", (err, address, family) => {
+      const scrollPointsToLocalhost = address === "127.0.0.1"
+      if (!scrollPointsToLocalhost) console.log(`No DNS alias to Scroll detected. Run '${__dirname}/wws.js hosts' to enable http://scroll `)
+
+      const hostname = scrollPointsToLocalhost ? "scroll" : "localhost"
+      app.listen(port, () => {
+        console.log(`WWS running at http://${hostname}`)
+      })
+    })
+
+    app.use((req, res, next) => {
+      res.setHeader("Access-Control-Allow-Origin", "*")
+      next()
+    })
+
+    app.use(express.static(this.wwsDir))
   }
 
   init() {
