@@ -8,6 +8,10 @@ Download as CSV | TSV | JSON
  https://wws.scroll.pub/releaseNotes.tsv TSV
  https://wws.scroll.pub/releaseNotes.json JSON
 
+0.19.0 10/13/2024
+=================
+🏥 bug fixes
+
 0.18.0 10/13/2024
 =================
 🎉 added delete command
