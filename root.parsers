@@ -1,10 +1,10 @@
 nameParser
- crux name
+ cue name
  extends abstractIdParser
  description What is the folder name?
 
 descriptionParser
- crux description
+ cue description
  extends abstractStringMeasureParser
  description What is this folder about? Maximum 7 words.
  float sortIndex 1.001
@@ -26,7 +26,7 @@ editorParser
  float sortIndex 1.1
  editorEmailParser
   // required
-  crux email
+  cue email
   extends abstractStringMeasureParser
   description What is the email address of the editor of this folder?
   float sortIndex 1.11
