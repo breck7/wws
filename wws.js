@@ -117,7 +117,7 @@ table
 
 wwsSnippetsParser
  extends printSnippetsParser
- crux snippets
+ cue snippets
  javascript
   makeSnippet(file, compileSettings) {
     const path = require("path")

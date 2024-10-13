@@ -5,7 +5,7 @@ idParser
  extends abstractIdParser
 
 commandDescriptionParser
- crux description
+ cue description
  extends abstractStringMeasureParser
  description What does this command do?
  float sortIndex 1.3
