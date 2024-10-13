@@ -202,21 +202,18 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     // mkdir the folder if it doesn't exist:
     const rootFolder = path.join(wwsDir, folder.name)
     const gitSource = folder.source
-    const gitBranch = folder.branch || "main"
     if (!Disk.exists(rootFolder)) {
       this.log(`Fetching ${folderName}`)
       Disk.mkdir(rootFolder)
-      // do a shallow clone of the built site (wws branch) into the folder:
-      const cloneCommand = `git clone --branch ${gitBranch} ${gitSource} ${rootFolder}`
+      const cloneCommand = `git clone ${gitSource} ${rootFolder}`
       console.log(cloneCommand)
       child_process.execSync(cloneCommand)
     } else {
-      // update the shallow clone but still keep it shallow
       this.log(`Updating ${folderName}`)
-      child_process.execSync(`cd ${rootFolder} && git pull origin ${gitBranch}`)
+      child_process.execSync(`cd ${rootFolder} && git pull origin`)
     }
-    // if main branch, build the site
-    if (gitBranch === "main") await scrollCli.buildCommand(rootFolder)
+    await scrollCli.buildCommand(rootFolder)
+    // ditch subfolders?
     const settingsParticle = this.getFolderSettings(folder.name)
     settingsParticle
       .filter(particle => particle.getLine().startsWith("subfolder"))
@@ -227,8 +224,8 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
         console.log(`Updating subfolder '${subfolderName}'`)
         if (!Disk.exists(subfolderPath)) {
           Disk.mkdir(subfolderPath)
-          child_process.execSync(`git clone --depth 1 --branch wws ${sourceRepo} ${subfolderPath}`)
-        } else child_process.execSync(`cd ${subfolderPath} && git pull origin wws`)
+          child_process.execSync(`git ${sourceRepo} ${subfolderPath}`)
+        } else child_process.execSync(`cd ${subfolderPath} && git pull origin`)
       })
   }
 
@@ -250,6 +247,10 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     this.buildIndexPage()
   }
 
+  get isLocalServerRunning() {
+    return false
+  }
+
   // buildCommand() {
   //   this.init()
   //   this.buildIndexPage()
@@ -258,9 +259,11 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   openCommand() {
     // Trigger the terminal to run "open index.html", opening the users web browser:
     this.init()
-    const { wwsDir } = this
+    const { wwsDir, isLocalServerRunning } = this
     const indexHtml = path.join(wwsDir, "index.html")
-    return child_process.exec(`open ${indexHtml}`)
+    const url = isLocalServerRunning ? "http://scroll/" : indexHtml
+    console.log(`Your copy of The Scroll can be accessed with 'open ${indexHtml}' or 'open http://scroll/' (if server started). Now opening: '${url}'`)
+    return child_process.exec(`open ${url}`)
   }
 
   get welcomeMessage() {

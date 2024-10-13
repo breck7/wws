@@ -14,10 +14,10 @@ The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and h
 
 2. *Open Source and Public Domain*: The WWS is designed for a post-copyright world and all content on the WWS is open-source and public domain.
 
-3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like GitHub and GitLab offer free hosting for open-source projects. Your repo should have a branch named `wws` where your compiled site is written to. ScrollHub (beta) is another fast option you could use.
+3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like GitHub and GitLab offer free hosting for open-source projects. ScrollHub (beta) is another fast option you could use.
  https://github.com GitHub
  https://gitlab.com GitLab
- http://hub.scroll.pub/ ScrollHub
+ https://hub.scroll.pub/ ScrollHub
 
 4. *Design for Offline Use*: Your site should function fully offline. Avoid using external JavaScript, images, or assets that require an internet connection. Ensure all necessary files are included in your Git repo. For large files, such as videos, linking to external sites is acceptable, but avoid adding unnecessarily large files directly to your repo.
 
@@ -64,4 +64,4 @@ Keeping WWS server running
 sudo npm install -g pm2
 pm2 start wws start
 
-Built with Scroll v138.4.0
+Built with Scroll v141.0.0
