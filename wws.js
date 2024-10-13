@@ -112,7 +112,7 @@ table
  data
   rootName
   ${this.fetchedFolders.map(folder => folder.name).join("\n  ")}
- compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0"></iframe></div>
+ compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">~{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0"></iframe></div>
   printColumn tag
 
 wwsSnippetsParser
@@ -122,7 +122,7 @@ wwsSnippetsParser
   makeSnippet(file, compileSettings) {
     const path = require("path")
     const folderName = file.folderPath.replace('${wwsDir}', "").split(path.sep)[1]
-    return super.makeSnippet(file, compileSettings).replace('<h1 class="scrollTitle">', '<h1 class="scrollTitle"><a href="' + folderName + '/index.html" style="color: gray;">~' + folderName + '</a><br>')
+    return super.makeSnippet(file, compileSettings).replace('class="scrollTitle">', 'class="scrollTitle"><a href="' + folderName + '/index.html" style="color: gray;">~' + folderName + '</a><br>')
   }
 
 thinColumns
