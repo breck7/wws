@@ -18,6 +18,10 @@ node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns 1
 
+📦 0.18.0 10/13/2024
+🎉 added delete command
+🏥 bug fixes
+
 📦 0.17.0 10/13/2024
 🏥 bug fixes
 ⚠️ removed branches. not worth the complexity at all.
