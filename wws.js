@@ -195,7 +195,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
     return new Particle(Disk.read(wwsFile))
   }
 
-  async fetchScroll(folderName) {
+  async fetchFolder(folderName) {
     const { wwsDir } = this
     const folder = this.folders.find(folder => folder.name === folderName)
     if (!folder) return this.log(`\n👎 No root folder '${folderName}' found.`)
@@ -242,9 +242,31 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
   async fetchCommand(folderNames) {
     this.init()
     const { wwsDir, fetchedFolders } = this
-    if (!folderNames.length) await Promise.all(fetchedFolders.map(async folder => await this.fetchScroll(folder.name)))
-    else folderNames.forEach(folderName => this.fetchScroll(folderName))
+    if (!folderNames.length) await Promise.all(fetchedFolders.map(async folder => await this.fetchFolder(folder.name)))
+    else folderNames.forEach(folderName => this.fetchFolder(folderName))
     this.buildIndexPage()
+  }
+
+  async deleteFolder(folderName) {
+    const { wwsDir } = this
+    const folderPath = path.join(wwsDir, folderName)
+
+    if (!fs.existsSync(folderPath)) return this.log(`❌ Folder '${folderName}' does not exist.`)
+
+    fs.rmSync(folderPath, { recursive: true, force: true })
+  }
+
+  async deleteCommand(folderNames = []) {
+    await this.init()
+    const { wwsDir, fetchedFolders } = this
+
+    if (folderNames.length === 0) return this.log("❌ No folder names provided. Please specify folders to delete.")
+
+    for (const folderName of folderNames) {
+      await this.deleteFolder(folderName)
+    }
+
+    await this.buildIndexPage()
   }
 
   get isLocalServerRunning() {
