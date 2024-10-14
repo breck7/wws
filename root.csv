@@ -1,8 +1,8 @@
-name,description,web,source,editor,editor_email,registered,expires,rep,transactionId
-public,A Public Domain Company,https://publicdomaincompany.com,https://publicdomaincompany.com/publicdomaincompany.com.git,Breck Yunits,,10/10/2024,10/10/2034,Breck Yunits,pi_3Q8SqRJktJxKl0r50QNBJBv1
-wifinder,WiFinder: find great wifi near you,https://wifinder.wiki,https://wifinder.wiki/wifinder.wiki.git,Breck Yunits,,10/02/2024,10/02/2034,Breck Yunits,pm_1Q5Y9HJktJxKl0r5jeY4nOdh
-news,BuilderNews: Watch people try web creations,https://news.pub,https://news.pub/news.pub.git,Breck Yunits,,9/22/2024,9/22/2034,Breck Yunits,pm_1Q1qilJktJxKl0r5ASsCMZ5K
-zombo,You can do anything.,https://zombo.togger.com,http://zombo.togger.com/zombo.togger.com.git,Breck Yunits,,9/14/2024,9/14/2034,Breck Yunits,pm_1Pz4fFJktJxKl0r537cx4sCs
-pldb,A Programming Language DataBase,https://pldb.io,https://github.com/breck7/pldb,Breck Yunits,,6/12/2024,6/12/2034,Breck Yunits,pm_1PQxCOJktJxKl0r5l24p6Zwu
-breck,Breck's Blog,https://breckyunits.com,https://breckyunits.com/breckyunits.com.git,Breck Yunits,,6/12/2024,6/12/2034,Breck Yunits,pm_1PQxCOJktJxKl0r5l24p6Zwu
-scroll,A language for scientists of all ages,https://scroll.pub,https://github.com/breck7/scroll,Breck Yunits,,6/12/2024,6/12/2034,Breck Yunits,pm_1PQxCOJktJxKl0r5l24p6Zwu
+name,description,tags,web,source,editor,editor_email,registered,expires,rep,transactionId
+public,A Public Domain Company,companyHomepage featured,https://publicdomaincompany.com,https://publicdomaincompany.com/publicdomaincompany.com.git,Breck Yunits,,10/10/2024,10/10/2034,Breck Yunits,pi_3Q8SqRJktJxKl0r50QNBJBv1
+wifinder,WiFinder: find great wifi near you,maps featured,https://wifinder.wiki,https://wifinder.wiki/wifinder.wiki.git,Breck Yunits,,10/02/2024,10/02/2034,Breck Yunits,pm_1Q5Y9HJktJxKl0r5jeY4nOdh
+news,BuilderNews: Watch people try web creations,forums featured,https://news.pub,https://news.pub/news.pub.git,Breck Yunits,,9/22/2024,9/22/2034,Breck Yunits,pm_1Q1qilJktJxKl0r5ASsCMZ5K
+zombo,You can do anything.,funny,https://zombo.togger.com,http://zombo.togger.com/zombo.togger.com.git,Breck Yunits,,9/14/2024,9/14/2034,Breck Yunits,pm_1Pz4fFJktJxKl0r537cx4sCs
+pldb,A Programming Language DataBase,programming knowledgeBase programmingLanguages featured,https://pldb.io,https://github.com/breck7/pldb,Breck Yunits,,6/12/2024,6/12/2034,Breck Yunits,pm_1PQxCOJktJxKl0r5l24p6Zwu
+breck,Breck's Blog,personalHomepage blog featured,https://breckyunits.com,https://breckyunits.com/breckyunits.com.git,Breck Yunits,,6/12/2024,6/12/2034,Breck Yunits,pm_1PQxCOJktJxKl0r5l24p6Zwu
+scroll,A language for scientists of all ages,projectHomepage programming programmingLanguages featured,https://scroll.pub,https://github.com/breck7/scroll,Breck Yunits,,6/12/2024,6/12/2034,Breck Yunits,pm_1PQxCOJktJxKl0r5l24p6Zwu

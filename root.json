@@ -2,6 +2,7 @@
   {
     "name": "public",
     "description": "A Public Domain Company",
+    "tags": "companyHomepage featured",
     "web": "https://publicdomaincompany.com",
     "source": "https://publicdomaincompany.com/publicdomaincompany.com.git",
     "editor": "Breck Yunits",
@@ -13,6 +14,7 @@
   {
     "name": "wifinder",
     "description": "WiFinder: find great wifi near you",
+    "tags": "maps featured",
     "web": "https://wifinder.wiki",
     "source": "https://wifinder.wiki/wifinder.wiki.git",
     "editor": "Breck Yunits",
@@ -24,6 +26,7 @@
   {
     "name": "news",
     "description": "BuilderNews: Watch people try web creations",
+    "tags": "forums featured",
     "web": "https://news.pub",
     "source": "https://news.pub/news.pub.git",
     "editor": "Breck Yunits",
@@ -35,6 +38,7 @@
   {
     "name": "zombo",
     "description": "You can do anything.",
+    "tags": "funny",
     "web": "https://zombo.togger.com",
     "source": "http://zombo.togger.com/zombo.togger.com.git",
     "editor": "Breck Yunits",
@@ -46,6 +50,7 @@
   {
     "name": "pldb",
     "description": "A Programming Language DataBase",
+    "tags": "programming knowledgeBase programmingLanguages featured",
     "web": "https://pldb.io",
     "source": "https://github.com/breck7/pldb",
     "editor": "Breck Yunits",
@@ -57,6 +62,7 @@
   {
     "name": "breck",
     "description": "Breck's Blog",
+    "tags": "personalHomepage blog featured",
     "web": "https://breckyunits.com",
     "source": "https://breckyunits.com/breckyunits.com.git",
     "editor": "Breck Yunits",
@@ -68,6 +74,7 @@
   {
     "name": "scroll",
     "description": "A language for scientists of all ages",
+    "tags": "projectHomepage programming programmingLanguages featured",
     "web": "https://scroll.pub",
     "source": "https://github.com/breck7/scroll",
     "editor": "Breck Yunits",

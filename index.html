@@ -61,72 +61,25 @@ document.addEventListener("DOMContentLoaded", () => document.querySelectorAll(".
 }</style>
 <div class="scrollSection"><h1 id="particle22" style="font-weight: 100; font-size: 400%;" class="scrollParagraph">The World Wide Scroll</h1>
 </div>
-<div class="scrollSection"><h2 id="particle24" style="font-weight: 100; font-size: 200%;" class="scrollParagraph">A successor to the web that is public domain, intelligent, and works offline</h2>
+<div style="width: 100%; box-sizing: border-box; max-width: 800px; margin: 0 auto;" class="scrollContainerParser">
+<div class="scrollSection"><h2 id="particle26" style="font-weight: 100; font-size: 200%;" class="scrollParagraph">A successor to the web that is public domain, intelligent, and works offline</h2>
 </div>
-<canvas id='canv'></canvas>
-<style>body {
- text-align: center;
-}</style>
-<script>const WIDTH = 400;
-const HEIGHT = 400;
-const NUM_POINTS = 200;
-const POINT_SIZE = 2
-const OUTER_RADIUS = Math.min(WIDTH, HEIGHT) / 2.2;
-const INNER_RADIUS = OUTER_RADIUS / 2;
-const canv = document.getElementById('canv');
-const ctx = canv.getContext('2d');
-canv.width = WIDTH;
-canv.height = HEIGHT;
-ctx.fillRect(0, 0, WIDTH, HEIGHT);
-const pts = new Float32Array(NUM_POINTS * 2);
-const targets = new Float32Array(NUM_POINTS * 2);
-function initializePoints() {
-    for (let i = 0; i < NUM_POINTS; i++) {
-        const angle = Math.random() * 2 * Math.PI;
-        pts[i * 2] = Math.cos(angle) * OUTER_RADIUS;
-        pts[i * 2 + 1] = Math.sin(angle) * OUTER_RADIUS;
-        const targetAngle = Math.random() * 2 * Math.PI;
-        targets[i * 2] = Math.cos(targetAngle) * INNER_RADIUS;
-        targets[i * 2 + 1] = Math.sin(targetAngle) * INNER_RADIUS;
-    }
-}
-function updatePoints() {
-    for (let i = 0; i < NUM_POINTS; i++) {
-        const x = pts[2 * i];
-        const y = pts[2 * i + 1];
-        const tx = targets[i * 2];
-        const ty = targets[i * 2 + 1];
-        pts[2 * i] += (tx - x) * 0.05;
-        pts[2 * i + 1] += (ty - y) * 0.05;
-    }
-}
-let ct = 0;
-function updateScreen() {
-    ct += 1;
-    updatePoints();
-    ctx.fillStyle = 'rgba(244,244,244,1)';
-    ctx.fillRect(0, 0, WIDTH, HEIGHT);
-    ctx.fillStyle = 'black';
-    for (let i = 0; i < NUM_POINTS; i++) {
-       ctx.fillRect(pts[i * 2] + WIDTH / 2, pts[i * 2 + 1] + HEIGHT / 2, POINT_SIZE, POINT_SIZE);
-    }
-    requestAnimationFrame(updateScreen);
-    if (ct > 150) {
-        initializePoints();
-        ct = 0;
-    }
-}
-initializePoints();
-requestAnimationFrame(updateScreen);
-</script>
+<center><p id="particle28" class="scrollParagraph"></p>
+<div class="iframeHolder"><div><a href="https://publicdomaincompany.com">~public</a></div><iframe src="https://publicdomaincompany.com" frameborder="0"></iframe></div>
+<div class="iframeHolder"><div><a href="https://wifinder.wiki">~wifinder</a></div><iframe src="https://wifinder.wiki" frameborder="0"></iframe></div>
+<div class="iframeHolder"><div><a href="https://news.pub">~news</a></div><iframe src="https://news.pub" frameborder="0"></iframe></div>
+<div class="iframeHolder"><div><a href="https://pldb.io">~pldb</a></div><iframe src="https://pldb.io" frameborder="0"></iframe></div>
+<div class="iframeHolder"><div><a href="https://breckyunits.com">~breck</a></div><iframe src="https://breckyunits.com" frameborder="0"></iframe></div>
+<div class="iframeHolder"><div><a href="https://scroll.pub">~scroll</a></div><iframe src="https://scroll.pub" frameborder="0"></iframe></div>
+</center>
 <br><br>
-<center><p id="particle36" class="scrollParagraph"></p>
-<button id="particle37" onclick="window.location='https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f'"class="scrollButton"><a href="https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f">Buy root name with Crypto</a></button>
-<button id="particle38" onclick="window.location='https://buy.stripe.com/cN2dUC82JaiNbaEfZn'"class="scrollButton"><a href="https://buy.stripe.com/cN2dUC82JaiNbaEfZn">Buy root name with Credit Card</a></button>
+<center><p id="particle34" class="scrollParagraph"></p>
+<button id="particle35" onclick="window.location='https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f'"class="scrollButton"><a href="https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f">Buy root name with Crypto</a></button>
+<button id="particle36" onclick="window.location='https://buy.stripe.com/cN2dUC82JaiNbaEfZn'"class="scrollButton"><a href="https://buy.stripe.com/cN2dUC82JaiNbaEfZn">Buy root name with Credit Card</a></button>
 <br><br>
 </center>
-<p id="particle42" style="color:grey;" class="scrollParagraph"><center><a href="readme.html">Readme</center></a></p>
+<p id="particle40" style="color:grey;" class="scrollParagraph"><center><a href="readme.html">Readme</center></a></p>
 <br>
-<div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v141.2.0</a></div>
+<div class="abstractTextLinkParser"><a href="https://scroll.pub">Built with Scroll v141.2.0</a></div></div>
 </body>
 </html>

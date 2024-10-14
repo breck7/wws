@@ -4,6 +4,13 @@ The World Wide Scroll
 A successor to the web that is public domain, intelligent, and works offline
 ============================================================================
 
+~public
+~wifinder
+~news
+~pldb
+~breck
+~scroll
+
 Buy root name with Crypto
  https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
 Buy root name with Credit Card

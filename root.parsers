@@ -9,6 +9,12 @@ descriptionParser
  description What is this folder about? Maximum 7 words.
  float sortIndex 1.001
 
+tagsParser
+ cue tags
+ extends abstractStringMeasureParser
+ description What labels apply to this folder?
+ float sortIndex 1.002
+
 webParser
  extends abstractUrlMeasureParser
  description What is the URL to this folder on the World Wide Web?

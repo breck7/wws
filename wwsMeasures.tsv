@@ -1,6 +1,7 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Cue
 name	7	100%	What is the folder name?	public	string		1	false	true	true	name
 description	7	100%	What is this folder about? Maximum 7 words.	A Public Domain Company	string		1.001	false			description
+tags	7	100%	What labels apply to this folder?	companyHomepage featured	string		1.002	false			tags
 web	7	100%	What is the URL to this folder on the World Wide Web?	https://publicdomaincompany.com	string		1.01	false			
 source	7	100%	What is the URL to the source code for this folder?	https://publicdomaincompany.com/publicdomaincompany.com.git	string		1.02	false			
 editor	7	100%	What is the real name of the editor of this folder?	Breck Yunits	string		1.1	false			
