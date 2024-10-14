@@ -6,7 +6,7 @@ header.scroll
 # The World Wide Scroll
  style font-weight: 100; font-size: 400%;
 
-# Make Something You Love
+## A successor to the web that is public domain, intelligent, and works offline
  style font-weight: 100; font-size: 200%;
 
 animation.scroll
