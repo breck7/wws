@@ -62,6 +62,14 @@ class WWSCli extends SimpleCLI {
       next()
     })
 
+    // Middleware to serve .scroll files as plain text
+    // This should come BEFORE the static file serving middleware
+    app.use(async (req, res, next) => {
+      if (!req.url.endsWith(".scroll")) return next()
+      res.setHeader("Content-Type", "text/plain; charset=utf-8")
+      next()
+    })
+
     // Serve static files from this.wwsDir
     app.use(express.static(this.wwsDir))
 
