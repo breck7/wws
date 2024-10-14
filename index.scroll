@@ -6,10 +6,16 @@ header.scroll
 # The World Wide Scroll
  style font-weight: 100; font-size: 400%;
 
+container 800px
+
 ## A successor to the web that is public domain, intelligent, and works offline
  style font-weight: 100; font-size: 200%;
 
-animation.scroll
+center
+table root.tsv
+ where tags includes featured
+  compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0"></iframe></div>
+   printColumn tag
 
 stripeButton.scroll
 
