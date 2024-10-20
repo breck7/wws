@@ -1,7 +1,3 @@
-editBaseUrl https://github.com/breck7/wws/blob/main
-
-editButton
-
 World Wide Scroll Release Notes
 ===============================
 A list of what has changed in WWS releases.
