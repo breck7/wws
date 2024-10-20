@@ -149,9 +149,9 @@ endColumns
 # Unfetched (${this.unfetchedFolders.length}): ${this.unfetchedFolders.map(folder => `${folder.name}`).join(" - ")}
 
 center
-viewSourceButton
+editButton
 scrollVersionLink
-viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
+editUrl https://github.com/breck7/wws/blob/main/wws.js
 `
     Disk.write(indexFile, content)
     await scrollCli.buildCommand(wwsDir)
@@ -220,7 +220,7 @@ viewSourceUrl https://github.com/breck7/wws/blob/main/wws.js
       this.log(`Updating ${folderName}`)
       child_process.execSync(`cd ${rootFolder} && git pull origin`)
     }
-    await scrollCli.buildCommand(rootFolder)
+    child_process.execSync(`cd ${rootFolder} && scroll list | scroll build`)
     // ditch subfolders?
     const settingsParticle = this.getFolderSettings(folder.name)
     settingsParticle
