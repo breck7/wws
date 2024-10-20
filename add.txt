@@ -1,4 +1,9 @@
+editBaseUrl https://github.com/breck7/wws/blob/main
+
+editButton
+
 WWS Registration Form
 =====================
 
+editButton
 Built with Scroll v141.3.1

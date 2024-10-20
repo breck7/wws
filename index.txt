@@ -1,3 +1,7 @@
+editBaseUrl https://github.com/breck7/wws/blob/main
+
+editButton
+
 The World Wide Scroll
 =====================
 

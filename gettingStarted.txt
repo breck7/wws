@@ -1,3 +1,7 @@
+editBaseUrl https://github.com/breck7/wws/blob/main
+
+editButton
+
 World Wide Scroll Getting Started Guide
 =======================================
 
@@ -64,4 +68,5 @@ Keeping WWS server running
 sudo npm install -g pm2
 pm2 start wws start
 
+editButton
 Built with Scroll v141.3.1

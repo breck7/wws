@@ -1,3 +1,7 @@
+editBaseUrl https://github.com/breck7/wws/blob/main
+
+editButton
+
 The World Wide Scroll Readme
 ============================
 
@@ -133,4 +137,5 @@ pldb,,"web source"
 breck,,"web source"
 scroll,,"web source"
 
+editButton
 Built with Scroll v141.3.1

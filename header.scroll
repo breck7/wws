@@ -3,12 +3,12 @@ baseUrl https://wws.scroll.pub/
 buildHtml
 buildTxt
 email wws@scroll.pub
-viewSourceBaseUrl https://github.com/breck7/wws/blob/main
+editBaseUrl https://github.com/breck7/wws/blob/main
 
 metaTags
 theme gazette
 homeButton
-viewSourceButton
+editButton
 copyButtons
 css html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}
 

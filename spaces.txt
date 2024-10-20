@@ -1,3 +1,7 @@
+editBaseUrl https://github.com/breck7/wws/blob/main
+
+editButton
+
 The *Scroll* for *Spaces*
 =========================
 
@@ -21,4 +25,5 @@ Includes 1 year standard hosting & support, and 10yr registration of root name o
 Buy now
  https://buy.stripe.com/eVacQy82Jez3a6AdRh Buy now
 
+editButton
 Built with Scroll v141.3.1
