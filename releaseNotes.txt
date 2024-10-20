@@ -12,6 +12,10 @@ Download as CSV | TSV | JSON
  https://wws.scroll.pub/releaseNotes.tsv TSV
  https://wws.scroll.pub/releaseNotes.json JSON
 
+0.21.0 10/19/2024
+=================
+🎉 update scroll
+
 0.20.0 10/14/2024
 =================
 🎉 added tags
