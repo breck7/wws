@@ -1,0 +1,13 @@
+buildTxt
+
+Below is the contents of this project/repo.
+
+Generate a beautiful readme.md file from this.
+
+codeFromFile readme.scroll
+codeFromFile releaseNotes.scroll
+codeFromFile gettingStarted.scroll
+codeFromFile commands.scroll
+codeFromFile clientInstall.scroll
+codeFromFile root.parsers
+codeFromFile root.scroll

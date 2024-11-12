@@ -32,26 +32,38 @@ WWS command line client one-liner install
 =========================================
 
 From npm:
+```
 sudo npm install -g @breck/wws
+```
 
 From source:
+```
 git clone https://github.com/breck7/wws && cd wws && npm install --omit=dev && sudo npm install --omit=dev -g . && wws
+```
 
 Fetch sites
 ===========
+```
 wws fetch scroll breck pldb
+```
 
 Start local server
 ==================
+```
 wws start
+```
 
 OR just open static files
 =========================
+```
 wws open 
+```
 
 Uninstalling
 ============
+```
 sudo npm uninstall -g wws
+```
 
 The WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js
@@ -59,8 +71,10 @@ The WWS client currently requires Node.js. More clients coming soon.
 Keeping WWS server running
 ==========================
 
+```
 sudo npm install -g pm2
 pm2 start wws start
+```
 
 Reserve your root name today!
 =============================
@@ -133,4 +147,4 @@ pldb,,"web source"
 breck,,"web source"
 scroll,,"web source"
 
-Built with Scroll v144.0.0
+Built with Scroll v148.1.0

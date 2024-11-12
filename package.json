@@ -1,6 +1,6 @@
 {
   "name": "@breck/wws",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "description": "The World Wide Scroll",
   "main": "wws.js",
   "engines": {
@@ -36,8 +36,8 @@
   "dependencies": {
     "express": "^4.21.1",
     "minimist": "^1.2.8",
-    "scroll-cli": "^144.0.0",
-    "scrollsdk": "^90.1.0"
+    "scroll-cli": "^148.1.0",
+    "scrollsdk": "^93.0.0"
   },
   "devDependencies": {
     "tap": "^18.7.2"
