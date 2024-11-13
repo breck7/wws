@@ -161,7 +161,7 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     const { wwsDir } = this
     const rootFilePath = path.join(__dirname, "root.scroll")
     const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
-    const { concepts } = wws
+    const { concepts } = wws.scrollProgram
     concepts.forEach(folder => (folder.fetched = Disk.exists(path.join(wwsDir, folder.name))))
     return concepts
   }
