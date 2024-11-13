@@ -78,4 +78,4 @@ sudo npm install -g pm2
 pm2 start wws start
 ```
 
-Built with Scroll v148.1.0
+Built with Scroll v150.0.0

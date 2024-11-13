@@ -9,7 +9,7 @@ descriptionParser
  description What is this folder about? Maximum 7 words.
  float sortIndex 1.001
 
-tagsParser
+wwsTagsParser
  cue tags
  extends abstractStringMeasureParser
  description What labels apply to this folder?
