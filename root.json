@@ -1,5 +1,17 @@
 [
   {
+    "name": "simoji",
+    "description": "Write simulations using emojis.",
+    "tags": "featured game science",
+    "web": "https://simoji.scroll.pub",
+    "source": "https://simoji.scroll.pub/simoji.scroll.pub.git",
+    "editor": "Breck Yunits",
+    "registered": "11/26/2024",
+    "expires": "11/26/2034",
+    "rep": "Breck Yunits",
+    "transactionId": "pm_1QPT5qJktJxKl0r5P6SuPhjI"
+  },
+  {
     "name": "wavewar",
     "description": "Save earth from invading drones with waves.",
     "tags": "featured game",

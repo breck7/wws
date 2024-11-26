@@ -4,6 +4,7 @@ The World Wide Scroll Readme
 A healthy, intelligent, trustworthy successor to the web that works offline.
 ============================================================================
 
+~simoji
 ~wavewar
 ~togger
 ~public
@@ -141,6 +142,7 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 Folders
 =======
 name,description,links
+simoji,Write simulations using emojis.,"web source"
 wavewar,Save earth from invading drones with waves.,"web source"
 togger,Live TV that connects you to humans.,"web source"
 public,A Public Domain Company,"web source"
