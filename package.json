@@ -36,7 +36,7 @@
   "dependencies": {
     "express": "^4.21.1",
     "minimist": "^1.2.8",
-    "scroll-cli": "^155.4.1",
+    "scroll-cli": "^155.4.2",
     "scrollsdk": "^95.0.1"
   },
   "devDependencies": {
