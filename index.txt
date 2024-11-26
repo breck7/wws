@@ -24,4 +24,4 @@ Buy root name with Credit Card
 Learn more
  https://wws.scroll.pub/readme.html Learn more
 
-Built with Scroll v155.4.1
+Built with Scroll v155.4.2
