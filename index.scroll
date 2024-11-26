@@ -6,20 +6,25 @@ header.scroll
 # The World Wide Scroll
  style font-weight: 100; font-size: 400%;
 
-container 800px
+container 880px
 
 ## A successor to the web that is public domain, intelligent, and works offline
- style font-weight: 100; font-size: 200%;
+ style font-weight: 300; font-size: 200%;
 
+# *Reading* The Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
+ style font-weight: 300;
 center
-table root.tsv
- where tags includes featured
-  compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0"></iframe></div>
-   printColumn tag
+root.tsv
+ limit 7
+  where tags includes featured
+   compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0"></iframe></div>
+    printColumn tag
 
+# *Writing* The Scroll is done by a community of *root name owners*. Become one:
+ style font-weight: 300;
 stripeButton.scroll
 
-Readme
+Learn more
  center
  style color:grey;
  readme.html

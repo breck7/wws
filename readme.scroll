@@ -1,5 +1,5 @@
 description DESCRIPTION
-replace DESCRIPTION A non-toxic, intelligent, trustworthy successor to the web that works offline.
+replace DESCRIPTION A healthy, intelligent, trustworthy successor to the web that works offline.
 title The World Wide Scroll Readme
 
 header.scroll
@@ -8,12 +8,12 @@ printTitle
 
 # DESCRIPTION
 
+container 800px
+
 center
-table root.tsv
+root.tsv
  compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0"></iframe></div>
   printColumn tag
-
-container 800px
 
 # Why build this?
 To provide every human with their own copy of humanity's most intelligent information.
@@ -69,8 +69,8 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
  link root.json JSON
 
 # Folders
-table root.tsv
- select name title web source
+root.tsv
+ select name description web source
   links web source
    printTable
 

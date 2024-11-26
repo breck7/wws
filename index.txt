@@ -4,19 +4,24 @@ The World Wide Scroll
 A successor to the web that is public domain, intelligent, and works offline
 ============================================================================
 
+*Reading* The Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
+==============================================================================
+~wavewar
+~togger
 ~public
 ~wifinder
 ~news
 ~pldb
-~breck
-~scroll
+
+*Writing* The Scroll is done by a community of *root name owners*. Become one:
+==============================================================================
 
 Buy root name with Crypto
  https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
 Buy root name with Credit Card
  https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name with Credit Card
 
-Readme
- https://wws.scroll.pub/readme.html Readme
+Learn more
+ https://wws.scroll.pub/readme.html Learn more
 
-Built with Scroll v151.0.0
+Built with Scroll v155.4.1

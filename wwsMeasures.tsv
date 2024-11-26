@@ -1,12 +1,12 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Cue
-name	7	100%	What is the folder name?	public	string		1	false	true	true	name
-description	7	100%	What is this folder about? Maximum 7 words.	A Public Domain Company	string		1.001	false			description
-tags	7	100%	What labels apply to this folder?	companyHomepage featured	string		1.002	false			tags
-web	7	100%	What is the URL to this folder on the World Wide Web?	https://publicdomaincompany.com	string		1.01	false			
-source	7	100%	What is the URL to the source code for this folder?	https://publicdomaincompany.com/publicdomaincompany.com.git	string		1.02	false			
-editor	7	100%	What is the real name of the editor of this folder?	Breck Yunits	string		1.1	false			
+name	9	100%	What is the folder name?	wavewar	string		1	false	true	true	name
+description	9	100%	What is this folder about? Maximum 7 words.	Save earth from invading drones with waves.	string		1.001	false			description
+tags	9	100%	What labels apply to this folder?	featured game	string		1.002	false			tags
+web	9	100%	What is the URL to this folder on the World Wide Web?	https://wavewar.space	string		1.01	false			
+source	9	100%	What is the URL to the source code for this folder?	https://wavewar.space/wavewar.space.git	string		1.02	false			
+editor	9	100%	What is the real name of the editor of this folder?	Breck Yunits	string		1.1	false			
 editor_email	0	0%	What is the email address of the editor of this folder?		text		1.11	false			email
-registered	7	100%	On what day was this folder name first registered?	10/10/2024	string		1.3	false			
-expires	7	100%	On what day does this registration expire?	10/10/2034	string		1.4	false			
-rep	7	100%	Which WWS rep onboarded this folder?	Breck Yunits	string		1.5	false			
-transactionId	7	100%	What is the payment transaction id for this purchase?	pi_3Q8SqRJktJxKl0r50QNBJBv1	string		1.5	false			
+registered	9	100%	On what day was this folder name first registered?	11/26/2024	string		1.3	false			
+expires	9	100%	On what day does this registration expire?	11/26/2034	string		1.4	false			
+rep	9	100%	Which WWS rep onboarded this folder?	Breck Yunits	string		1.5	false			
+transactionId	9	100%	What is the payment transaction id for this purchase?	pm_1QPSGHJktJxKl0r521XUJLOx	string		1.5	false			

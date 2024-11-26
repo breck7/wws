@@ -4,7 +4,7 @@ Generate a beautiful readme.md file from this.
 
 ```readme.scroll
 description DESCRIPTION
-replace DESCRIPTION A non-toxic, intelligent, trustworthy successor to the web that works offline.
+replace DESCRIPTION A healthy, intelligent, trustworthy successor to the web that works offline.
 title The World Wide Scroll Readme
 
 header.scroll
@@ -13,12 +13,12 @@ printTitle
 
 # DESCRIPTION
 
+container 800px
+
 center
-table root.tsv
+root.tsv
  compose tag ~{name}
   printColumn tag
-
-container 800px
 
 # Why build this?
 To provide every human with their own copy of humanity's most intelligent information.
@@ -74,8 +74,8 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
  link root.json JSON
 
 # Folders
-table root.tsv
- select name title web source
+root.tsv
+ select name description web source
   links web source
    printTable
 
@@ -102,6 +102,10 @@ br
 node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns 1
+
+📦 0.23.0 11/26/2024
+🎉 updated scroll
+🎉 updated scrollsdk
 
 📦 0.22.0 11/12/2024
 🎉 updated scroll
@@ -343,6 +347,30 @@ buildMeasures wwsMeasures.tsv
 // The World Wide Scroll Root File
 
 root.parsers
+
+name wavewar
+description Save earth from invading drones with waves.
+tags featured game
+web https://wavewar.space
+source https://wavewar.space/wavewar.space.git
+editor Breck Yunits
+ email breck7@gmail.com
+registered 11/26/2024
+expires 11/26/2034
+rep Breck Yunits
+transactionId pm_1QPSGHJktJxKl0r521XUJLOx
+
+name togger
+description Live TV that connects you to humans.
+tags featured social
+web https://togger.com
+source https://togger.com/togger.com.git
+editor Breck Yunits
+ email breck7@gmail.com
+registered 11/26/2024
+expires 11/26/2034
+rep Breck Yunits
+transactionId pi_3QPS3bJktJxKl0r50euUafo7
 
 name public
 description A Public Domain Company

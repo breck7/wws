@@ -1,9 +1,11 @@
 The World Wide Scroll Readme
 ============================
 
-A non-toxic, intelligent, trustworthy successor to the web that works offline.
-==============================================================================
+A healthy, intelligent, trustworthy successor to the web that works offline.
+============================================================================
 
+~wavewar
+~togger
 ~public
 ~wifinder
 ~news
@@ -138,13 +140,15 @@ Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
 
 Folders
 =======
-name,title,links
-public,,"web source"
-wifinder,,"web source"
-news,,"web source"
-zombo,,"web source"
-pldb,,"web source"
-breck,,"web source"
-scroll,,"web source"
+name,description,links
+wavewar,Save earth from invading drones with waves.,"web source"
+togger,Live TV that connects you to humans.,"web source"
+public,A Public Domain Company,"web source"
+wifinder,WiFinder: find great wifi near you,"web source"
+news,BuilderNews: Watch people try web creations,"web source"
+zombo,You can do anything.,"web source"
+pldb,A Programming Language DataBase,"web source"
+breck,Breck's Blog,"web source"
+scroll,A language for scientists of all ages,"web source"
 
-Built with Scroll v151.0.0
+Built with Scroll v155.4.1

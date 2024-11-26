@@ -1,5 +1,29 @@
 [
   {
+    "name": "wavewar",
+    "description": "Save earth from invading drones with waves.",
+    "tags": "featured game",
+    "web": "https://wavewar.space",
+    "source": "https://wavewar.space/wavewar.space.git",
+    "editor": "Breck Yunits",
+    "registered": "11/26/2024",
+    "expires": "11/26/2034",
+    "rep": "Breck Yunits",
+    "transactionId": "pm_1QPSGHJktJxKl0r521XUJLOx"
+  },
+  {
+    "name": "togger",
+    "description": "Live TV that connects you to humans.",
+    "tags": "featured social",
+    "web": "https://togger.com",
+    "source": "https://togger.com/togger.com.git",
+    "editor": "Breck Yunits",
+    "registered": "11/26/2024",
+    "expires": "11/26/2034",
+    "rep": "Breck Yunits",
+    "transactionId": "pi_3QPS3bJktJxKl0r50euUafo7"
+  },
+  {
     "name": "public",
     "description": "A Public Domain Company",
     "tags": "companyHomepage featured",
