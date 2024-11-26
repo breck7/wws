@@ -113,7 +113,7 @@ center
 Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/${this.folders.length} folders fetched. WWS version: ${WWS_VERSION}.
 
 // todo: fix root includes in scroll and remove below.
-${fs.readFileSync("header.scroll")}
+${fs.readFileSync(path.join(__dirname, "header.scroll"))}
 
 center
 table
@@ -217,7 +217,7 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     if (!Disk.exists(rootFolder)) {
       this.log(`Fetching ${folderName}`)
       Disk.mkdir(rootFolder)
-      const cloneCommand = `git clone ${gitSource} ${rootFolder}`
+      const cloneCommand = `git clone --single-branch ${gitSource} ${rootFolder}`
       console.log(cloneCommand)
       child_process.execSync(cloneCommand)
     } else {
@@ -236,7 +236,7 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
         console.log(`Updating subfolder '${subfolderName}'`)
         if (!Disk.exists(subfolderPath)) {
           Disk.mkdir(subfolderPath)
-          child_process.execSync(`git ${sourceRepo} ${subfolderPath}`)
+          child_process.execSync(`git clone --single-branch ${sourceRepo} ${subfolderPath}`)
         } else child_process.execSync(`cd ${subfolderPath} && git pull origin`)
       })
   }

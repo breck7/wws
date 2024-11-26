@@ -12,13 +12,6 @@ editButton
 copyButtons
 css html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}
 
-iframeThumbsParser
- extends iframesParser
- javascript
-  compile () {
-    return this.atoms.slice(1).map(url => `<div class="iframeHolder"><iframe src="${url}" frameborder="0"></iframe></div>`).join("\n")
-  }
-
 css
  iframe {
    width: 800px;
