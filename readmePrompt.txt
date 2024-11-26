@@ -103,6 +103,10 @@ node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns 1
 
+📦 0.25.0 11/26/2024
+🎉 much faster now (just clone a single branch)
+🎉 updated scroll
+
 📦 0.24.0 11/26/2024
 🎉 if you just type `wws [folderName]` it will run fetch
 
