@@ -120,7 +120,7 @@ table
  data
   rootName
   ${this.fetchedFolders.map(folder => folder.name).join("\n  ")}
- compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">~{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0"></iframe></div>
+ compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">~{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0" allow="geolocation 'none'"></iframe></div>
   printColumn tag
 
 wwsSnippetsParser
