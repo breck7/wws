@@ -104,6 +104,7 @@ node_modules/scroll-cli/microlangs/changes.parsers
 thinColumns 1
 
 📦 0.23.0 11/26/2024
+🎉 if you just type `wws [folderName]` it will run fetch
 🎉 updated scroll
 🎉 updated scrollsdk
 

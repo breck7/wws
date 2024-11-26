@@ -10,6 +10,7 @@ Download as CSV | TSV | JSON
 
 0.23.0 11/26/2024
 =================
+🎉 if you just type `wws [folderName]` it will run fetch
 🎉 updated scroll
 🎉 updated scrollsdk
 
