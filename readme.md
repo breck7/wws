@@ -1,6 +1,6 @@
 # The World Wide Scroll Readme
 
-A non-toxic, intelligent, trustworthy successor to the web that works offline.
+A healthy, intelligent, trustworthy successor to the web that works offline.
 
 ## Why build this?
 
