@@ -17,7 +17,7 @@ center
 root.tsv
  limit 7
   where tags includes featured
-   compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0"></iframe></div>
+   compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0" allow="geolocation 'none'"></iframe></div>
     printColumn tag
 
 # *Writing* The Scroll is done by a community of *root name owners*. Become one:
