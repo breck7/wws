@@ -203,9 +203,13 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     return new Particle(Disk.read(wwsFile))
   }
 
+  getFolder(folderName) {
+    return this.folders.find(folder => folder.name === folderName)
+  }
+
   async fetchFolder(folderName) {
     const { wwsDir } = this
-    const folder = this.folders.find(folder => folder.name === folderName)
+    const folder = this.getFolder(folderName)
     if (!folder) return this.log(`\n👎 No root folder '${folderName}' found.`)
     // mkdir the folder if it doesn't exist:
     const rootFolder = path.join(wwsDir, folder.name)
@@ -242,7 +246,12 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     const command = args[0]
     const commandName = `${command}${this.CommandFnDecoratorSuffix}`
     if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](args.slice(1))
-    else if (command) this.log(`No command '${command}'. Running help command.`)
+    else if (command) {
+      const folder = this.getFolder(command)
+      if (folder)
+        return this.fetchCommand([command])
+      this.log(`No command '${command}'. Running help command.`)
+    }
     else this.log(`No command provided. Running help command.`)
     return this.helpCommand()
   }
