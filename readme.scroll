@@ -31,26 +31,19 @@ The WWS is like the World Wide Web, except:
 
 clientInstall.scroll
 
-# Reserve your root name today!
+# Register root names today!
 The World Wide Scroll beta is live!
 
-You can now reserve a root name on The Scroll!
+Scroll Alliance members can now register root names on The Scroll!
+ https://alliance.scroll.pub/ Scroll Alliance members
 
-When you buy a root name, you get to name and edit a root "folder" in the World Wide Scroll.
+When you register a root name, you get to name and edit a root "folder" in the World Wide Scroll.
 
 A root folder is just a few lines of data about your folder and where the files reside, that is written to the root.scroll file.
  link root.scroll root.scroll
 
-Revenue from root name sales go toward the development of The Scroll ecosystem including funds to "WWS Reps" who help onboard and maintain the community.
-
-stripeButton.scroll
-
-After you buy your root name, check out the Getting Started Guide.
+When you are ready to register your root name(s), check out the Getting Started Guide.
  gettingStarted.html Getting Started Guide
-
-finePrint.scroll
-
-stripeButton.scroll
 
 # Values
 Craftsmanship, truth, courage, laughter, intelligence, science and love.

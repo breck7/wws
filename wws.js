@@ -31,6 +31,7 @@ class WWSCli extends SimpleCLI {
 
   server = null
   async startCommand() {
+    await this.init()
     const app = express()
     const port = 80
 
@@ -88,15 +89,30 @@ class WWSCli extends SimpleCLI {
     })
   }
 
-  init() {
+  async loadFolders() {
     const { wwsDir } = this
-    if (Disk.exists(wwsDir)) return true
+    const rootFilePath = path.join(__dirname, "root.scroll")
+    const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
+    await wws.fuse()
+    await wws.scrollProgram.load()
+    const { concepts } = wws.scrollProgram
+    concepts.forEach(folder => (folder.fetched = Disk.exists(path.join(wwsDir, folder.name))))
+    this.folders = concepts
+  }
+
+  async init() {
+    const { wwsDir } = this
+    if (Disk.exists(wwsDir)) {
+      await this.loadFolders()
+      return true
+    }
 
     Disk.mkdir(wwsDir)
     const initFolder = {
       "index.scroll": `The World Wide Scroll\n`
     }
     Disk.writeObjectToDisk(wwsDir, initFolder)
+    await this.loadFolders()
     return this.log(`\n👍 Initialized new WWS copy in '${wwsDir}'.`)
   }
 
@@ -157,15 +173,6 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     await scrollCli.buildCommand(wwsDir)
   }
 
-  get folders() {
-    const { wwsDir } = this
-    const rootFilePath = path.join(__dirname, "root.scroll")
-    const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
-    const { concepts } = wws.scrollProgram
-    concepts.forEach(folder => (folder.fetched = Disk.exists(path.join(wwsDir, folder.name))))
-    return concepts
-  }
-
   get fetchedFolders() {
     return this.folders.filter(folder => folder.fetched)
   }
@@ -174,7 +181,8 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     return this.folders.filter(folder => !folder.fetched)
   }
 
-  listCommand() {
+  async listCommand() {
+    await this.init()
     const table = new Particle(
       this.folders.map(folder => {
         const { fetched, name, description } = folder
@@ -242,22 +250,21 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
   }
 
   // todo: upstream this
-  executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
+  async executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
+    await this.init()
     const command = args[0]
     const commandName = `${command}${this.CommandFnDecoratorSuffix}`
     if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](args.slice(1))
     else if (command) {
       const folder = this.getFolder(command)
-      if (folder)
-        return this.fetchCommand([command])
+      if (folder) return this.fetchCommand([command])
       this.log(`No command '${command}'. Running help command.`)
-    }
-    else this.log(`No command provided. Running help command.`)
+    } else this.log(`No command provided. Running help command.`)
     return this.helpCommand()
   }
 
   async fetchCommand(folderNames) {
-    this.init()
+    await this.init()
     const { wwsDir, fetchedFolders } = this
     if (!folderNames.length) await Promise.all(fetchedFolders.map(async folder => await this.fetchFolder(folder.name)))
     else folderNames.forEach(folderName => this.fetchFolder(folderName))
@@ -295,9 +302,9 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
   //   this.buildIndexPage()
   // }
 
-  openCommand() {
+  async openCommand() {
     // Trigger the terminal to run "open index.html", opening the users web browser:
-    this.init()
+    await this.init()
     const { wwsDir, isLocalServerRunning } = this
     const indexHtml = path.join(wwsDir, "index.html")
     const url = isLocalServerRunning ? "http://scroll/" : indexHtml
