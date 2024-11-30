@@ -13,15 +13,11 @@ A successor to the web that is public domain, intelligent, and works offline
 ~wifinder
 ~news
 
-*Writing* The Scroll is done by a community of *root name owners*. Become one:
-==============================================================================
-
-Buy root name with Crypto
- https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
-Buy root name with Credit Card
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name with Credit Card
+*Writing* Folders on The Scroll are created and maintained by Scroll Alliance members.
+ https://alliance.scroll.pub/ Scroll Alliance members
+============================================================================================================================================
 
 Learn more
  https://wws.scroll.pub/readme.html Learn more
 
-Built with Scroll v155.4.2
+Built with Scroll v158.0.4

@@ -8,6 +8,10 @@ Download as CSV | TSV | JSON
  https://wws.scroll.pub/releaseNotes.tsv TSV
  https://wws.scroll.pub/releaseNotes.json JSON
 
+0.26.0 11/30/2024
+=================
+🎉 updated scroll and ScrollSDK
+
 0.25.0 11/26/2024
 =================
 🎉 much faster now (just clone a single branch)

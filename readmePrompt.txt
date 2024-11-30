@@ -36,26 +36,19 @@ The WWS is like the World Wide Web, except:
 
 clientInstall.scroll
 
-# Reserve your root name today!
+# Register root names today!
 The World Wide Scroll beta is live!
 
-You can now reserve a root name on The Scroll!
+Scroll Alliance members can now register root names on The Scroll!
+ https://alliance.scroll.pub/ Scroll Alliance members
 
-When you buy a root name, you get to name and edit a root "folder" in the World Wide Scroll.
+When you register a root name, you get to name and edit a root "folder" in the World Wide Scroll.
 
 A root folder is just a few lines of data about your folder and where the files reside, that is written to the root.scroll file.
  link root.scroll root.scroll
 
-Revenue from root name sales go toward the development of The Scroll ecosystem including funds to "WWS Reps" who help onboard and maintain the community.
-
-stripeButton.scroll
-
-After you buy your root name, check out the Getting Started Guide.
+When you are ready to register your root name(s), check out the Getting Started Guide.
  gettingStarted.html Getting Started Guide
-
-finePrint.scroll
-
-stripeButton.scroll
 
 # Values
 Craftsmanship, truth, courage, laughter, intelligence, science and love.
@@ -102,6 +95,9 @@ br
 node_modules/scroll-cli/microlangs/changes.parsers
 
 thinColumns 1
+
+📦 0.26.0 11/30/2024
+🎉 updated scroll and ScrollSDK
 
 📦 0.25.0 11/26/2024
 🎉 much faster now (just clone a single branch)
@@ -185,9 +181,10 @@ printTitle
 
 mediumColumns 1
 
-After you've purchased your Scroll Name, a WWS Rep will reach out to you via the email you provided at checkout to help onboard your work to the WWS.
+So you've joined The Scroll Alliance and want to register root names on The Scroll. This guide is for you!
+ https://alliance.scroll.pub/ The Scroll Alliance
 
-While you wait for their email, follow this guide to get your site ready for the World Wide Scroll.
+Follow this guide to get your site ready for the World Wide Scroll.
 
 # How to Get Your Site Ready for the World Wide Scroll
 The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and human-first alternative to the World Wide Web. As you prepare your site for the WWS, keep the following guidelines in mind:
@@ -197,7 +194,7 @@ The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and h
 
 2. *Open Source and Public Domain*: The WWS is designed for a post-copyright world and all content on the WWS is open-source and public domain.
 
-3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like GitHub and GitLab offer free hosting for open-source projects. ScrollHub (beta) is another fast option you could use.
+3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like ScrollHub, GitHub and GitLab offer free hosting for open-source projects.
  https://github.com GitHub
  https://gitlab.com GitLab
  https://hub.scroll.pub/ ScrollHub
@@ -205,6 +202,8 @@ The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and h
 4. *Design for Offline Use*: Your site should function fully offline. Avoid using external JavaScript, images, or assets that require an internet connection. Ensure all necessary files are included in your Git repo. For large files, such as videos, linking to external sites is acceptable, but avoid adding unnecessarily large files directly to your repo.
 
 5. *No Ads or Trackers*: While commercial sites and sponsorships are welcome on the WWS, any form of JavaScript trackers or advertising is prohibited. Ensure your site is free from ads and trackers to maintain the integrity and privacy of the WWS.
+
+6. *Launch your folder*: When you are ready to submit your folder, simply submit your `root.scroll` additions as a pull request, via email, or on ScrollHub.
 
 If you need _any_ help with these guidelines, share your issue on github.com/breck7/wws/issues or r/WorldWideScroll or Twitter.
  https://www.reddit.com/r/WorldWideScroll/ r/WorldWideScroll
@@ -314,36 +313,14 @@ sourceParser
  description What is the URL to the source code for this folder?
  float sortIndex 1.02
 
-editorParser
- // required
- extends abstractStringMeasureParser
- description What is the real name of the editor of this folder?
- float sortIndex 1.1
- editorEmailParser
-  // required
-  cue email
-  extends abstractStringMeasureParser
-  description What is the email address of the editor of this folder?
-  float sortIndex 1.11
-
 registeredParser
  extends abstractStringMeasureParser
  description On what day was this folder name first registered?
  float sortIndex 1.3
 
-expiresParser
+ownerParser
  extends abstractStringMeasureParser
- description On what day does this registration expire?
- float sortIndex 1.4
-
-repParser
- extends abstractStringMeasureParser
- description Which WWS rep onboarded this folder?
- float sortIndex 1.5
-
-transactionIdParser
- extends abstractStringMeasureParser
- description What is the payment transaction id for this purchase?
+ description Which Scroll Alliance member owns this folder?
  float sortIndex 1.5
 
 ```
@@ -360,119 +337,79 @@ description Write simulations using emojis.
 tags featured game science
 web https://simoji.scroll.pub
 source https://simoji.scroll.pub/simoji.scroll.pub.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 11/26/2024
-expires 11/26/2034
-rep Breck Yunits
-transactionId pm_1QPT5qJktJxKl0r5P6SuPhjI
+owner breck7@gmail.com
 
 name wavewar
 description Save earth from invading drones with waves.
 tags featured game
 web https://wavewar.space
 source https://wavewar.space/wavewar.space.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 11/26/2024
-expires 11/26/2034
-rep Breck Yunits
-transactionId pm_1QPSGHJktJxKl0r521XUJLOx
+owner breck7@gmail.com
 
 name togger
 description Live TV that connects you to humans.
 tags featured social
 web https://togger.com
 source https://togger.com/togger.com.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 11/26/2024
-expires 11/26/2034
-rep Breck Yunits
-transactionId pi_3QPS3bJktJxKl0r50euUafo7
+owner breck7@gmail.com
 
 name public
 description A Public Domain Company
 tags companyHomepage featured
 web https://publicdomaincompany.com
 source https://publicdomaincompany.com/publicdomaincompany.com.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 10/10/2024
-expires 10/10/2034
-rep Breck Yunits
-transactionId pi_3Q8SqRJktJxKl0r50QNBJBv1
+owner breck7@gmail.com
 
 name wifinder
 description WiFinder: find great wifi near you
 tags maps featured
 web https://wifinder.wiki
 source https://wifinder.wiki/wifinder.wiki.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 10/02/2024
-expires 10/02/2034
-rep Breck Yunits
-transactionId pm_1Q5Y9HJktJxKl0r5jeY4nOdh
+owner breck7@gmail.com
 
 name news
 description BuilderNews: Watch people try web creations
 tags forums featured
 web https://news.pub
 source https://news.pub/news.pub.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 9/22/2024
-expires 9/22/2034
-rep Breck Yunits
-transactionId pm_1Q1qilJktJxKl0r5ASsCMZ5K
+owner breck7@gmail.com
 
 name zombo
 description You can do anything.
 tags funny
 web https://zombo.togger.com
 source http://zombo.togger.com/zombo.togger.com.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 9/14/2024
-expires 9/14/2034
-rep Breck Yunits
-transactionId pm_1Pz4fFJktJxKl0r537cx4sCs
+owner breck7@gmail.com
 
 name pldb
 description A Programming Language DataBase
 tags programming knowledgeBase programmingLanguages featured
 web https://pldb.io
 source https://pldb.io/pldb.io.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
+owner breck7@gmail.com
 
 name breck
 description Breck's Blog
 tags personalHomepage blog featured
 web https://breckyunits.com
 source https://breckyunits.com/breckyunits.com.git
-editor Breck Yunits
- email breck7@gmail.com
 registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
+owner breck7@gmail.com
 
 name scroll
 description A language for scientists of all ages
 tags projectHomepage programming programmingLanguages featured
 web https://scroll.pub
 source https://github.com/breck7/scroll
-editor Breck Yunits
- email breck7@gmail.com
 registered 6/12/2024
-expires 6/12/2034
-rep Breck Yunits
-transactionId pm_1PQxCOJktJxKl0r5l24p6Zwu
+owner breck7@gmail.com
 
 ```

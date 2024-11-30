@@ -25,34 +25,12 @@ sourceParser
  description What is the URL to the source code for this folder?
  float sortIndex 1.02
 
-editorParser
- // required
- extends abstractStringMeasureParser
- description What is the real name of the editor of this folder?
- float sortIndex 1.1
- editorEmailParser
-  // required
-  cue email
-  extends abstractStringMeasureParser
-  description What is the email address of the editor of this folder?
-  float sortIndex 1.11
-
 registeredParser
  extends abstractStringMeasureParser
  description On what day was this folder name first registered?
  float sortIndex 1.3
 
-expiresParser
+ownerParser
  extends abstractStringMeasureParser
- description On what day does this registration expire?
- float sortIndex 1.4
-
-repParser
- extends abstractStringMeasureParser
- description Which WWS rep onboarded this folder?
- float sortIndex 1.5
-
-transactionIdParser
- extends abstractStringMeasureParser
- description What is the payment transaction id for this purchase?
+ description Which Scroll Alliance member owns this folder?
  float sortIndex 1.5

@@ -79,47 +79,20 @@ sudo npm install -g pm2
 pm2 start wws start
 ```
 
-Reserve your root name today!
-=============================
+Register root names today!
+==========================
 The World Wide Scroll beta is live!
 
-You can now reserve a root name on The Scroll!
+Scroll Alliance members can now register root names on The Scroll!
+ https://alliance.scroll.pub/ Scroll Alliance members
 
-When you buy a root name, you get to name and edit a root "folder" in the World Wide Scroll.
+When you register a root name, you get to name and edit a root "folder" in the World Wide Scroll.
 
 A root folder is just a few lines of data about your folder and where the files reside, that is written to the root.scroll file.
  https://wws.scroll.pub/root.scroll root.scroll
 
-Revenue from root name sales go toward the development of The Scroll ecosystem including funds to "WWS Reps" who help onboard and maintain the community.
-
-Buy root name with Crypto
- https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
-Buy root name with Credit Card
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name with Credit Card
-
-After you buy your root name, check out the Getting Started Guide.
+When you are ready to register your root name(s), check out the Getting Started Guide.
  https://wws.scroll.pub/gettingStarted.html Getting Started Guide
-
-Fine Print
-==========
-- A purchase gives you the rights to control a number of lines in `root.scroll`, including choosing one unique unclaimed alpha-numeric id which is the name of your root folder, as well as rights to update that folder information for ten years and renewal rights.
- - At any time you may change your folder name to a different unclaimed alpha-numeric id.
-- All updates are subject to approval by the World Wide Scroll reps.
-- WWS Folders can only be reserved by individuals.
-- The WWS is for high quality, non-anonymous content.
- - You must use your real name and a real email address when registering a folder.
-  - This information will be publicly visible in root file (`root.scroll`).
-- Limit 10 folders per person.
- - The WWS discourages name squatting and content not edited by humans.
- - If you maintain high quality folders and hit the limit, you can request a higher limit.
-- Changes to your folder information may be made by pull request or communicated to your WWS rep via email.
-- Folders must adhere to the Guidelines
- https://wws.scroll.pub/gettingStarted.html Guidelines
-
-Buy root name with Crypto
- https://commerce.coinbase.com/checkout/1373f33e-e662-45ac-9ec0-dbd18d991e8f Buy root name with Crypto
-Buy root name with Credit Card
- https://buy.stripe.com/cN2dUC82JaiNbaEfZn Buy root name with Credit Card
 
 Values
 ======
@@ -153,4 +126,4 @@ pldb,A Programming Language DataBase,"web source"
 breck,Breck's Blog,"web source"
 scroll,A language for scientists of all ages,"web source"
 
-Built with Scroll v155.4.2
+Built with Scroll v158.0.4

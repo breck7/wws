@@ -5,11 +5,8 @@
     "tags": "featured game science",
     "web": "https://simoji.scroll.pub",
     "source": "https://simoji.scroll.pub/simoji.scroll.pub.git",
-    "editor": "Breck Yunits",
     "registered": "11/26/2024",
-    "expires": "11/26/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1QPT5qJktJxKl0r5P6SuPhjI"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "wavewar",
@@ -17,11 +14,8 @@
     "tags": "featured game",
     "web": "https://wavewar.space",
     "source": "https://wavewar.space/wavewar.space.git",
-    "editor": "Breck Yunits",
     "registered": "11/26/2024",
-    "expires": "11/26/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1QPSGHJktJxKl0r521XUJLOx"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "togger",
@@ -29,11 +23,8 @@
     "tags": "featured social",
     "web": "https://togger.com",
     "source": "https://togger.com/togger.com.git",
-    "editor": "Breck Yunits",
     "registered": "11/26/2024",
-    "expires": "11/26/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pi_3QPS3bJktJxKl0r50euUafo7"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "public",
@@ -41,11 +32,8 @@
     "tags": "companyHomepage featured",
     "web": "https://publicdomaincompany.com",
     "source": "https://publicdomaincompany.com/publicdomaincompany.com.git",
-    "editor": "Breck Yunits",
     "registered": "10/10/2024",
-    "expires": "10/10/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pi_3Q8SqRJktJxKl0r50QNBJBv1"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "wifinder",
@@ -53,11 +41,8 @@
     "tags": "maps featured",
     "web": "https://wifinder.wiki",
     "source": "https://wifinder.wiki/wifinder.wiki.git",
-    "editor": "Breck Yunits",
     "registered": "10/02/2024",
-    "expires": "10/02/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1Q5Y9HJktJxKl0r5jeY4nOdh"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "news",
@@ -65,11 +50,8 @@
     "tags": "forums featured",
     "web": "https://news.pub",
     "source": "https://news.pub/news.pub.git",
-    "editor": "Breck Yunits",
     "registered": "9/22/2024",
-    "expires": "9/22/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1Q1qilJktJxKl0r5ASsCMZ5K"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "zombo",
@@ -77,11 +59,8 @@
     "tags": "funny",
     "web": "https://zombo.togger.com",
     "source": "http://zombo.togger.com/zombo.togger.com.git",
-    "editor": "Breck Yunits",
     "registered": "9/14/2024",
-    "expires": "9/14/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1Pz4fFJktJxKl0r537cx4sCs"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "pldb",
@@ -89,11 +68,8 @@
     "tags": "programming knowledgeBase programmingLanguages featured",
     "web": "https://pldb.io",
     "source": "https://pldb.io/pldb.io.git",
-    "editor": "Breck Yunits",
     "registered": "6/12/2024",
-    "expires": "6/12/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "breck",
@@ -101,11 +77,8 @@
     "tags": "personalHomepage blog featured",
     "web": "https://breckyunits.com",
     "source": "https://breckyunits.com/breckyunits.com.git",
-    "editor": "Breck Yunits",
     "registered": "6/12/2024",
-    "expires": "6/12/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "scroll",
@@ -113,10 +86,7 @@
     "tags": "projectHomepage programming programmingLanguages featured",
     "web": "https://scroll.pub",
     "source": "https://github.com/breck7/scroll",
-    "editor": "Breck Yunits",
     "registered": "6/12/2024",
-    "expires": "6/12/2034",
-    "rep": "Breck Yunits",
-    "transactionId": "pm_1PQxCOJktJxKl0r5l24p6Zwu"
+    "owner": "breck7@gmail.com"
   }
 ]
