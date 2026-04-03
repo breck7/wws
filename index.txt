@@ -7,11 +7,11 @@ A successor to the web that is public domain, intelligent, and works offline
 *Reading* The Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
 ==============================================================================
 ~simoji
-~wavewar
-~togger
-~public
 ~wifinder
 ~news
+~pldb
+~breck
+~scroll
 
 *Writing* Folders on The Scroll are created and maintained by Scroll Alliance members.
  https://alliance.scroll.pub/ Scroll Alliance members

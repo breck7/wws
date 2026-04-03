@@ -5,12 +5,8 @@ A healthy, intelligent, trustworthy successor to the web that works offline.
 ============================================================================
 
 ~simoji
-~wavewar
-~togger
-~public
 ~wifinder
 ~news
-~zombo
 ~pldb
 ~breck
 ~scroll
@@ -116,12 +112,8 @@ Folders
 =======
 name,description,links
 simoji,Write simulations using emojis.,"web source"
-wavewar,Save earth from invading drones with waves.,"web source"
-togger,Live TV that connects you to humans.,"web source"
-public,A Public Domain Company,"web source"
 wifinder,WiFinder: find great wifi near you,"web source"
 news,BuilderNews: Watch people try web creations,"web source"
-zombo,You can do anything.,"web source"
 pldb,A Programming Language DataBase,"web source"
 breck,Breck's Blog,"web source"
 scroll,A language for scientists of all ages,"web source"

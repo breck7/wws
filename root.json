@@ -4,35 +4,8 @@
     "description": "Write simulations using emojis.",
     "tags": "featured game science",
     "web": "https://simoji.scroll.pub",
-    "source": "https://simoji.scroll.pub/simoji.scroll.pub.git",
+    "source": "https://github.com/breck7/simoji",
     "registered": "11/26/2024",
-    "owner": "breck7@gmail.com"
-  },
-  {
-    "name": "wavewar",
-    "description": "Save earth from invading drones with waves.",
-    "tags": "featured game",
-    "web": "https://wavewar.space",
-    "source": "https://wavewar.space/wavewar.space.git",
-    "registered": "11/26/2024",
-    "owner": "breck7@gmail.com"
-  },
-  {
-    "name": "togger",
-    "description": "Live TV that connects you to humans.",
-    "tags": "featured social",
-    "web": "https://togger.com",
-    "source": "https://togger.com/togger.com.git",
-    "registered": "11/26/2024",
-    "owner": "breck7@gmail.com"
-  },
-  {
-    "name": "public",
-    "description": "A Public Domain Company",
-    "tags": "companyHomepage featured",
-    "web": "https://publicdomaincompany.com",
-    "source": "https://publicdomaincompany.com/publicdomaincompany.com.git",
-    "registered": "10/10/2024",
     "owner": "breck7@gmail.com"
   },
   {
@@ -40,7 +13,7 @@
     "description": "WiFinder: find great wifi near you",
     "tags": "maps featured",
     "web": "https://wifinder.wiki",
-    "source": "https://wifinder.wiki/wifinder.wiki.git",
+    "source": "https://github.com/breck7/wifinder",
     "registered": "10/02/2024",
     "owner": "breck7@gmail.com"
   },
@@ -49,17 +22,8 @@
     "description": "BuilderNews: Watch people try web creations",
     "tags": "forums featured",
     "web": "https://news.pub",
-    "source": "https://news.pub/news.pub.git",
+    "source": "https://github.com/breck7/news.pub",
     "registered": "9/22/2024",
-    "owner": "breck7@gmail.com"
-  },
-  {
-    "name": "zombo",
-    "description": "You can do anything.",
-    "tags": "funny",
-    "web": "https://zombo.togger.com",
-    "source": "http://zombo.togger.com/zombo.togger.com.git",
-    "registered": "9/14/2024",
     "owner": "breck7@gmail.com"
   },
   {
@@ -67,7 +31,7 @@
     "description": "A Programming Language DataBase",
     "tags": "programming knowledgeBase programmingLanguages featured",
     "web": "https://pldb.io",
-    "source": "https://pldb.io/pldb.io.git",
+    "source": "https://github.com/breck7/pldb",
     "registered": "6/12/2024",
     "owner": "breck7@gmail.com"
   },
@@ -76,7 +40,7 @@
     "description": "Breck's Blog",
     "tags": "personalHomepage blog featured",
     "web": "https://breckyunits.com",
-    "source": "https://breckyunits.com/breckyunits.com.git",
+    "source": "https://github.com/breck7/breckyunits.com",
     "registered": "6/12/2024",
     "owner": "breck7@gmail.com"
   },

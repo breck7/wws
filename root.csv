@@ -1,11 +1,7 @@
 name,description,tags,web,source,registered,owner
-simoji,Write simulations using emojis.,featured game science,https://simoji.scroll.pub,https://simoji.scroll.pub/simoji.scroll.pub.git,11/26/2024,breck7@gmail.com
-wavewar,Save earth from invading drones with waves.,featured game,https://wavewar.space,https://wavewar.space/wavewar.space.git,11/26/2024,breck7@gmail.com
-togger,Live TV that connects you to humans.,featured social,https://togger.com,https://togger.com/togger.com.git,11/26/2024,breck7@gmail.com
-public,A Public Domain Company,companyHomepage featured,https://publicdomaincompany.com,https://publicdomaincompany.com/publicdomaincompany.com.git,10/10/2024,breck7@gmail.com
-wifinder,WiFinder: find great wifi near you,maps featured,https://wifinder.wiki,https://wifinder.wiki/wifinder.wiki.git,10/02/2024,breck7@gmail.com
-news,BuilderNews: Watch people try web creations,forums featured,https://news.pub,https://news.pub/news.pub.git,9/22/2024,breck7@gmail.com
-zombo,You can do anything.,funny,https://zombo.togger.com,http://zombo.togger.com/zombo.togger.com.git,9/14/2024,breck7@gmail.com
-pldb,A Programming Language DataBase,programming knowledgeBase programmingLanguages featured,https://pldb.io,https://pldb.io/pldb.io.git,6/12/2024,breck7@gmail.com
-breck,Breck's Blog,personalHomepage blog featured,https://breckyunits.com,https://breckyunits.com/breckyunits.com.git,6/12/2024,breck7@gmail.com
+simoji,Write simulations using emojis.,featured game science,https://simoji.scroll.pub,https://github.com/breck7/simoji,11/26/2024,breck7@gmail.com
+wifinder,WiFinder: find great wifi near you,maps featured,https://wifinder.wiki,https://github.com/breck7/wifinder,10/02/2024,breck7@gmail.com
+news,BuilderNews: Watch people try web creations,forums featured,https://news.pub,https://github.com/breck7/news.pub,9/22/2024,breck7@gmail.com
+pldb,A Programming Language DataBase,programming knowledgeBase programmingLanguages featured,https://pldb.io,https://github.com/breck7/pldb,6/12/2024,breck7@gmail.com
+breck,Breck's Blog,personalHomepage blog featured,https://breckyunits.com,https://github.com/breck7/breckyunits.com,6/12/2024,breck7@gmail.com
 scroll,A language for scientists of all ages,projectHomepage programming programmingLanguages featured,https://scroll.pub,https://github.com/breck7/scroll,6/12/2024,breck7@gmail.com
