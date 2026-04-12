@@ -335,7 +335,7 @@ root.parsers
 name simoji
 description Write simulations using emojis.
 tags featured game science
-web https://simoji.scroll.pub
+web https://breck7.github.io/simoji/
 source https://github.com/breck7/simoji
 registered 11/26/2024
 owner breck7@gmail.com
@@ -359,7 +359,7 @@ owner breck7@gmail.com
 name pldb
 description A Programming Language DataBase
 tags programming knowledgeBase programmingLanguages featured
-web https://pldb.io
+web https://pldb.info
 source https://github.com/breck7/pldb
 registered 6/12/2024
 owner breck7@gmail.com
@@ -367,7 +367,7 @@ owner breck7@gmail.com
 name breck
 description Breck's Blog
 tags personalHomepage blog featured
-web https://breckyunits.com
+web https://breck7.github.io/breckyunits.com/
 source https://github.com/breck7/breckyunits.com
 registered 6/12/2024
 owner breck7@gmail.com
@@ -375,7 +375,7 @@ owner breck7@gmail.com
 name scroll
 description A language for scientists of all ages
 tags projectHomepage programming programmingLanguages featured
-web https://scroll.pub
+web https://breck7.github.io/scroll/
 source https://github.com/breck7/scroll
 registered 6/12/2024
 owner breck7@gmail.com
