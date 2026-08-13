@@ -31,7 +31,7 @@ The WWS is like the World Wide Web, except:
 - *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Non-toxic.* No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
- https://scroll.pub simple, expandable language
+ https://scroll.surf simple, expandable language
 - *Trustworthy.* Source code and change history behind every page. Human verified editors.
 
 clientInstall.scroll
@@ -40,7 +40,7 @@ clientInstall.scroll
 The World Wide Scroll beta is live!
 
 Scroll Alliance members can now register root names on The Scroll!
- https://alliance.scroll.pub/ Scroll Alliance members
+ https://alliance.scroll.surf/ Scroll Alliance members
 
 When you register a root name, you get to name and edit a root "folder" in the World Wide Scroll.
 
@@ -182,22 +182,22 @@ printTitle
 mediumColumns 1
 
 So you've joined The Scroll Alliance and want to register root names on The Scroll. This guide is for you!
- https://alliance.scroll.pub/ The Scroll Alliance
+ https://alliance.scroll.surf/ The Scroll Alliance
 
 Follow this guide to get your site ready for the World Wide Scroll.
 
 # How to Get Your Site Ready for the World Wide Scroll
 The World Wide Scroll (WWS) is designed to be a more intelligent, offline, and human-first alternative to the World Wide Web. As you prepare your site for the WWS, keep the following guidelines in mind:
 
-1. *Utilize the Scroll Language*: Scroll is the primary language of the WWS, designed to be simple and expandable for both humans and AIs. While you can use plain HTML, Markdown, or any language that compiles to HTML, using Scroll will streamline many other requirements. Learn more about Scroll at scroll.pub.
- https://scroll.pub scroll.pub
+1. *Utilize the Scroll Language*: Scroll is the primary language of the WWS, designed to be simple and expandable for both humans and AIs. While you can use plain HTML, Markdown, or any language that compiles to HTML, using Scroll will streamline many other requirements. Learn more about Scroll at scroll.surf.
+ https://scroll.surf scroll.surf
 
 2. *Open Source and Public Domain*: The WWS is designed for a post-copyright world and all content on the WWS is open-source and public domain.
 
 3. *Leverage Git for Site Management*: Unlike the traditional web, the WWS uses Git for site transfers. Your site must be stored in a publicly accessible Git repository. Platforms like ScrollHub, GitHub and GitLab offer free hosting for open-source projects.
  https://github.com GitHub
  https://gitlab.com GitLab
- https://hub.scroll.pub/ ScrollHub
+ https://hub.scroll.surf/ ScrollHub
 
 4. *Design for Offline Use*: Your site should function fully offline. Avoid using external JavaScript, images, or assets that require an internet connection. Ensure all necessary files are included in your Git repo. For large files, such as videos, linking to external sites is acceptable, but avoid adding unnecessarily large files directly to your repo.
 

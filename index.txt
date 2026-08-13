@@ -14,10 +14,10 @@ A successor to the web that is public domain, intelligent, and works offline
 ~scroll
 
 *Writing* Folders on The Scroll are created and maintained by Scroll Alliance members.
- https://alliance.scroll.pub/ Scroll Alliance members
-============================================================================================================================================
+ https://alliance.scroll.surf/ Scroll Alliance members
+=============================================================================================================================================
 
 Learn more
- https://wws.scroll.pub/readme.html Learn more
+ https://wws.scroll.surf/readme.html Learn more
 
 Built with Scroll v158.0.4

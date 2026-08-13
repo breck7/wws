@@ -24,7 +24,7 @@ The WWS is like the World Wide Web, except:
 - *Offline.* You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - *Non-toxic.* No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.
 - *Intelligent.* Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs.
- https://scroll.pub simple, expandable language
+ https://scroll.surf simple, expandable language
 - *Trustworthy.* Source code and change history behind every page. Human verified editors.
 
 WWS command line client one-liner install
@@ -80,15 +80,15 @@ Register root names today!
 The World Wide Scroll beta is live!
 
 Scroll Alliance members can now register root names on The Scroll!
- https://alliance.scroll.pub/ Scroll Alliance members
+ https://alliance.scroll.surf/ Scroll Alliance members
 
 When you register a root name, you get to name and edit a root "folder" in the World Wide Scroll.
 
 A root folder is just a few lines of data about your folder and where the files reside, that is written to the root.scroll file.
- https://wws.scroll.pub/root.scroll root.scroll
+ https://wws.scroll.surf/root.scroll root.scroll
 
 When you are ready to register your root name(s), check out the Getting Started Guide.
- https://wws.scroll.pub/gettingStarted.html Getting Started Guide
+ https://wws.scroll.surf/gettingStarted.html Getting Started Guide
 
 Values
 ======
@@ -99,14 +99,14 @@ These are the words that guide The Scroll.
 ⁂
 
 Release notes
- https://wws.scroll.pub/releaseNotes.html Release notes
+ https://wws.scroll.surf/releaseNotes.html Release notes
 
 Download
 ========
 Download the list of root folders in the World Wide Scroll as: CSV | TSV | JSON
- https://wws.scroll.pub/root.csv CSV
- https://wws.scroll.pub/root.tsv TSV
- https://wws.scroll.pub/root.json JSON
+ https://wws.scroll.surf/root.csv CSV
+ https://wws.scroll.surf/root.tsv TSV
+ https://wws.scroll.surf/root.json JSON
 
 Folders
 =======
