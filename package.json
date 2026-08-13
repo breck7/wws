@@ -32,7 +32,7 @@
     "arrowParens": "avoid",
     "quoteProps": "as-needed"
   },
-  "homepage": "https://wws.scroll.pub",
+  "homepage": "https://wws.scroll.surf",
   "dependencies": {
     "express": "^4.21.1",
     "minimist": "^1.2.8",

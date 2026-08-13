@@ -14,7 +14,7 @@ The WWS is like the World Wide Web, except:
 
 - **Offline:** You download entire sites and browse completely offline locally, rather than fetching one page at a time.
 - **Non-toxic:** No ads, no paywalls, no trackers, no cookies, no copyright. The WWS and all content on it is public domain.
-- **Intelligent:** Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs. [Learn about Scroll](https://scroll.pub)
+- **Intelligent:** Built not on HTML, but from the ground up in a simple, expandable language, designed for both humans and AIs. [Learn about Scroll](https://scroll.surf)
 - **Trustworthy:** Source code and change history behind every page. Human-verified editors.
 
 ## Reserve your root name today!
@@ -59,7 +59,7 @@ Download the list of root folders in the World Wide Scroll as:
 | zombo    | You can do anything.                        | [link](https://zombo.togger.com)        | [source](http://zombo.togger.com/zombo.togger.com.git)                |
 | pldb     | A Programming Language DataBase             | [link](https://pldb.io)                 | [source](https://pldb.io/pldb.io.git)                                 |
 | breck    | Breck's Blog                                | [link](https://breckyunits.com)         | [source](https://breckyunits.com/breckyunits.com.git)                 |
-| scroll   | A language for scientists of all ages       | [link](https://scroll.pub)              | [source](https://github.com/breck7/scroll)                            |
+| scroll   | A language for scientists of all ages       | [link](https://scroll.surf)              | [source](https://github.com/breck7/scroll)                            |
 
 ---
 
