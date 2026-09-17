@@ -1,23 +1,20 @@
-The World Wide Scroll
-=====================
+World Wide Scroll
+=================
 
-A successor to the web that is public domain, intelligent, and works offline
-============================================================================
+Works offline. Simpler. Public domain.
+======================================
 
-*Reading* The Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
-==============================================================================
-~simoji
-~wifinder
-~news
-~pldb
-~breck
-~scroll
+Downloading the Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
+================================================================================
+<div class="iframeHolder"><div><a href="https://knowbooks.com">~knowbooks</a></div><iframe src="https://knowbooks.com" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://simoji.breck.lol">~simoji</a></div><iframe src="https://simoji.breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://wifinder.breck.lol">~wifinder</a></div><iframe src="https://wifinder.breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://pldb.io">~pldb</a></div><iframe src="https://pldb.io" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://breck.lol">~breck</a></div><iframe src="https://breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://scroll.surf">~scroll</a></div><iframe src="https://scroll.surf" frameborder="0" allow="geolocation 'none'"></iframe></div>
 
-*Writing* Folders on The Scroll are created and maintained by Scroll Alliance members.
- https://alliance.scroll.surf/ Scroll Alliance members
-=============================================================================================================================================
+Register your Scroll name with a patch.
+ https://github.com/breck7/wws/blob/main/root.scroll patch
+==================================================================================================
 
-Learn more
- https://wws.scroll.surf/readme.html Learn more
-
-Built with Scroll v158.0.4
+Built with Scroll v178.2.3

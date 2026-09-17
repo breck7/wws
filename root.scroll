@@ -5,10 +5,18 @@ buildMeasures wwsMeasures.tsv
 
 root.parsers
 
+name knowbooks
+description Books you do with your hands.
+tags featured science
+web https://knowbooks.com
+source https://github.com/breck7/knowbooks.com
+registered 9/17/2026
+owner breck@knowbooks.com
+
 name simoji
 description Write simulations using emojis.
 tags featured game science
-web https://breck7.github.io/simoji/
+web https://simoji.breck.lol
 source https://github.com/breck7/simoji
 registered 11/26/2024
 owner breck7@gmail.com
@@ -16,23 +24,15 @@ owner breck7@gmail.com
 name wifinder
 description WiFinder: find great wifi near you
 tags maps featured
-web https://wifinder.wiki
+web https://wifinder.breck.lol
 source https://github.com/breck7/wifinder
 registered 10/02/2024
-owner breck7@gmail.com
-
-name news
-description BuilderNews: Watch people try web creations
-tags forums featured
-web https://news.pub
-source https://github.com/breck7/news.pub
-registered 9/22/2024
 owner breck7@gmail.com
 
 name pldb
 description A Programming Language DataBase
 tags programming knowledgeBase programmingLanguages featured
-web https://pldb.info
+web https://pldb.io
 source https://github.com/breck7/pldb
 registered 6/12/2024
 owner breck7@gmail.com
@@ -41,7 +41,7 @@ name breck
 description Breck's Blog
 tags personalHomepage blog featured
 web https://breck.lol
-source https://github.com/breck7/blog
+source https://github.com/breck7/breck.lol
 registered 6/12/2024
 owner breck7@gmail.com
 

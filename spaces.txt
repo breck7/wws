@@ -18,7 +18,4 @@ One click updates:
 Includes 1 year standard hosting & support, and 10yr registration of root name on The Scroll:
 =============================================================================================
 
-Buy now
- https://buy.stripe.com/eVacQy82Jez3a6AdRh Buy now
-
-Built with Scroll v158.0.4
+Built with Scroll v178.2.3
