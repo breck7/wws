@@ -13,13 +13,12 @@ const util = require("util")
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Particle } = require("scrollsdk/products/Particle.js")
-const { ScrollCli, ScrollFile, ScrollFileSystem, SimpleCLI } = require("scroll-cli")
+const { ScrollCli, SimpleCLI } = require("scroll-cli")
 const packageJson = require("./package.json")
 
 // Constants
 const WWS_VERSION = packageJson.version
 
-const scrollFs = new ScrollFileSystem()
 const scrollCli = new ScrollCli().silence()
 
 const sanitizeFolderName = name => name.toLowerCase().replace(/[^a-z0-9._]/g, "")
@@ -92,8 +91,8 @@ class WWSCli extends SimpleCLI {
   async loadFolders() {
     const { wwsDir } = this
     const rootFilePath = path.join(__dirname, "root.scroll")
-    const wws = new ScrollFile(Disk.read(rootFilePath), rootFilePath, scrollFs)
-    await wws.fuse()
+    const wws = scrollCli.sfs.newFile(Disk.read(rootFilePath), rootFilePath)
+    await wws.singlePassFuse()
     await wws.scrollProgram.load()
     const { concepts } = wws.scrollProgram
     concepts.forEach(folder => (folder.fetched = Disk.exists(path.join(wwsDir, folder.name))))

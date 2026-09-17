@@ -10,27 +10,57 @@ theme gazette
 homeButton
 editButton
 copyButtons
-css html {font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial"; font-size: var(--base-font-size, 14px);}
-
 css
- iframe {
-   width: 800px;
-   height: 600px;
-   border-radius: 15px;
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-   padding: 20px;
-   display: inline-block;
-   border: 0;
-   transform: scale(0.25);
-   transform-origin: 0 0;
+ :root {
+  --scrollPrimaryRgb: 43, 105, 99;
+  --scrollSurfaceRgb: 220, 224, 216;
+  --scrollTextBase: 47, 57, 54;
+  --scrollLinkBase: 38, 102, 95;
+  --scrollColorBackground: #f7f6f2;
+  --scrollColorSubdued: #65716b;
+  --scrollFontPrimary: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --scrollFontUi: var(--scrollFontPrimary);
+  --scrollFontMono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --scrollBaseFontSize: 17px;
  }
+ html { line-height: 1.7; hyphens: none; }
+ body { padding: 2rem 1.25rem 1.25rem; }
+ .scrollParagraph { text-align: left; margin: 0.85rem 0; }
+ h1, h2, h3, h4 { color: #293d37; font-weight: 600; line-height: 1.35; }
+ .scrollSection h1, .scrollSection h2 { margin: 2rem 0 1rem; }
+ a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+ a:hover { color: #194d46; }
+ a:focus-visible { outline: 2px solid #36796e; outline-offset: 4px; border-radius: 3px; }
+ strong { font-weight: 600; }
+ .scrollInlineCode { overflow-wrap: anywhere; padding: 0.2em 0.4em; }
+ .scrollCodeBlock { padding: 1rem; border: 1px solid #dce1d9; border-radius: 8px; line-height: 1.6; }
+ .abstractIconButtonParser svg { fill: #718078; }
+ .abstractTextLinkParser { color: #65716b; font-size: 0.8rem; text-align: center; }
  .iframeHolder {
   width: 200px;
-  height: 150px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  margin: 10px;
+  height: 188px;
+  background: #fff;
+  border: 1px solid #dce1d9;
+  box-shadow: 0 3px 12px rgba(40, 58, 48, 0.05);
+  border-radius: 10px;
+  margin: 8px;
   display: inline-block;
+  vertical-align: top;
   position: relative;
   overflow: hidden;
+  text-align: left;
+ }
+ .iframeHolder > div { height: 38px; box-sizing: border-box; padding: 5px 12px; background: #eef1ea; border-bottom: 1px solid #dce1d9; }
+ .iframeHolder a { font-size: 0.85rem; font-weight: 600; }
+ .iframeHolder iframe {
+  width: 800px;
+  height: 600px;
+  display: block;
+  border: 0;
+  transform: scale(0.25);
+  transform-origin: 0 0;
+ }
+ @media (max-width: 520px) {
+  body { padding: 2.75rem 1rem 1.25rem; }
+  .iframeHolder { margin: 6px; }
  }

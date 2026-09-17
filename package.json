@@ -4,7 +4,7 @@
   "description": "The World Wide Scroll",
   "main": "wws.js",
   "engines": {
-    "node": ">=16.0"
+    "node": ">=18.0"
   },
   "scripts": {
     "hosts": "echo '127.0.0.1 scroll' | sudo tee -a /etc/hosts",
@@ -36,8 +36,8 @@
   "dependencies": {
     "express": "^4.21.1",
     "minimist": "^1.2.8",
-    "scroll-cli": "^158.0.4",
-    "scrollsdk": "^98.0.0"
+    "scroll-cli": "^178.2.3",
+    "scrollsdk": "^107.0.1"
   },
   "devDependencies": {
     "tap": "^18.7.2"
