@@ -12,7 +12,7 @@
     "build": "scroll build",
     "format": "scroll format",
     "open": "open index.html",
-    "up": "npm install scroll-cli@latest; npm install scrollsdk@latest"
+    "up": "npm install github:breck7/scroll github:breck7/scrollsdk"
   },
   "bin": {
     "wws": "./wws.js"
@@ -36,8 +36,8 @@
   "dependencies": {
     "express": "^5.2.1",
     "minimist": "^1.2.8",
-    "scroll-cli": "^178.2.3",
-    "scrollsdk": "^107.0.1"
+    "scroll-cli": "github:breck7/scroll",
+    "scrollsdk": "github:breck7/scrollsdk"
   },
   "devDependencies": {
     "tap": "^18.7.2"
