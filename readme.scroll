@@ -26,7 +26,7 @@ container 880px
 ## Works offline. Simpler. Public domain.
  style font-weight: 400; font-size: clamp(1.2rem, 3vw, 1.5rem); color: #65716b; max-width: 680px; margin: 0 auto 1rem;
 
-# Downloading the Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
+# Downloading the Scroll *is free*. Install now: `npm install -g breck7/wws`.
  style font-weight: 400; font-size: 1.15rem; margin: 0.75rem auto; max-width: 720px;
 center
 root.tsv

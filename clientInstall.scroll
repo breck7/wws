@@ -2,9 +2,9 @@ importOnly
 
 # WWS command line client one-liner install
 
-From npm:
+From GitHub:
 code
- sudo npm install -g @breck/wws
+ npm install -g breck7/wws
 
 From source:
 code

@@ -34,7 +34,7 @@
   },
   "homepage": "https://wws.scroll.surf",
   "dependencies": {
-    "express": "^4.21.1",
+    "express": "^5.2.1",
     "minimist": "^1.2.8",
     "scroll-cli": "^178.2.3",
     "scrollsdk": "^107.0.1"

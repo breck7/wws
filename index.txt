@@ -4,8 +4,8 @@ World Wide Scroll
 Works offline. Simpler. Public domain.
 ======================================
 
-Downloading the Scroll *is free*. Install now: `sudo npm install -g @breck/wws`.
-================================================================================
+Downloading the Scroll *is free*. Install now: `npm install -g breck7/wws`.
+===========================================================================
 <div class="iframeHolder"><div><a href="https://knowbooks.com">~knowbooks</a></div><iframe src="https://knowbooks.com" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://simoji.breck.lol">~simoji</a></div><iframe src="https://simoji.breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://wifinder.breck.lol">~wifinder</a></div><iframe src="https://wifinder.breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
