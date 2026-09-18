@@ -8,78 +8,99 @@ Download as CSV | TSV | JSON
  https://wws.scroll.surf/releaseNotes.tsv TSV
  https://wws.scroll.surf/releaseNotes.json JSON
 
-📦 0.27.0 9/17/2026
+0.27.0 9/17/2026
+================
 🎉 updated readme
 🎉 updated scroll and ScrollSDK
 
-📦 0.26.0 11/30/2024
+0.26.0 11/30/2024
+=================
 🎉 updated scroll and ScrollSDK
 
-📦 0.25.0 11/26/2024
+0.25.0 11/26/2024
+=================
 🎉 much faster now (just clone a single branch)
 🎉 updated scroll
 
-📦 0.24.0 11/26/2024
+0.24.0 11/26/2024
+=================
 🎉 if you just type `wws [folderName]` it will run fetch
 
-📦 0.23.0 11/26/2024
+0.23.0 11/26/2024
+=================
 🎉 updated scroll
 🎉 updated scrollsdk
 
-📦 0.22.0 11/12/2024
+0.22.0 11/12/2024
+=================
 🎉 updated scroll
 🎉 updated scrollsdk
 
-📦 0.21.0 10/19/2024
+0.21.0 10/19/2024
+=================
 🎉 update scroll
 
-📦 0.20.0 10/14/2024
+0.20.0 10/14/2024
+=================
 🎉 added tags
 🎉 homepage refresh
 
-📦 0.19.0 10/13/2024
+0.19.0 10/13/2024
+=================
 🏥 bug fixes
 
-📦 0.18.0 10/13/2024
+0.18.0 10/13/2024
+=================
 🎉 added delete command
 🏥 bug fixes
 
-📦 0.17.0 10/13/2024
+0.17.0 10/13/2024
+=================
 🏥 bug fixes
 ⚠️ removed branches. not worth the complexity at all.
 
-📦 0.16.0 10/11/2024
+0.16.0 10/11/2024
+=================
 🎉 store data in users home dir. Thanks TD!
 🏥 bug fixes
 
-📦 0.15.0 10/11/2024
+0.15.0 10/11/2024
+=================
 🎉 added http://scroll
 
-📦 0.14.0 10/10/2024
+0.14.0 10/10/2024
+=================
 🎉 various improvements and upgrades
 
-📦 0.13.0 10/02/2024
+0.13.0 10/02/2024
+=================
 🎉 new local homepage
 🎉 started support for other branches
 
-📦 0.12.0 10/02/2024
+0.12.0 10/02/2024
+=================
 🎉 miscelaneous cleanup
 
-📦 0.11.0 9/12/2024
+0.11.0 9/12/2024
+================
 🏥 bug fixes
 
-📦 0.10.0 9/6/2024
+0.10.0 9/6/2024
+===============
 🏥 upgrade scroll
 
-📦 0.9.0 7/11/2024
+0.9.0 7/11/2024
+===============
 🎉 added descriptions to folders (max 7 words)
 🎉 nicer `wws list` output
 ⚠️ moved `snippets` parser from the `root.scroll` file to `wws.scroll` files.
 
-📦 0.8.0 7/10/2024
+0.8.0 7/10/2024
+===============
 🎉 added new concept of subfolders
 
-📦 0.7.0 7/10/2024
+0.7.0 7/10/2024
+===============
 🎉 added release notes
 🎉 updated Scroll
 🎉 moved site registry to `root.scroll`
