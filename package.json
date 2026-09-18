@@ -36,7 +36,7 @@
   "dependencies": {
     "express": "^5.2.1",
     "minimist": "^1.2.8",
-    "scroll-cli": "github:breck7/scroll#v180.0.1",
+    "scroll": "github:breck7/scroll#v180.0.1",
     "scrollsdk": "github:breck7/scrollsdk#v108.0.0"
   },
   "devDependencies": {

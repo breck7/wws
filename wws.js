@@ -13,7 +13,7 @@ const util = require("util")
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
 const { Particle } = require("scrollsdk/products/Particle.js")
-const { ScrollCli, SimpleCLI } = require("scroll-cli")
+const { ScrollCli, SimpleCLI } = require("scroll")
 const packageJson = require("./package.json")
 
 // Constants
