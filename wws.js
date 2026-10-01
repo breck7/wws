@@ -128,7 +128,9 @@ center
 Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/${this.folders.length} folders fetched. WWS version: ${WWS_VERSION}.
 
 // todo: fix root includes in scroll and remove below.
-${fs.readFileSync(path.join(__dirname, "header.scroll"))}
+// Note: header.scroll is an importOnly file. Strip the importOnly line when inlining it here,
+// otherwise the whole index.scroll becomes importOnly and scroll refuses to build it.
+${fs.readFileSync(path.join(__dirname, "header.scroll"), "utf8").replace(/^importOnly\n/, "")}
 
 center
 table
