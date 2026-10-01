@@ -133,7 +133,7 @@ Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/$
 ${fs.readFileSync(path.join(__dirname, "header.scroll"), "utf8").replace(/^importOnly\n/, "")}
 
 center
-table
+datatable
  data
   rootName
   ${this.fetchedFolders.map(folder => folder.name).join("\n  ")}
