@@ -30,7 +30,7 @@ container 880px
  style font-weight: 400; font-size: 1.15rem; margin: 0.75rem auto; max-width: 720px;
 center
 root.tsv
- limit 7
+ limit 9
   where tags includes featured
    compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0" allow="geolocation 'none'"></iframe></div>
     printColumn tag

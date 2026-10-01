@@ -52,5 +52,41 @@
     "source": "https://github.com/breck7/scroll",
     "registered": "6/12/2024",
     "owner": "breck7@gmail.com"
+  },
+  {
+    "name": "busam",
+    "description": "Backup Sam Altman",
+    "tags": "projectHomepage featured",
+    "web": "https://busam.breck.lol/",
+    "source": "https://github.com/breck7/busam",
+    "registered": "10/1/2026",
+    "owner": "breck7@gmail.com"
+  },
+  {
+    "name": "bupaul",
+    "description": "Backup Paul Graham",
+    "tags": "projectHomepage featured",
+    "web": "https://bupaul.breck.lol/",
+    "source": "https://github.com/breck7/bupaul",
+    "registered": "10/1/2026",
+    "owner": "breck7@gmail.com"
+  },
+  {
+    "name": "bupatrick",
+    "description": "Backup Patrick Collison",
+    "tags": "projectHomepage featured",
+    "web": "https://bupatrick.breck.lol/",
+    "source": "https://github.com/breck7/bupatrick",
+    "registered": "10/1/2026",
+    "owner": "breck7@gmail.com"
+  },
+  {
+    "name": "budario",
+    "description": "Backup Dario Amodei",
+    "tags": "projectHomepage featured",
+    "web": "https://budario.breck.lol/",
+    "source": "https://github.com/breck7/budario",
+    "registered": "10/1/2026",
+    "owner": "breck7@gmail.com"
   }
 ]
