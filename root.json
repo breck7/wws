@@ -81,6 +81,24 @@
     "owner": "breck7@gmail.com"
   },
   {
+    "name": "buelon",
+    "description": "Backup Elon Musk",
+    "tags": "projectHomepage featured",
+    "web": "https://buelon.breck.lol/",
+    "source": "https://github.com/breck7/buelon",
+    "registered": "10/4/2026",
+    "owner": "breck7@gmail.com"
+  },
+  {
+    "name": "bujohnnyc",
+    "description": "Backup John Collison",
+    "tags": "projectHomepage featured",
+    "web": "https://bujohnnyc.breck.lol/",
+    "source": "https://github.com/breck7/bujohnnyc",
+    "registered": "10/4/2026",
+    "owner": "breck7@gmail.com"
+  },
+  {
     "name": "budario",
     "description": "Backup Dario Amodei",
     "tags": "projectHomepage featured",
