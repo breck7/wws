@@ -1,8 +1,8 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Cue
-name	24	200%	What is the folder name?	knowbooks	string		1	false	true	true	name
-description	24	200%	What is this folder about? Maximum 7 words.	Books you do with your hands.	string		1.001	false			description
-tags	24	200%	What labels apply to this folder?	featured science	string		1.002	false			tags
-web	24	200%	What is the URL to this folder on the World Wide Web?	https://knowbooks.com	string		1.01	false			
-source	24	200%	What is the URL to the source code for this folder?	https://github.com/breck7/knowbooks.com	string		1.02	false			
-registered	24	200%	On what day was this folder name first registered?	9/17/2026	string		1.3	false			
-owner	24	200%	Which Scroll Alliance member owns this folder?	breck@knowbooks.com	string		1.5	false			
+name	28	200%	What is the folder name?	music	string		1	false	true	true	name
+description	28	200%	What is this folder about? Maximum 7 words.	Music of a people.	string		1.001	false			description
+tags	28	200%	What labels apply to this folder?	featured music	string		1.002	false			tags
+web	28	200%	What is the URL to this folder on the World Wide Web?	https://music.breck.lol	string		1.01	false			
+source	28	200%	What is the URL to the source code for this folder?	https://github.com/breck7/music	string		1.02	false			
+registered	28	200%	On what day was this folder name first registered?	10/18/2026	string		1.3	false			
+owner	28	200%	Which Scroll Alliance member owns this folder?	breck7@gmail.com	string		1.5	false			
