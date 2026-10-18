@@ -108,7 +108,7 @@ class WWSCli extends SimpleCLI {
 
     Disk.mkdir(wwsDir)
     const initFolder = {
-      "index.scroll": `The World Wide Scroll\n`
+      "index.scroll": `World Wide Scroll\n`
     }
     Disk.writeObjectToDisk(wwsDir, initFolder)
     await this.loadFolders()
@@ -118,7 +118,7 @@ class WWSCli extends SimpleCLI {
   async buildIndexPage() {
     const { wwsDir } = this
     const indexFile = path.join(wwsDir, "index.scroll")
-    const content = `title The World Wide Scroll
+    const content = `title World Wide Scroll
 metaTags
 theme gazette
 printTitle
@@ -194,7 +194,7 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
         }
       })
     )
-    this.log(`There are currently ${this.folders.length} root folders in the World Wide Scroll.`)
+    this.log(`There are currently ${this.folders.length} root folders in World Wide Scroll.`)
     this.log("")
     this.log(table.toFormattedTable())
     this.log("")

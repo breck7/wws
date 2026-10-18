@@ -1,7 +1,7 @@
 buildConcepts root.csv root.json root.tsv
 buildMeasures wwsMeasures.tsv
 
-// The World Wide Scroll Root File
+// World Wide Scroll Root File
 
 root.parsers
 

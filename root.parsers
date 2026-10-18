@@ -17,7 +17,7 @@ wwsTagsParser
 
 webParser
  extends abstractUrlMeasureParser
- description What is the URL to this folder on the World Wide Web?
+ description What is the URL to this folder on World Wide Web?
  float sortIndex 1.01
 
 sourceParser

@@ -1,7 +1,7 @@
 {
   "name": "@breck/wws",
   "version": "0.27.0",
-  "description": "The World Wide Scroll",
+  "description": "World Wide Scroll",
   "main": "wws.js",
   "engines": {
     "node": ">=18.0"

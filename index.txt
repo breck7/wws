@@ -15,6 +15,11 @@ Downloading the Scroll *is free*. Install now: `npm install -g breck7/wws && wws
 <div class="iframeHolder"><div><a href="https://breck.lol">~breck</a></div><iframe src="https://breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://scroll.surf">~scroll</a></div><iframe src="https://scroll.surf" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://busam.breck.lol/">~busam</a></div><iframe src="https://busam.breck.lol/" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://bupaul.breck.lol/">~bupaul</a></div><iframe src="https://bupaul.breck.lol/" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://bupatrick.breck.lol/">~bupatrick</a></div><iframe src="https://bupatrick.breck.lol/" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://buelon.breck.lol/">~buelon</a></div><iframe src="https://buelon.breck.lol/" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://bujohnnyc.breck.lol/">~bujohnnyc</a></div><iframe src="https://bujohnnyc.breck.lol/" frameborder="0" allow="geolocation 'none'"></iframe></div>
+<div class="iframeHolder"><div><a href="https://budario.breck.lol/">~budario</a></div><iframe src="https://budario.breck.lol/" frameborder="0" allow="geolocation 'none'"></iframe></div>
 
 Register your Scroll name with a patch.
  https://github.com/breck7/wws/blob/main/root.scroll patch
