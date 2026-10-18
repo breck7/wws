@@ -125,7 +125,7 @@ printTitle
 buildHtml
 
 center
-Your copy of the WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/${this.folders.length} folders fetched. WWS version: ${WWS_VERSION}.
+Your copy of WWS is stored in \`${wwsDir}\`. ${this.fetchedFolders.length}/${this.folders.length} folders fetched. WWS version: ${WWS_VERSION}.
 
 // todo: fix root includes in scroll and remove below.
 // Note: header.scroll is an importOnly file. Strip the importOnly line when inlining it here,
@@ -309,12 +309,12 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     const { wwsDir, isLocalServerRunning } = this
     const indexHtml = path.join(wwsDir, "index.html")
     const url = isLocalServerRunning ? "http://scroll/" : indexHtml
-    console.log(`Your copy of The Scroll can be accessed with 'open ${indexHtml}' or 'open http://scroll/' (if server started). Now opening: '${url}'`)
+    console.log(`Your copy of WWS can be accessed with 'open ${indexHtml}' or 'open http://scroll/' (if server started). Now opening: '${url}'`)
     return child_process.exec(`open ${url}`)
   }
 
   get welcomeMessage() {
-    return `\n🌎🌏📜 WELCOME TO THE WWS (v${WWS_VERSION})\n\n${this.count} root folders in ${this.wwsDir}`
+    return `\n🌎🌏📜 WELCOME TO WWS (v${WWS_VERSION})\n\n${this.count} root folders in ${this.wwsDir}`
   }
 }
 
