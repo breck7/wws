@@ -26,7 +26,7 @@ code
 code
  sudo npm uninstall -g wws
 
-The WWS client currently requires Node.js. More clients coming soon.
+WWS client currently requires Node.js. More clients coming soon.
  https://nodejs.org/en Node.js
 
 # Keeping WWS server running
