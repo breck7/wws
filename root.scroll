@@ -5,6 +5,22 @@ buildMeasures wwsMeasures.tsv
 
 root.parsers
 
+name music
+description Music of a people.
+tags featured music
+web https://music.breck.lol
+source https://github.com/breck7/music
+registered 10/18/2026
+owner breck7@gmail.com
+
+name launchation
+description A new way to launch.
+tags featured startups
+web https://launchation.com
+source https://github.com/breck7/launchation.com
+registered 10/18/2026
+owner breck@knowbooks.com
+
 name knowbooks
 description Books you do with your hands.
 tags featured science
