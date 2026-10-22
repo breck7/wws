@@ -1,12 +1,21 @@
 [
   {
+    "name": "breck.podcasts",
+    "description": "Podcasts of a People.",
+    "tags": "featured",
+    "web": "https://podcasts.breck.lol",
+    "source": "https://github.com/breck7/podcasts.breck.lol",
+    "registered": "10/22/2026",
+    "owner": "breck7@gmail.com"
+  },
+  {
     "name": "breck.bank",
     "description": "You decide your balance.",
     "tags": "featured",
     "web": "https://bank.breck.lol",
     "source": "https://github.com/breck7/bank.breck.lol",
     "registered": "10/22/2026",
-    "owner": "breck@knowbooks.com"
+    "owner": "breck7@gmail.com"
   },
   {
     "name": "knowbooks.videos",
