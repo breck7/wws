@@ -137,7 +137,7 @@ datatable
  data
   rootName
   ${this.fetchedFolders.map(folder => folder.name).join("\n  ")}
- compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">~{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0" allow="geolocation 'none'"></iframe></div>
+ compose tag <div class="iframeHolder"><div><a href="{rootName}/index.html">~{rootName}</a></div><iframe src="{rootName}/index.html" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
   printColumn tag
 
 wwsSnippetsParser
@@ -270,6 +270,13 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     if (!folderNames.length) await Promise.all(fetchedFolders.map(async folder => await this.fetchFolder(folder.name)))
     else folderNames.forEach(folderName => this.fetchFolder(folderName))
     this.buildIndexPage()
+  }
+
+  async updateCommand() {
+    const rootFile = path.join(__dirname, "root.scroll")
+    if (Disk.exists(path.join(__dirname, ".git"))) return this.log(child_process.execSync(`cd ${__dirname} && git pull`).toString())
+    Disk.write(rootFile, await (await fetch("https://raw.githubusercontent.com/breck7/wws/main/root.scroll")).text())
+    this.log(`👍 Updated ${rootFile}`)
   }
 
   async deleteFolder(folderName) {
