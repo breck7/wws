@@ -18,8 +18,13 @@ node_modules/scroll/microlangs/changes.parsers
 
 thinColumns 1
 
-📦 0.27.1 10/22/2026
-🏥 homepage previews no longer play sound
+📦 0.28.0 10/22/2026
+🎉 added \`wws update\` command (git pull origin main)
+🎉 added knowbooks.videos, music, launchation, buelon and bujohnnyc folders
+🎉 homepage now shows up to 20 featured folders
+🎉 removed spaces page
+🏥 homepage previews no longer autoplay sound
+🏥 wording cleanups ("The WWS" → "WWS")
 
 📦 0.27.0 10/1/2026
 🎉 updated readme
