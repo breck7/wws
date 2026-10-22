@@ -1,5 +1,14 @@
 [
   {
+    "name": "knowbooks.videos",
+    "description": "Knowbooks.com videos for entertainment only.",
+    "tags": "featured",
+    "web": "https://videos.knowbooks.com",
+    "source": "https://github.com/breck7/videos.knowbooks.com",
+    "registered": "10/22/2026",
+    "owner": "breck@knowbooks.com"
+  },
+  {
     "name": "music",
     "description": "Music of a people.",
     "tags": "featured music",
@@ -10,7 +19,7 @@
   },
   {
     "name": "launchation",
-    "description": "A new way to launch.",
+    "description": "Better way to launch new products.",
     "tags": "featured startups",
     "web": "https://launchation.com",
     "source": "https://github.com/breck7/launchation.com",

@@ -6,6 +6,7 @@ Works offline. Simpler. Public domain.
 
 Downloading WWS *is free*. Install now: `npm install -g breck7/wws && wws`.
 ===========================================================================
+<div class="iframeHolder"><div><a href="https://videos.knowbooks.com">~knowbooks.videos</a></div><iframe src="https://videos.knowbooks.com" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://music.breck.lol">~music</a></div><iframe src="https://music.breck.lol" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://launchation.com">~launchation</a></div><iframe src="https://launchation.com" frameborder="0" allow="geolocation 'none'"></iframe></div>
 <div class="iframeHolder"><div><a href="https://knowbooks.com">~knowbooks</a></div><iframe src="https://knowbooks.com" frameborder="0" allow="geolocation 'none'"></iframe></div>
