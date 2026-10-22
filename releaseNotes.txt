@@ -8,6 +8,10 @@ Download as CSV | TSV | JSON
  https://wws.scroll.surf/releaseNotes.tsv TSV
  https://wws.scroll.surf/releaseNotes.json JSON
 
+0.27.1 10/22/2026
+=================
+🏥 homepage previews no longer play sound
+
 0.27.0 10/1/2026
 ================
 🎉 updated readme
