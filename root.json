@@ -1,5 +1,14 @@
 [
   {
+    "name": "breck.bank",
+    "description": "You decide your balance.",
+    "tags": "featured",
+    "web": "https://bank.breck.lol",
+    "source": "https://github.com/breck7/bank.breck.lol",
+    "registered": "10/22/2026",
+    "owner": "breck@knowbooks.com"
+  },
+  {
     "name": "knowbooks.videos",
     "description": "Knowbooks.com videos for entertainment only.",
     "tags": "featured",
@@ -9,7 +18,7 @@
     "owner": "breck@knowbooks.com"
   },
   {
-    "name": "music",
+    "name": "breck.music",
     "description": "Music of a people.",
     "tags": "featured music",
     "web": "https://music.breck.lol",
@@ -18,7 +27,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "launchation",
+    "name": "knowbooks.launchation",
     "description": "Better way to launch new products.",
     "tags": "featured startups",
     "web": "https://launchation.com",
@@ -36,7 +45,7 @@
     "owner": "breck@knowbooks.com"
   },
   {
-    "name": "simoji",
+    "name": "breck.simoji",
     "description": "Write simulations using emojis.",
     "tags": "featured game science",
     "web": "https://simoji.breck.lol",
@@ -45,7 +54,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "wifinder",
+    "name": "breck.wifinder",
     "description": "WiFinder: find great wifi near you",
     "tags": "maps featured",
     "web": "https://wifinder.breck.lol",
@@ -81,7 +90,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "busam",
+    "name": "breck.busam",
     "description": "Backup Sam Altman",
     "tags": "projectHomepage featured",
     "web": "https://busam.breck.lol/",
@@ -90,7 +99,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "bupaul",
+    "name": "breck.bupaul",
     "description": "Backup Paul Graham",
     "tags": "projectHomepage featured",
     "web": "https://bupaul.breck.lol/",
@@ -99,7 +108,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "bupatrick",
+    "name": "breck.bupatrick",
     "description": "Backup Patrick Collison",
     "tags": "projectHomepage featured",
     "web": "https://bupatrick.breck.lol/",
@@ -108,7 +117,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "buelon",
+    "name": "breck.buelon",
     "description": "Backup Elon Musk",
     "tags": "projectHomepage featured",
     "web": "https://buelon.breck.lol/",
@@ -117,7 +126,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "bujohnnyc",
+    "name": "breck.bujohnnyc",
     "description": "Backup John Collison",
     "tags": "projectHomepage featured",
     "web": "https://bujohnnyc.breck.lol/",
@@ -126,7 +135,7 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "budario",
+    "name": "breck.budario",
     "description": "Backup Dario Amodei",
     "tags": "projectHomepage featured",
     "web": "https://budario.breck.lol/",
