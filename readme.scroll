@@ -42,4 +42,4 @@ root.tsv
 scrollVersionLink
 
 // Skills
-// - Update a local install's root.scroll (list of folders): `wws update`.
+// - Update a local install (git pulls the wws repo, including root.scroll): `wws update`.
