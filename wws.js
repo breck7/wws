@@ -272,11 +272,8 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     this.buildIndexPage()
   }
 
-  async updateCommand() {
-    const rootFile = path.join(__dirname, "root.scroll")
-    if (Disk.exists(path.join(__dirname, ".git"))) return this.log(child_process.execSync(`cd ${__dirname} && git pull`).toString())
-    Disk.write(rootFile, await (await fetch("https://raw.githubusercontent.com/breck7/wws/main/root.scroll")).text())
-    this.log(`👍 Updated ${rootFile}`)
+  updateCommand() {
+    child_process.execSync("git pull", { cwd: __dirname, stdio: "inherit" })
   }
 
   async deleteFolder(folderName) {
