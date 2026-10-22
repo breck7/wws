@@ -1,9 +1,9 @@
 [
   {
-    "version": "0.27.1",
+    "version": "0.28.0",
     "releaseDate": "10/22/2026",
-    "bugFixes": 1,
-    "newFeatures": 0,
+    "bugFixes": 2,
+    "newFeatures": 4,
     "breakingChanges": 0
   },
   {
