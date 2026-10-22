@@ -26,3 +26,5 @@ description Open wws/index.html
 
 id start
 description Start a local server to serve files over http://scroll/[folderName]
+id update
+description Update the root.scroll list of folders (git pull if a git checkout, otherwise download the latest root.scroll).

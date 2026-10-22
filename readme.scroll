@@ -32,7 +32,7 @@ center
 root.tsv
  limit 20
   where tags includes featured
-   compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0" allow="geolocation 'none'"></iframe></div>
+   compose tag <div class="iframeHolder"><div><a href="{web}">~{name}</a></div><iframe src="{web}" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
     printColumn tag
 
 # Register your Scroll name with a patch.
@@ -40,3 +40,6 @@ root.tsv
  https://github.com/breck7/wws/blob/main/root.scroll patch
 
 scrollVersionLink
+
+// Skills
+// - Update a local install's root.scroll (list of folders): `wws update`.
