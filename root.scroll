@@ -1,8 +1,3 @@
-buildConcepts root.csv root.json root.tsv
-buildMeasures wwsMeasures.tsv
-
-// World Wide Scroll Root File
-
 root.parsers
 
 name breck.podcasts
@@ -141,4 +136,7 @@ source https://github.com/breck7/budario
 registered 10/1/2026
 owner breck7@gmail.com
 
+
+buildConcepts root.csv root.json root.tsv
+buildMeasures wwsMeasures.tsv
 
