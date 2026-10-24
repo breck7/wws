@@ -1,5 +1,13 @@
 root.parsers
 
+name breck.pleasecopy
+description PleaseCopy: Copying is a Human Right
+tags featured
+web https://pleasecopy.breck.lol/
+source https://github.com/breck7/pleasecopy.breck.lol
+registered 10/24/2026
+owner breck7@gmail.com
+
 name breck.podcasts
 description Podcasts of a People.
 tags featured
