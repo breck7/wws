@@ -93,11 +93,15 @@ strong { font-weight: 600; }
  .iframeHolder { margin: 6px; }
 }</style>
 <style>center > .scrollParagraph:empty { display: none; }
-.ogHolder { width: 280px; display: inline-block; vertical-align: top; margin: 8px; text-align: left; }
-.ogHolder img { width: 100%; height: 148px; object-fit: cover; border-radius: 6px; display: block; background: #e8ece9; }</style>
+center:has(.ogHolder) { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: left; }
+.ogHolder { min-width: 0; text-align: left; }
+.ogHolder img { width: 100%; height: 148px; object-fit: cover; border-radius: 6px; display: block; background: #e8ece9; }
+@media (min-width: 1100px) { center:has(.ogHolder) { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 1500px) { center:has(.ogHolder) { grid-template-columns: repeat(7, 1fr); } }
+@media (max-width: 520px) { center:has(.ogHolder) { grid-template-columns: 1fr; } }</style>
 <div class="scrollSection"><h1 id="particle31"  class="scrollParagraph" style="font-weight: 600; font-size: clamp(2.25rem, 6vw, 3.5rem); letter-spacing: -0.045em; max-width: 1000px; margin: 0 auto 0.5rem;;undefined;undefined;undefined">World Wide Scroll</h1>
 </div>
-<div id="particle33" class="scrollContainerParser" style="width: 100%; box-sizing: border-box; max-width: 880px; margin: 0 auto;">
+<div id="particle33" class="scrollContainerParser" style="width: 100%; box-sizing: border-box; max-width: 1200px; margin: 0 auto;">
 <div class="scrollSection"><h2 id="particle35"  class="scrollParagraph" style="font-weight: 400; font-size: clamp(1.2rem, 3vw, 1.5rem); color: #65716b; max-width: 680px; margin: 0 auto 1rem;;undefined;undefined;undefined">Works offline. Simpler. Public domain.</h2>
 </div>
 <div class="scrollSection"><h1 id="particle37"  class="scrollParagraph" style="font-weight: 400; font-size: 1.15rem; margin: 0.75rem auto; max-width: 720px;;undefined;undefined;undefined">Downloading WWS <strong>is free</strong>. Install now: <code class="scrollInlineCode">npm install -g breck7/wws && wws</code>.</h1>
