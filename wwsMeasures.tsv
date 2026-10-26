@@ -4,6 +4,6 @@ description	38	200%	What is this folder about? Maximum 7 words.	Backup Steve Job
 tags	38	200%	What labels apply to this folder?	featured	string		1.002	false			tags
 web	38	200%	What is the URL to this folder on World Wide Web?	https://busteve.breck.lol	string		1.01	false			
 image	38	200%	Open graph image URL for the website homepage preview.	https://busteve.breck.lol/og.png	string		1.015	false			
-source	38	200%	What is the URL to the source code for this folder?	https://github.com/breck7/busteve.breck.lol	string		1.02	false			
+source	38	200%	What is the URL to the source code for this folder?	https://github.com/breck7/busteve	string		1.02	false			
 registered	38	200%	On what day was this folder name first registered?	10/26/2026	string		1.3	false			
 owner	38	200%	Which Scroll Alliance member owns this folder?	breck7@gmail.com	string		1.5	false			
