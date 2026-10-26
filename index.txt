@@ -26,8 +26,9 @@ Downloading WWS *is free*. Install now: `npm install -g breck7/wws && wws`.
 <div class="ogHolder"><div><a href="https://bujohnnyc.breck.lol/">~breck.johnnyc</a></div><a href="https://bujohnnyc.breck.lol/"><img src="https://bujohnnyc.breck.lol/john-hedcut.png" alt="breck.johnnyc" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://budario.breck.lol/">~breck.dario</a></div><a href="https://budario.breck.lol/"><img src="https://budario.breck.lol/dario-hedcut-v2.png" alt="breck.dario" loading="lazy" onerror="this.remove()"></a></div>
 
-Register your Scroll name with a patch.
- https://github.com/breck7/wws/blob/main/root.scroll patch
-==================================================================================================
+Buy | Edit your folder
+ https://github.com/breck7/wws/blob/main/root.scroll Edit
+ https://knowbooks.com/?knowbookId=wws Buy
+===========================================================================================================================
 
 Built with Scroll v180.0.1

@@ -40,9 +40,10 @@ root.tsv
    compose tag <div class="ogHolder"><div><a href="{web}">~{name}</a></div><a href="{web}"><img src="{image}" alt="{name}" loading="lazy" onerror="this.remove()"></a></div>
     printColumn tag
 
-# Register your Scroll name with a patch.
+# Buy | Edit your folder
  style font-weight: 400; font-size: 1.15rem; margin: 0.75rem auto; max-width: 720px;
- https://github.com/breck7/wws/blob/main/root.scroll patch
+ https://github.com/breck7/wws/blob/main/root.scroll Edit
+ https://knowbooks.com/?knowbookId=wws Buy
 
 scrollVersionLink
 
