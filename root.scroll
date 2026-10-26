@@ -4,6 +4,7 @@ name breck.steve
 description Backup Steve Jobs
 tags featured
 web https://busteve.breck.lol
+image https://busteve.breck.lol/og.png
 source https://github.com/breck7/busteve.breck.lol
 registered 10/26/2026
 owner breck7@gmail.com
@@ -12,6 +13,7 @@ name breck.pleasecopy
 description PleaseCopy: Copying is a Human Right
 tags featured
 web https://pleasecopy.breck.lol/
+image https://pleasecopy.breck.lol/og.png
 source https://github.com/breck7/pleasecopy.breck.lol
 registered 10/24/2026
 owner breck7@gmail.com
@@ -20,6 +22,7 @@ name breck.podcasts
 description Podcasts of a People.
 tags featured
 web https://podcasts.breck.lol
+image https://podcasts.breck.lol/og.jpg
 source https://github.com/breck7/podcasts.breck.lol
 registered 10/22/2026
 owner breck7@gmail.com
@@ -28,6 +31,7 @@ name breck.bank
 description You decide your balance.
 tags featured
 web https://bank.breck.lol
+image https://bank.breck.lol/og.png
 source https://github.com/breck7/bank.breck.lol
 registered 10/22/2026
 owner breck7@gmail.com
@@ -36,6 +40,7 @@ name knowbooks.videos
 description Knowbooks.com videos for entertainment only.
 tags featured
 web https://videos.knowbooks.com
+image https://videos.knowbooks.com/og.png
 source https://github.com/breck7/videos.knowbooks.com
 registered 10/22/2026
 owner breck@knowbooks.com
@@ -44,6 +49,7 @@ name breck.music
 description Music of a people.
 tags featured music
 web https://music.breck.lol
+image https://music.breck.lol/og.jpg
 source https://github.com/breck7/music
 registered 10/18/2026
 owner breck7@gmail.com
@@ -52,6 +58,7 @@ name knowbooks.launchation
 description Better way to launch new products.
 tags featured startups
 web https://launchation.com
+image https://launchation.com/og.png
 source https://github.com/breck7/launchation.com
 registered 10/18/2026
 owner breck@knowbooks.com
@@ -60,6 +67,7 @@ name knowbooks
 description Books you do with your hands.
 tags featured science
 web https://knowbooks.com
+image https://knowbooks.com/og.png
 source https://github.com/breck7/knowbooks.com
 registered 9/17/2026
 owner breck@knowbooks.com
@@ -68,6 +76,7 @@ name breck.simoji
 description Write simulations using emojis.
 tags featured game science
 web https://simoji.breck.lol
+image https://simoji.breck.lol/screenshot.png
 source https://github.com/breck7/simoji
 registered 11/26/2024
 owner breck7@gmail.com
@@ -76,6 +85,7 @@ name breck.wifinder
 description WiFinder: find great wifi near you
 tags maps featured
 web https://wifinder.breck.lol
+image https://wifinder.breck.lol/og.png
 source https://github.com/breck7/wifinder
 registered 10/02/2024
 owner breck7@gmail.com
@@ -84,6 +94,7 @@ name pldb
 description A Programming Language DataBase
 tags programming knowledgeBase programmingLanguages featured
 web https://pldb.io
+image https://pldb.io/screenshot.jpg
 source https://github.com/breck7/pldb
 registered 6/12/2024
 owner breck7@gmail.com
@@ -92,6 +103,7 @@ name breck
 description Breck's Blog
 tags personalHomepage blog featured
 web https://breck.lol
+image https://breck.lol/screenshot.png
 source https://github.com/breck7/breck.lol
 registered 6/12/2024
 owner breck7@gmail.com
@@ -100,6 +112,7 @@ name scroll
 description A language for scientists of all ages
 tags projectHomepage programming programmingLanguages featured
 web https://scroll.surf
+image https://scroll.surf/scrollInfographic.png
 source https://github.com/breck7/scroll
 registered 6/12/2024
 owner breck7@gmail.com
@@ -108,6 +121,7 @@ name breck.sam
 description Backup Sam Altman
 tags projectHomepage featured
 web https://busam.breck.lol/
+image https://busam.breck.lol/sam-hedcut.png
 source https://github.com/breck7/busam
 registered 10/1/2026
 owner breck7@gmail.com
@@ -116,6 +130,7 @@ name breck.paul
 description Backup Paul Graham
 tags projectHomepage featured
 web https://bupaul.breck.lol/
+image https://bupaul.breck.lol/paul-hedcut.png
 source https://github.com/breck7/bupaul
 registered 10/1/2026
 owner breck7@gmail.com
@@ -124,6 +139,7 @@ name breck.patrick
 description Backup Patrick Collison
 tags projectHomepage featured
 web https://bupatrick.breck.lol/
+image https://bupatrick.breck.lol/patrick-hedcut.png
 source https://github.com/breck7/bupatrick
 registered 10/1/2026
 owner breck7@gmail.com
@@ -132,6 +148,7 @@ name breck.elon
 description Backup Elon Musk
 tags projectHomepage featured
 web https://buelon.breck.lol/
+image https://buelon.breck.lol/elon-hedcut.png
 source https://github.com/breck7/buelon
 registered 10/4/2026
 owner breck7@gmail.com
@@ -140,6 +157,7 @@ name breck.johnnyc
 description Backup John Collison
 tags projectHomepage featured
 web https://bujohnnyc.breck.lol/
+image https://bujohnnyc.breck.lol/john-hedcut.png
 source https://github.com/breck7/bujohnnyc
 registered 10/4/2026
 owner breck7@gmail.com
@@ -148,6 +166,7 @@ name breck.dario
 description Backup Dario Amodei
 tags projectHomepage featured
 web https://budario.breck.lol/
+image https://budario.breck.lol/dario-hedcut-v2.png
 source https://github.com/breck7/budario
 registered 10/1/2026
 owner breck7@gmail.com

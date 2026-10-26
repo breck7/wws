@@ -9,6 +9,7 @@ const child_process = require("child_process")
 const express = require("express")
 const dns = require("dns")
 const util = require("util")
+const readline = require("readline")
 
 // Particles Includes
 const { Disk } = require("scrollsdk/products/Disk.node.js")
@@ -250,6 +251,31 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
       })
   }
 
+  closestFolder(query) {
+    const q = query.toLowerCase()
+    const names = this.folders.map(folder => folder.name)
+    const scored = names
+      .map(name => {
+        const n = name.toLowerCase()
+        let score = 0
+        if (n === q) score = 100
+        else if (n.endsWith("." + q)) score = 90
+        else if (n.startsWith(q + ".")) score = 80
+        else if (n.includes("." + q) || n.includes(q + ".")) score = 60
+        else if (n.includes(q)) score = 40
+        else return null
+        return { name, score, len: name.length }
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.score - a.score || a.len - b.len)
+    return scored.length && scored[0].score >= 40 ? scored[0].name : null
+  }
+
+  askYesNo(question) {
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+    return new Promise(resolve => rl.question(question, answer => { rl.close(); resolve(/^y(es)?$/i.test(answer.trim())) }))
+  }
+
   // todo: upstream this
   async executeUsersInstructionsFromShell(args = [], userIsPipingInput = process.platform !== "win32" && fs.fstatSync(0).isFIFO()) {
     await this.init()
@@ -259,6 +285,16 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     else if (command) {
       const folder = this.getFolder(command)
       if (folder) return this.fetchCommand([command])
+      const guess = this.closestFolder(command)
+      if (guess) {
+        if (process.stdin.isTTY) {
+          const yes = await this.askYesNo(`Did you want '${guess}'? y/n `)
+          if (yes) return this.fetchCommand([guess])
+          return
+        }
+        this.log(`No command '${command}'. Did you want '${guess}'? Try: wws ${guess}`)
+        return
+      }
       this.log(`No command '${command}'. Running help command.`)
     } else this.log(`No command provided. Running help command.`)
     return this.helpCommand()
@@ -266,10 +302,12 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
 
   async fetchCommand(folderNames) {
     await this.init()
-    const { wwsDir, fetchedFolders } = this
-    if (!folderNames.length) await Promise.all(fetchedFolders.map(async folder => await this.fetchFolder(folder.name)))
-    else folderNames.forEach(folderName => this.fetchFolder(folderName))
-    this.buildIndexPage()
+    if (!folderNames.length) {
+      for (const folder of this.fetchedFolders) await this.fetchFolder(folder.name)
+    } else {
+      for (const folderName of folderNames) await this.fetchFolder(folderName)
+    }
+    await this.buildIndexPage()
   }
 
   updateCommand() {

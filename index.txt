@@ -6,25 +6,25 @@ Works offline. Simpler. Public domain.
 
 Downloading WWS *is free*. Install now: `npm install -g breck7/wws && wws`.
 ===========================================================================
-<div class="iframeHolder"><div><a href="https://busteve.breck.lol">~breck.steve</a></div><iframe src="https://busteve.breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://pleasecopy.breck.lol/">~breck.pleasecopy</a></div><iframe src="https://pleasecopy.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://podcasts.breck.lol">~breck.podcasts</a></div><iframe src="https://podcasts.breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://bank.breck.lol">~breck.bank</a></div><iframe src="https://bank.breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://videos.knowbooks.com">~knowbooks.videos</a></div><iframe src="https://videos.knowbooks.com" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://music.breck.lol">~breck.music</a></div><iframe src="https://music.breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://launchation.com">~knowbooks.launchation</a></div><iframe src="https://launchation.com" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://knowbooks.com">~knowbooks</a></div><iframe src="https://knowbooks.com" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://simoji.breck.lol">~breck.simoji</a></div><iframe src="https://simoji.breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://wifinder.breck.lol">~breck.wifinder</a></div><iframe src="https://wifinder.breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://pldb.io">~pldb</a></div><iframe src="https://pldb.io" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://breck.lol">~breck</a></div><iframe src="https://breck.lol" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://scroll.surf">~scroll</a></div><iframe src="https://scroll.surf" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://busam.breck.lol/">~breck.sam</a></div><iframe src="https://busam.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://bupaul.breck.lol/">~breck.paul</a></div><iframe src="https://bupaul.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://bupatrick.breck.lol/">~breck.patrick</a></div><iframe src="https://bupatrick.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://buelon.breck.lol/">~breck.elon</a></div><iframe src="https://buelon.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://bujohnnyc.breck.lol/">~breck.johnnyc</a></div><iframe src="https://bujohnnyc.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
-<div class="iframeHolder"><div><a href="https://budario.breck.lol/">~breck.dario</a></div><iframe src="https://budario.breck.lol/" frameborder="0" allow="geolocation 'none'; autoplay 'none'"></iframe></div>
+<div class="ogHolder"><div><a href="https://busteve.breck.lol">~breck.steve</a></div><a href="https://busteve.breck.lol"><img src="https://busteve.breck.lol/og.png" alt="breck.steve" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://pleasecopy.breck.lol/">~breck.pleasecopy</a></div><a href="https://pleasecopy.breck.lol/"><img src="https://pleasecopy.breck.lol/og.png" alt="breck.pleasecopy" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://podcasts.breck.lol">~breck.podcasts</a></div><a href="https://podcasts.breck.lol"><img src="https://podcasts.breck.lol/og.jpg" alt="breck.podcasts" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://bank.breck.lol">~breck.bank</a></div><a href="https://bank.breck.lol"><img src="https://bank.breck.lol/og.png" alt="breck.bank" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://videos.knowbooks.com">~knowbooks.videos</a></div><a href="https://videos.knowbooks.com"><img src="https://videos.knowbooks.com/og.png" alt="knowbooks.videos" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://music.breck.lol">~breck.music</a></div><a href="https://music.breck.lol"><img src="https://music.breck.lol/og.jpg" alt="breck.music" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://launchation.com">~knowbooks.launchation</a></div><a href="https://launchation.com"><img src="https://launchation.com/og.png" alt="knowbooks.launchation" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://knowbooks.com">~knowbooks</a></div><a href="https://knowbooks.com"><img src="https://knowbooks.com/og.png" alt="knowbooks" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://simoji.breck.lol">~breck.simoji</a></div><a href="https://simoji.breck.lol"><img src="https://simoji.breck.lol/screenshot.png" alt="breck.simoji" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://wifinder.breck.lol">~breck.wifinder</a></div><a href="https://wifinder.breck.lol"><img src="https://wifinder.breck.lol/og.png" alt="breck.wifinder" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://pldb.io">~pldb</a></div><a href="https://pldb.io"><img src="https://pldb.io/screenshot.jpg" alt="pldb" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://breck.lol">~breck</a></div><a href="https://breck.lol"><img src="https://breck.lol/screenshot.png" alt="breck" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://scroll.surf">~scroll</a></div><a href="https://scroll.surf"><img src="https://scroll.surf/scrollInfographic.png" alt="scroll" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://busam.breck.lol/">~breck.sam</a></div><a href="https://busam.breck.lol/"><img src="https://busam.breck.lol/sam-hedcut.png" alt="breck.sam" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://bupaul.breck.lol/">~breck.paul</a></div><a href="https://bupaul.breck.lol/"><img src="https://bupaul.breck.lol/paul-hedcut.png" alt="breck.paul" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://bupatrick.breck.lol/">~breck.patrick</a></div><a href="https://bupatrick.breck.lol/"><img src="https://bupatrick.breck.lol/patrick-hedcut.png" alt="breck.patrick" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://buelon.breck.lol/">~breck.elon</a></div><a href="https://buelon.breck.lol/"><img src="https://buelon.breck.lol/elon-hedcut.png" alt="breck.elon" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://bujohnnyc.breck.lol/">~breck.johnnyc</a></div><a href="https://bujohnnyc.breck.lol/"><img src="https://bujohnnyc.breck.lol/john-hedcut.png" alt="breck.johnnyc" loading="lazy" onerror="this.remove()"></a></div>
+<div class="ogHolder"><div><a href="https://budario.breck.lol/">~breck.dario</a></div><a href="https://budario.breck.lol/"><img src="https://budario.breck.lol/dario-hedcut-v2.png" alt="breck.dario" loading="lazy" onerror="this.remove()"></a></div>
 
 Register your Scroll name with a patch.
  https://github.com/breck7/wws/blob/main/root.scroll patch
