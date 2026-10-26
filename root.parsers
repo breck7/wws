@@ -34,3 +34,9 @@ ownerParser
  extends abstractStringMeasureParser
  description Which Scroll Alliance member owns this folder?
  float sortIndex 1.5
+
+imageParser
+ extends abstractUrlMeasureParser
+ description Open graph image URL for the website homepage preview.
+ float sortIndex 1.015
+

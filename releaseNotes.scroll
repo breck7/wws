@@ -18,6 +18,12 @@ node_modules/scroll/microlangs/changes.parsers
 
 thinColumns 1
 
+📦 0.29.0 10/26/2026
+🎉 all featured folders have image URLs for homepage cards
+🎉 website homepage previews use open graph images (local index still iframes)
+🎉 `wws music` style typos prompt "Did you want 'breck.music'?"
+🏥 fetch now awaits each site build before rebuilding the local index
+
 📦 0.28.0 10/22/2026
 🎉 added \`wws update\` command (git pull origin main)
 🎉 added knowbooks.videos, music, launchation, buelon and bujohnnyc folders
