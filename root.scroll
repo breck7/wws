@@ -1,5 +1,13 @@
 root.parsers
 
+name breck.steve
+description Backup Steve Jobs
+tags featured
+web https://busteve.breck.lol
+source https://github.com/breck7/busteve.breck.lol
+registered 10/26/2026
+owner breck7@gmail.com
+
 name breck.pleasecopy
 description PleaseCopy: Copying is a Human Right
 tags featured
@@ -96,7 +104,7 @@ source https://github.com/breck7/scroll
 registered 6/12/2024
 owner breck7@gmail.com
 
-name breck.busam
+name breck.sam
 description Backup Sam Altman
 tags projectHomepage featured
 web https://busam.breck.lol/
@@ -104,7 +112,7 @@ source https://github.com/breck7/busam
 registered 10/1/2026
 owner breck7@gmail.com
 
-name breck.bupaul
+name breck.paul
 description Backup Paul Graham
 tags projectHomepage featured
 web https://bupaul.breck.lol/
@@ -112,7 +120,7 @@ source https://github.com/breck7/bupaul
 registered 10/1/2026
 owner breck7@gmail.com
 
-name breck.bupatrick
+name breck.patrick
 description Backup Patrick Collison
 tags projectHomepage featured
 web https://bupatrick.breck.lol/
@@ -120,7 +128,7 @@ source https://github.com/breck7/bupatrick
 registered 10/1/2026
 owner breck7@gmail.com
 
-name breck.buelon
+name breck.elon
 description Backup Elon Musk
 tags projectHomepage featured
 web https://buelon.breck.lol/
@@ -128,7 +136,7 @@ source https://github.com/breck7/buelon
 registered 10/4/2026
 owner breck7@gmail.com
 
-name breck.bujohnnyc
+name breck.johnnyc
 description Backup John Collison
 tags projectHomepage featured
 web https://bujohnnyc.breck.lol/
@@ -136,7 +144,7 @@ source https://github.com/breck7/bujohnnyc
 registered 10/4/2026
 owner breck7@gmail.com
 
-name breck.budario
+name breck.dario
 description Backup Dario Amodei
 tags projectHomepage featured
 web https://budario.breck.lol/
