@@ -20,12 +20,12 @@
     "owner": "breck7@gmail.com"
   },
   {
-    "name": "breck.podcasts",
-    "description": "Podcasts of a People.",
+    "name": "breck.comics",
+    "description": "Comics of a People.",
     "tags": "featured",
-    "web": "https://podcasts.breck.lol",
-    "image": "https://podcasts.breck.lol/og.jpg",
-    "source": "https://github.com/breck7/podcasts.breck.lol",
+    "web": "https://comics.breck.lol",
+    "image": "https://comics.breck.lol/og.jpg",
+    "source": "https://github.com/breck7/comics.breck.lol",
     "registered": "10/22/2026",
     "owner": "breck7@gmail.com"
   },
