@@ -18,6 +18,10 @@ node_modules/scroll/microlangs/changes.parsers
 
 thinColumns 1
 
+📦 0.30.0 10/28/2026
+🎉 folder wildcards: `wws '*'` / `wws '*music'` / `wws 'breck.*'` (quote the pattern)
+🎉 homepage featured cards use odd column grid (3 / 5 / 7)
+
 📦 0.29.0 10/26/2026
 🎉 all featured folders have image URLs for homepage cards
 🎉 website homepage previews use open graph images (local index still iframes)

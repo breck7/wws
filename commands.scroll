@@ -13,7 +13,7 @@ commandDescriptionParser
 // Commands
 
 id fetch
-description If no params provided, fetch all folders previously fetched. If folder names provided, fetch those folders.
+description If no params provided, fetch all folders previously fetched. If folder names provided, fetch those folders. Names may include * wildcards (e.g. *music, breck.*).
 
 id help
 description Print available commands and stats about local copy.
