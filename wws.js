@@ -271,6 +271,11 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     return scored.length && scored[0].score >= 40 ? scored[0].name : null
   }
 
+  matchFolders(pattern) {
+    const re = new RegExp("^" + pattern.replace(/[.+^${}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*") + "$", "i")
+    return this.folders.map(folder => folder.name).filter(name => re.test(name))
+  }
+
   askYesNo(question) {
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
     return new Promise(resolve => rl.question(question, answer => { rl.close(); resolve(/^y(es)?$/i.test(answer.trim())) }))
@@ -283,6 +288,12 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     const commandName = `${command}${this.CommandFnDecoratorSuffix}`
     if (this[commandName]) return userIsPipingInput ? this._runCommandOnPipedStdIn(commandName) : this[commandName](args.slice(1))
     else if (command) {
+      if (command.includes("*")) {
+        const matches = this.matchFolders(command)
+        if (!matches.length) return this.log(`No folders matching '${command}'.`)
+        this.log(`Matching ${matches.length}: ${matches.join(", ")}`)
+        return this.fetchCommand(matches)
+      }
       const folder = this.getFolder(command)
       if (folder) return this.fetchCommand([command])
       const guess = this.closestFolder(command)
@@ -305,7 +316,14 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     if (!folderNames.length) {
       for (const folder of this.fetchedFolders) await this.fetchFolder(folder.name)
     } else {
-      for (const folderName of folderNames) await this.fetchFolder(folderName)
+      const expanded = []
+      for (const folderName of folderNames) {
+        if (folderName.includes("*")) expanded.push(...this.matchFolders(folderName))
+        else expanded.push(folderName)
+      }
+      const unique = [...new Set(expanded)]
+      if (!unique.length) return this.log(`No folders matching.`)
+      for (const folderName of unique) await this.fetchFolder(folderName)
     }
     await this.buildIndexPage()
   }

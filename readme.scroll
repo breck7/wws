@@ -50,3 +50,4 @@ scrollVersionLink
 // Skills
 // - Update a local install (git pulls the wws repo, including root.scroll): `wws update`.
 // - Did-you-mean: typing `wws music` with no exact match prompts for the closest folder (e.g. breck.music).
+// - Wildcards: `wws '*'` fetches all folders; `wws '*music'` or `wws 'breck.*'` fetches matches (quote so the shell does not expand `*`).
