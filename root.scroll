@@ -1,5 +1,14 @@
 root.parsers
 
+name kbay
+description No relationship to eBay.
+tags featured
+web https://kbay.breck.lol
+image https://kbay.breck.lol/og.png
+source https://github.com/breck7/kbay
+registered 11/16/2026
+owner breck7@gmail.com
+
 name breck.steve
 description Backup Steve Jobs
 tags featured

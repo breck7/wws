@@ -6,6 +6,7 @@ Works offline. Simpler. Public domain.
 
 Downloading WWS *is free*. Install now: `npm install -g breck7/wws && wws`.
 ===========================================================================
+<div class="ogHolder"><div><a href="https://kbay.breck.lol">~kbay</a></div><a href="https://kbay.breck.lol"><img src="https://kbay.breck.lol/og.png" alt="kbay" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://busteve.breck.lol">~breck.steve</a></div><a href="https://busteve.breck.lol"><img src="https://busteve.breck.lol/og.png" alt="breck.steve" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://pleasecopy.breck.lol/">~breck.pleasecopy</a></div><a href="https://pleasecopy.breck.lol/"><img src="https://pleasecopy.breck.lol/og.png" alt="breck.pleasecopy" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://comics.breck.lol">~breck.comics</a></div><a href="https://comics.breck.lol"><img src="https://comics.breck.lol/og.jpg" alt="breck.comics" loading="lazy" onerror="this.remove()"></a></div>
