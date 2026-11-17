@@ -18,6 +18,9 @@ node_modules/scroll/microlangs/changes.parsers
 
 thinColumns 1
 
+📦 0.30.1 11/16/2026
+🏥 `wws update` now works on npm installs (reinstalls from GitHub when not a git clone)
+
 📦 0.30.0 10/28/2026
 🎉 folder wildcards: `wws '*'` / `wws '*music'` / `wws 'breck.*'` (quote the pattern)
 🎉 homepage featured cards use odd column grid (3 / 5 / 7)
