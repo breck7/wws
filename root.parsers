@@ -32,7 +32,7 @@ registeredParser
 
 ownerParser
  extends abstractStringMeasureParser
- description Which Scroll Alliance member owns this folder?
+ description Best way to get in touch with human who owns this folder?
  float sortIndex 1.5
 
 imageParser
