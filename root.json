@@ -1,5 +1,15 @@
 [
   {
+    "name": "hhh",
+    "description": "No relationship to eBay.",
+    "tags": "featured",
+    "web": "https://humanitieshelpinghands.com",
+    "image": "https://humanitieshelpinghands.com/og.png",
+    "source": "https://github.com/humanityhelpinghands/humanities-helping-hands",
+    "registered": "11/16/2026",
+    "owner": "https://x.com/33_SI_Agents"
+  },
+  {
     "name": "kbay",
     "description": "No relationship to eBay.",
     "tags": "featured",

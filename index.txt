@@ -6,6 +6,7 @@ Works offline. Simpler. Public domain.
 
 Downloading WWS *is free*. Install now: `npm install -g breck7/wws && wws`.
 ===========================================================================
+<div class="ogHolder"><div><a href="https://humanitieshelpinghands.com">~hhh</a></div><a href="https://humanitieshelpinghands.com"><img src="https://humanitieshelpinghands.com/og.png" alt="hhh" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://kbay.breck.lol">~kbay</a></div><a href="https://kbay.breck.lol"><img src="https://kbay.breck.lol/og.png" alt="kbay" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://busteve.breck.lol">~breck.steve</a></div><a href="https://busteve.breck.lol"><img src="https://busteve.breck.lol/og.png" alt="breck.steve" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://pleasecopy.breck.lol/">~breck.pleasecopy</a></div><a href="https://pleasecopy.breck.lol/"><img src="https://pleasecopy.breck.lol/og.png" alt="breck.pleasecopy" loading="lazy" onerror="this.remove()"></a></div>
@@ -25,7 +26,6 @@ Downloading WWS *is free*. Install now: `npm install -g breck7/wws && wws`.
 <div class="ogHolder"><div><a href="https://bupatrick.breck.lol/">~breck.patrick</a></div><a href="https://bupatrick.breck.lol/"><img src="https://bupatrick.breck.lol/patrick-hedcut.png" alt="breck.patrick" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://buelon.breck.lol/">~breck.elon</a></div><a href="https://buelon.breck.lol/"><img src="https://buelon.breck.lol/elon-hedcut.png" alt="breck.elon" loading="lazy" onerror="this.remove()"></a></div>
 <div class="ogHolder"><div><a href="https://bujohnnyc.breck.lol/">~breck.johnnyc</a></div><a href="https://bujohnnyc.breck.lol/"><img src="https://bujohnnyc.breck.lol/john-hedcut.png" alt="breck.johnnyc" loading="lazy" onerror="this.remove()"></a></div>
-<div class="ogHolder"><div><a href="https://budario.breck.lol/">~breck.dario</a></div><a href="https://budario.breck.lol/"><img src="https://budario.breck.lol/dario-hedcut-v2.png" alt="breck.dario" loading="lazy" onerror="this.remove()"></a></div>
 
 Buy | Edit your folder
  https://github.com/breck7/wws/blob/main/root.scroll Edit
