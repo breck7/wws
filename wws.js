@@ -329,8 +329,9 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
   }
 
   updateCommand() {
-    if (!Disk.exists(path.join(__dirname, ".git"))) return this.log(`❌ ${__dirname} is not a git clone. Reinstall with: npm install -g breck7/wws`)
-    try { child_process.execSync("git pull origin main", { cwd: __dirname, stdio: "inherit" }) } catch (err) { process.exitCode = 1 }
+    const isClone = Disk.exists(path.join(__dirname, ".git"))
+    const command = isClone ? "git pull origin main" : "npm install -g breck7/wws"
+    try { child_process.execSync(command, { cwd: isClone ? __dirname : os.homedir(), stdio: "inherit" }) } catch (err) { process.exitCode = 1 }
   }
 
   async deleteFolder(folderName) {
