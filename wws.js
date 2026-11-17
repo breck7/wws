@@ -224,9 +224,9 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
     // mkdir the folder if it doesn't exist:
     const rootFolder = path.join(wwsDir, folder.name)
     const gitSource = folder.source
-    if (!Disk.exists(rootFolder)) {
+    if (!Disk.exists(path.join(rootFolder, ".git"))) {
       this.log(`Fetching ${folderName}`)
-      Disk.mkdir(rootFolder)
+      fs.rmSync(rootFolder, { recursive: true, force: true })
       const cloneCommand = `git clone --single-branch ${gitSource} ${rootFolder}`
       console.log(cloneCommand)
       child_process.execSync(cloneCommand)
@@ -244,8 +244,8 @@ editUrl https://github.com/breck7/wws/blob/main/wws.js
         const subfolderPath = path.join(rootFolder, subfolderName)
         const sourceRepo = subfolder.atoms[2]
         console.log(`Updating subfolder '${subfolderName}'`)
-        if (!Disk.exists(subfolderPath)) {
-          Disk.mkdir(subfolderPath)
+        if (!Disk.exists(path.join(subfolderPath, ".git"))) {
+          fs.rmSync(subfolderPath, { recursive: true, force: true })
           child_process.execSync(`git clone --single-branch ${sourceRepo} ${subfolderPath}`)
         } else child_process.execSync(`cd ${subfolderPath} && git pull origin`)
       })
